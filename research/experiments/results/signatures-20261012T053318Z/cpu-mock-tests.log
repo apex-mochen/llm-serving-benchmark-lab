@@ -1,0 +1,9 @@
+test_failure_not_invented_as_success (__main__.RunnerTests.test_failure_not_invented_as_success) ... ok
+test_open_arrival_boundary (__main__.RunnerTests.test_open_arrival_boundary) ... ok
+test_shared_prefix_and_percentile (__main__.RunnerTests.test_shared_prefix_and_percentile) ... ok
+test_variable_lengths_and_usage (__main__.RunnerTests.test_variable_lengths_and_usage) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 2.211s
+
+OK

@@ -1,0 +1,25 @@
+{
+  "status": "HOLD",
+  "numeric_pass": null,
+  "all_pairs_below_five": null,
+  "error": "AssertionError('GPU is not quiet: NVIDIA GeForce RTX 4060 Laptop GPU, GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca, 1472, 8188, 23, 1890, 8001, 66, 29.26')",
+  "completed_variants": 0,
+  "core_unchanged": true,
+  "monitor_errors": [],
+  "observed_interference": [],
+  "run_to_run_cv": {
+    "off/mean_ttft_ms": null,
+    "off/mean_tpot_ms": null,
+    "off/mean_e2e_ms": null,
+    "off/requests_per_s": null,
+    "off/output_tokens_per_s": null,
+    "full/mean_ttft_ms": null,
+    "full/mean_tpot_ms": null,
+    "full/mean_e2e_ms": null,
+    "full/requests_per_s": null,
+    "full/output_tokens_per_s": null
+  },
+  "preflight_only": true,
+  "observe_only": false,
+  "phase2_expansion_executed": false
+}

@@ -1,0 +1,15 @@
+{
+  "group": "queue",
+  "level": 8,
+  "repeat": 2,
+  "seed": 20261014,
+  "input_length": 512,
+  "output_length": 128,
+  "requests": 8,
+  "concurrency": 8,
+  "arrival_rate": 4.0,
+  "load_mode": "scheduled open arrival + client cap",
+  "cache_state": "disabled",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "served_model": "benchmark-model"
+}

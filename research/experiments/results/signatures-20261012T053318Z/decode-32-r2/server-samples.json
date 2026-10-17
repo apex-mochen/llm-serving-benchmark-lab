@@ -1,0 +1,92 @@
+[
+  {
+    "monotonic_s": 10969.230637823,
+    "metrics": {
+      "vllm:num_requests_running": 0.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 10969.790895851,
+    "metrics": {
+      "vllm:num_requests_running": 1.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.0024999999999999467,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 10970.347787567,
+    "metrics": {
+      "vllm:num_requests_running": 1.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.0024999999999999467,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 10970.896261034,
+    "metrics": {
+      "vllm:num_requests_running": 1.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.0024999999999999467,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 10971.455586221,
+    "metrics": {
+      "vllm:num_requests_running": 1.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.0024999999999999467,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 10972.011374978,
+    "metrics": {
+      "vllm:num_requests_running": 1.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.0024999999999999467,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 10972.576687178,
+    "metrics": {
+      "vllm:num_requests_running": 1.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.0024999999999999467,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 10973.120704984,
+    "metrics": {
+      "vllm:num_requests_running": 1.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.0024999999999999467,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 10973.663742976,
+    "metrics": {
+      "vllm:num_requests_running": 1.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.0024999999999999467,
+      "vllm:num_preemptions_total": 0.0
+    }
+  }
+]

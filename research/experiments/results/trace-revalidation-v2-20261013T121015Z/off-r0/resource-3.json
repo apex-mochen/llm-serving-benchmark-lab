@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-13T12:11:42.523876+00:00",
+  "monotonic_s": 237.4269473,
+  "boot_id": "c4de3fb3-353c-4893-8db5-e5bbae099cd3",
+  "gpu": {
+    "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver_version": "616.64",
+    "memory.total": 8188.0,
+    "memory.used": 7538.0,
+    "utilization.gpu": 76.0,
+    "temperature.gpu": "86",
+    "power.draw": "71.00",
+    "clocks.sm": "2295",
+    "clocks.mem": "8001"
+  },
+  "linux_memory": "MemTotal:       10178252 kB\nMemFree:         1134024 kB\nMemAvailable:    6268188 kB\nBuffers:          102632 kB\nCached:          5210300 kB\nSwapCached:            0 kB\nActive:           733660 kB\nInactive:        7767212 kB\nActive(anon):       2912 kB\nInactive(anon):  3268428 kB\nActive(file):     730748 kB\nInactive(file):  4498784 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:      16777216 kB\nSwapFree:       16777216 kB\nDirty:               308 kB\nWriteback:             0 kB\nAnonPages:       3188240 kB\nMapped:           833020 kB\nShmem:             83300 kB\nKReclaimable:     105920 kB\nSlab:             231972 kB\nSReclaimable:     105920 kB\nSUnreclaim:       126052 kB\nKernelStack:       12496 kB\nPageTables:        19996 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    21866340 kB\nCommitted_AS:   21189936 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       52300 kB\nVmallocChunk:          0 kB\nPercpu:            13568 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    761856 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       72704 kB\nDirectMap2M:     4120576 kB\nDirectMap1G:     7340032 kB\n",
+  "linux_processes": "    PID    PPID   RSS %CPU COMMAND\n      1       0 13112  0.4 systemd\n      2       1  2212  0.0 init-systemd(Ub\n      8       2  2156  0.0 init\n     41       1 17684  0.2 systemd-journal\n     92       1  6412  0.1 systemd-udevd\n    177       1 13216  0.0 systemd-resolve\n    178       1  8092  0.0 systemd-timesyn\n    185       1  2744  0.0 cron\n    186       1  5368  0.0 dbus-daemon\n    196       1  8816  0.0 systemd-logind\n    201       1 13752  0.0 wsl-pro-service\n    211       1  5636  0.0 rsyslogd\n    223       1 51644  0.2 containerd\n    231       1  1968  0.0 agetty\n    232       1 23228  0.0 unattended-upgr\n    310       1 85908  0.2 dockerd\n    558       2  1120  0.0 SessionLeader\n    559     558  1320  0.0 Relay(560)\n    560     559  3676  0.0 bash\n    561       2  4732  0.0 login\n    594       1 11484  0.0 systemd\n    595     594  3592  0.0 (sd-pam)\n    605     561  5344  0.0 bash\n    630     560 741152 11.7 python\n    693     630 1442316 34.3 python\n    814     693 12668  0.0 python\n    815     693 2315664 132 VLLM::EngineCor\n   1186     630  4108  0.0 ps\n",
+  "compute_apps": ""
+}

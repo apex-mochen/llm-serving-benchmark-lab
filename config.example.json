@@ -1,0 +1,43 @@
+{
+  "client_python": "/absolute/path/to/benchmark-client-env/bin/python",
+  "model_snapshot": "/absolute/path/to/huggingface/snapshots/REPLACE_WITH_MODEL_COMMIT",
+  "model_revision": "REPLACE_WITH_40_CHARACTER_MODEL_COMMIT",
+  "served_model_name": "benchmark-model",
+  "gpu_index": 0,
+  "seed": 20261002,
+  "num_prompts": 64,
+  "repeats": 3,
+  "results_dir": "results",
+  "engines": {
+    "vllm": {
+      "python": "/absolute/path/to/verified-vllm-source-env/bin/python",
+      "repo": "/absolute/path/to/vllm-source",
+      "base_url": "http://127.0.0.1:8000",
+      "server_command": [
+        "REPLACE_WITH_EXACT_LAUNCH_COMMAND"
+      ],
+      "server_parameters": {
+        "dtype": "float16",
+        "max_model_len": 2048,
+        "memory_fraction": 0.6,
+        "prefix_cache": false,
+        "tensor_parallel_size": 1
+      }
+    },
+    "sglang": {
+      "python": "/absolute/path/to/verified-sglang-source-env/bin/python",
+      "repo": "/absolute/path/to/sglang-source",
+      "base_url": "http://127.0.0.1:8000",
+      "server_command": [
+        "REPLACE_WITH_EXACT_LAUNCH_COMMAND"
+      ],
+      "server_parameters": {
+        "dtype": "float16",
+        "max_model_len": 2048,
+        "memory_fraction": 0.6,
+        "prefix_cache": false,
+        "tensor_parallel_size": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,578 @@
+[
+  {
+    "request": "session-0-0",
+    "session": "session-0",
+    "event": "start",
+    "at_s": 0.0006579410000995267
+  },
+  {
+    "request": "session-1-0",
+    "session": "session-1",
+    "event": "start",
+    "at_s": 0.2515237650004565
+  },
+  {
+    "request": "session-2-0",
+    "session": "session-2",
+    "event": "start",
+    "at_s": 0.5008481250006298
+  },
+  {
+    "request": "session-3-0",
+    "session": "session-3",
+    "event": "start",
+    "at_s": 0.7516224200007855
+  },
+  {
+    "request": "session-4-0",
+    "session": "session-4",
+    "event": "start",
+    "at_s": 1.0008374570006708
+  },
+  {
+    "request": "session-5-0",
+    "session": "session-5",
+    "event": "start",
+    "at_s": 1.2508745530012675
+  },
+  {
+    "request": "session-0-0",
+    "session": "session-0",
+    "event": "finish",
+    "at_s": 1.2906080780012417
+  },
+  {
+    "request": "session-1-0",
+    "session": "session-1",
+    "event": "finish",
+    "at_s": 1.4740426620010112
+  },
+  {
+    "request": "session-6-0",
+    "session": "session-6",
+    "event": "start",
+    "at_s": 1.50099017499997
+  },
+  {
+    "request": "session-2-0",
+    "session": "session-2",
+    "event": "finish",
+    "at_s": 1.7147963030001847
+  },
+  {
+    "request": "session-7-0",
+    "session": "session-7",
+    "event": "start",
+    "at_s": 1.7516984860012599
+  },
+  {
+    "request": "session-1-1",
+    "session": "session-1",
+    "event": "resume",
+    "at_s": 1.7799838880000607
+  },
+  {
+    "request": "session-3-0",
+    "session": "session-3",
+    "event": "finish",
+    "at_s": 1.962607185001616
+  },
+  {
+    "request": "session-8-0",
+    "session": "session-8",
+    "event": "start",
+    "at_s": 2.0014363730006153
+  },
+  {
+    "request": "session-0-1",
+    "session": "session-0",
+    "event": "resume",
+    "at_s": 2.0882303180005692
+  },
+  {
+    "request": "session-4-0",
+    "session": "session-4",
+    "event": "finish",
+    "at_s": 2.208753868000713
+  },
+  {
+    "request": "session-3-1",
+    "session": "session-3",
+    "event": "resume",
+    "at_s": 2.2490849810001237
+  },
+  {
+    "request": "session-9-0",
+    "session": "session-9",
+    "event": "start",
+    "at_s": 2.25043823300075
+  },
+  {
+    "request": "session-5-0",
+    "session": "session-5",
+    "event": "finish",
+    "at_s": 2.4634231529998942
+  },
+  {
+    "request": "session-2-1",
+    "session": "session-2",
+    "event": "resume",
+    "at_s": 2.500118409001516
+  },
+  {
+    "request": "session-10-0",
+    "session": "session-10",
+    "event": "start",
+    "at_s": 2.501599959001396
+  },
+  {
+    "request": "session-6-0",
+    "session": "session-6",
+    "event": "finish",
+    "at_s": 2.706388065000283
+  },
+  {
+    "request": "session-11-0",
+    "session": "session-11",
+    "event": "start",
+    "at_s": 2.7504181200001767
+  },
+  {
+    "request": "session-5-1",
+    "session": "session-5",
+    "event": "resume",
+    "at_s": 2.8416556320007658
+  },
+  {
+    "request": "session-7-0",
+    "session": "session-7",
+    "event": "finish",
+    "at_s": 2.9460191130001476
+  },
+  {
+    "request": "session-1-1",
+    "session": "session-1",
+    "event": "finish",
+    "at_s": 2.976878576000672
+  },
+  {
+    "request": "session-12-0",
+    "session": "session-12",
+    "event": "start",
+    "at_s": 3.0011461379999673
+  },
+  {
+    "request": "session-4-1",
+    "session": "session-4",
+    "event": "resume",
+    "at_s": 3.032114289000674
+  },
+  {
+    "request": "session-8-0",
+    "session": "session-8",
+    "event": "finish",
+    "at_s": 3.2090049400012504
+  },
+  {
+    "request": "session-13-0",
+    "session": "session-13",
+    "event": "start",
+    "at_s": 3.250781998000093
+  },
+  {
+    "request": "session-0-1",
+    "session": "session-0",
+    "event": "finish",
+    "at_s": 3.2755890250009543
+  },
+  {
+    "request": "session-7-1",
+    "session": "session-7",
+    "event": "resume",
+    "at_s": 3.3235410659999616
+  },
+  {
+    "request": "session-3-1",
+    "session": "session-3",
+    "event": "finish",
+    "at_s": 3.4496477840002626
+  },
+  {
+    "request": "session-9-0",
+    "session": "session-9",
+    "event": "finish",
+    "at_s": 3.449677156000689
+  },
+  {
+    "request": "session-14-0",
+    "session": "session-14",
+    "event": "start",
+    "at_s": 3.5006259120000323
+  },
+  {
+    "request": "session-6-1",
+    "session": "session-6",
+    "event": "resume",
+    "at_s": 3.5838189000005514
+  },
+  {
+    "request": "session-10-0",
+    "session": "session-10",
+    "event": "finish",
+    "at_s": 3.700845998000659
+  },
+  {
+    "request": "session-2-1",
+    "session": "session-2",
+    "event": "finish",
+    "at_s": 3.7008736570005567
+  },
+  {
+    "request": "session-9-1",
+    "session": "session-9",
+    "event": "resume",
+    "at_s": 3.7339652860009664
+  },
+  {
+    "request": "session-15-0",
+    "session": "session-15",
+    "event": "start",
+    "at_s": 3.7509376870002598
+  },
+  {
+    "request": "session-11-0",
+    "session": "session-11",
+    "event": "finish",
+    "at_s": 3.9675636179999856
+  },
+  {
+    "request": "session-16-0",
+    "session": "session-16",
+    "event": "start",
+    "at_s": 4.001013943001453
+  },
+  {
+    "request": "session-8-1",
+    "session": "session-8",
+    "event": "resume",
+    "at_s": 4.011100574000011
+  },
+  {
+    "request": "session-5-1",
+    "session": "session-5",
+    "event": "finish",
+    "at_s": 4.031152467001448
+  },
+  {
+    "request": "session-12-0",
+    "session": "session-12",
+    "event": "finish",
+    "at_s": 4.198418002000835
+  },
+  {
+    "request": "session-11-1",
+    "session": "session-11",
+    "event": "resume",
+    "at_s": 4.2097635330010235
+  },
+  {
+    "request": "session-4-1",
+    "session": "session-4",
+    "event": "finish",
+    "at_s": 4.232287975000872
+  },
+  {
+    "request": "session-17-0",
+    "session": "session-17",
+    "event": "start",
+    "at_s": 4.251160505000371
+  },
+  {
+    "request": "session-13-0",
+    "session": "session-13",
+    "event": "finish",
+    "at_s": 4.4382051400007185
+  },
+  {
+    "request": "session-10-1",
+    "session": "session-10",
+    "event": "resume",
+    "at_s": 4.474062647001119
+  },
+  {
+    "request": "session-7-1",
+    "session": "session-7",
+    "event": "finish",
+    "at_s": 4.48670752200087
+  },
+  {
+    "request": "session-18-0",
+    "session": "session-18",
+    "event": "start",
+    "at_s": 4.501034478000292
+  },
+  {
+    "request": "session-14-0",
+    "session": "session-14",
+    "event": "finish",
+    "at_s": 4.694192248000036
+  },
+  {
+    "request": "session-13-1",
+    "session": "session-13",
+    "event": "resume",
+    "at_s": 4.714261154000269
+  },
+  {
+    "request": "session-6-1",
+    "session": "session-6",
+    "event": "finish",
+    "at_s": 4.74092929300059
+  },
+  {
+    "request": "session-19-0",
+    "session": "session-19",
+    "event": "start",
+    "at_s": 4.751108022001063
+  },
+  {
+    "request": "session-9-1",
+    "session": "session-9",
+    "event": "finish",
+    "at_s": 4.92105319500115
+  },
+  {
+    "request": "session-15-0",
+    "session": "session-15",
+    "event": "finish",
+    "at_s": 4.936419647001458
+  },
+  {
+    "request": "session-12-1",
+    "session": "session-12",
+    "event": "resume",
+    "at_s": 4.937838219000696
+  },
+  {
+    "request": "session-20-0",
+    "session": "session-20",
+    "event": "start",
+    "at_s": 5.000770624001234
+  },
+  {
+    "request": "session-16-0",
+    "session": "session-16",
+    "event": "finish",
+    "at_s": 5.184352588001275
+  },
+  {
+    "request": "session-8-1",
+    "session": "session-8",
+    "event": "finish",
+    "at_s": 5.200161813001614
+  },
+  {
+    "request": "session-15-1",
+    "session": "session-15",
+    "event": "resume",
+    "at_s": 5.235950108000907
+  },
+  {
+    "request": "session-21-0",
+    "session": "session-21",
+    "event": "start",
+    "at_s": 5.251822609001465
+  },
+  {
+    "request": "session-11-1",
+    "session": "session-11",
+    "event": "finish",
+    "at_s": 5.411019096000018
+  },
+  {
+    "request": "session-17-0",
+    "session": "session-17",
+    "event": "finish",
+    "at_s": 5.443369845001143
+  },
+  {
+    "request": "session-14-1",
+    "session": "session-14",
+    "event": "resume",
+    "at_s": 5.4751618999998755
+  },
+  {
+    "request": "session-22-0",
+    "session": "session-22",
+    "event": "start",
+    "at_s": 5.501020385001539
+  },
+  {
+    "request": "session-10-1",
+    "session": "session-10",
+    "event": "finish",
+    "at_s": 5.667999422999856
+  },
+  {
+    "request": "session-18-0",
+    "session": "session-18",
+    "event": "finish",
+    "at_s": 5.700776417999805
+  },
+  {
+    "request": "session-23-0",
+    "session": "session-23",
+    "event": "start",
+    "at_s": 5.751499341000454
+  },
+  {
+    "request": "session-17-1",
+    "session": "session-17",
+    "event": "resume",
+    "at_s": 5.777759009000874
+  },
+  {
+    "request": "session-13-1",
+    "session": "session-13",
+    "event": "finish",
+    "at_s": 5.914836130999902
+  },
+  {
+    "request": "session-19-0",
+    "session": "session-19",
+    "event": "finish",
+    "at_s": 5.948630695000247
+  },
+  {
+    "request": "session-16-1",
+    "session": "session-16",
+    "event": "resume",
+    "at_s": 6.02276874600102
+  },
+  {
+    "request": "session-12-1",
+    "session": "session-12",
+    "event": "finish",
+    "at_s": 6.1317761020000034
+  },
+  {
+    "request": "session-20-0",
+    "session": "session-20",
+    "event": "finish",
+    "at_s": 6.196376769999915
+  },
+  {
+    "request": "session-19-1",
+    "session": "session-19",
+    "event": "resume",
+    "at_s": 6.299653711001156
+  },
+  {
+    "request": "session-15-1",
+    "session": "session-15",
+    "event": "finish",
+    "at_s": 6.409716913000011
+  },
+  {
+    "request": "session-21-0",
+    "session": "session-21",
+    "event": "finish",
+    "at_s": 6.426400835000095
+  },
+  {
+    "request": "session-18-1",
+    "session": "session-18",
+    "event": "resume",
+    "at_s": 6.540788912001517
+  },
+  {
+    "request": "session-14-1",
+    "session": "session-14",
+    "event": "finish",
+    "at_s": 6.6192328200013435
+  },
+  {
+    "request": "session-22-0",
+    "session": "session-22",
+    "event": "finish",
+    "at_s": 6.63522045100035
+  },
+  {
+    "request": "session-21-1",
+    "session": "session-21",
+    "event": "resume",
+    "at_s": 6.741934776000562
+  },
+  {
+    "request": "session-23-0",
+    "session": "session-23",
+    "event": "finish",
+    "at_s": 6.8745512690002215
+  },
+  {
+    "request": "session-17-1",
+    "session": "session-17",
+    "event": "finish",
+    "at_s": 6.915816770000674
+  },
+  {
+    "request": "session-20-1",
+    "session": "session-20",
+    "event": "resume",
+    "at_s": 7.02747909000027
+  },
+  {
+    "request": "session-16-1",
+    "session": "session-16",
+    "event": "finish",
+    "at_s": 7.126835351000409
+  },
+  {
+    "request": "session-23-1",
+    "session": "session-23",
+    "event": "resume",
+    "at_s": 7.1651113250009075
+  },
+  {
+    "request": "session-19-1",
+    "session": "session-19",
+    "event": "finish",
+    "at_s": 7.400137702001302
+  },
+  {
+    "request": "session-22-1",
+    "session": "session-22",
+    "event": "resume",
+    "at_s": 7.443900931000826
+  },
+  {
+    "request": "session-18-1",
+    "session": "session-18",
+    "event": "finish",
+    "at_s": 7.657253772000331
+  },
+  {
+    "request": "session-21-1",
+    "session": "session-21",
+    "event": "finish",
+    "at_s": 7.9150683540010505
+  },
+  {
+    "request": "session-20-1",
+    "session": "session-20",
+    "event": "finish",
+    "at_s": 8.215730904001248
+  },
+  {
+    "request": "session-23-1",
+    "session": "session-23",
+    "event": "finish",
+    "at_s": 8.365969177000807
+  },
+  {
+    "request": "session-22-1",
+    "session": "session-22",
+    "event": "finish",
+    "at_s": 8.667156884001088
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "requests": 8,
+  "duration_s": 4.585182234000001,
+  "trace": false,
+  "cap": 8,
+  "mean_ttft_ms": 543.4175451250028,
+  "mean_tpot_ms": 14.800378751968525,
+  "mean_e2e_ms": 2423.425242625008,
+  "queue_hist_mean_ms": 493.9869926249969,
+  "prefill_hist_mean_ms": 38.36519100000402,
+  "decode_hist_mean_ms": 1880.1331056249992,
+  "prefix_cache_queries_total_delta": 0.0,
+  "prefix_cache_hits_total_delta": 0.0,
+  "num_preemptions_total_delta": 0.0
+}

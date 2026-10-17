@@ -1,0 +1,14 @@
+BEGIN 2026-10-15T08:32:28.755709+00:00 ['research/experiments/run_trace_revalidation_v3.py', '--execute']
+START off-r0 1008
+DONE off-r0
+START on-r0 1771
+DONE on-r0
+START on-r1 2347
+DONE on-r1
+START off-r1 2930
+DONE off-r1
+START off-r2 3510
+DONE off-r2
+START on-r2 4089
+DONE on-r2
+END HOLD

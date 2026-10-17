@@ -1,0 +1,149 @@
+{
+  "kind": "read-only historical real GPU histogram analysis; not new B experiment",
+  "cells": [
+    {
+      "cache": false,
+      "kind": "agent",
+      "repeat": 0,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-False-r0-agent",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.007220208469031301,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 66.79948920835461,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1269.6402188959155
+    },
+    {
+      "cache": false,
+      "kind": "agent",
+      "repeat": 1,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-False-r1-agent",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.01015487490955517,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 68.4464130209032,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1364.6353353541372
+    },
+    {
+      "cache": false,
+      "kind": "agent",
+      "repeat": 2,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-False-r2-agent",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.008087562681187896,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 61.620275770868226,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1250.5066833540468
+    },
+    {
+      "cache": false,
+      "kind": "traditional",
+      "repeat": 0,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-False-r0-traditional",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.010074833350396753,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 67.64592539578491,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1463.5193307708885
+    },
+    {
+      "cache": false,
+      "kind": "traditional",
+      "repeat": 1,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-False-r1-traditional",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.007519083207322789,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 66.95220962509059,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1330.5515903125145
+    },
+    {
+      "cache": false,
+      "kind": "traditional",
+      "repeat": 2,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-False-r2-traditional",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.008008583373945536,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 62.93595493749156,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1336.8869308958438
+    },
+    {
+      "cache": true,
+      "kind": "agent",
+      "repeat": 0,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-True-r0-agent",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.007721250009732708,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 52.14624941663715,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1161.7790738751712
+    },
+    {
+      "cache": true,
+      "kind": "agent",
+      "repeat": 1,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-True-r1-agent",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.007851687504019841,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 50.71615122919108,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1208.6751969790537
+    },
+    {
+      "cache": true,
+      "kind": "agent",
+      "repeat": 2,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-True-r2-agent",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.00814779165618044,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 57.801604333424926,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1376.8175637708282
+    },
+    {
+      "cache": true,
+      "kind": "traditional",
+      "repeat": 0,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-True-r0-traditional",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.007325979026973073,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 49.2870030625833,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1121.0923813749407
+    },
+    {
+      "cache": true,
+      "kind": "traditional",
+      "repeat": 1,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-True-r1-traditional",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.008183083423318749,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 54.61247408330413,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1287.8947071458622
+    },
+    {
+      "cache": true,
+      "kind": "traditional",
+      "repeat": 2,
+      "source": "research/experiments/validation-runs/20261012T051151Z/cache-True-r2-traditional",
+      "queue_count": 48.0,
+      "queue_mean_ms": 0.008049791593596941,
+      "prefill_count": 48.0,
+      "prefill_mean_ms": 54.421546812515466,
+      "decode_count": 48.0,
+      "decode_mean_ms": 1246.8516986251263
+    }
+  ]
+}

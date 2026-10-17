@@ -1,0 +1,3 @@
+BEGIN 2026-10-15T07:21:32.743438+00:00 ['research/experiments/run_trace_revalidation_v3.py', '--observe-only']
+OBSERVE ONLY: 30 seconds; no server or workload
+END HOLD

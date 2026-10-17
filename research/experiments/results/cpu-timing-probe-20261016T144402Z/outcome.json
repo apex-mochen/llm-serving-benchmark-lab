@@ -1,0 +1,55 @@
+{
+  "status": "PROBE_COMPLETE",
+  "error": null,
+  "cleanup_errors": [],
+  "completed_trials": 32,
+  "summary": {
+    "sleep": {
+      "wakeup": {
+        "n": 16,
+        "min": 0.07519700000102603,
+        "median": 0.20359200000541477,
+        "max": 0.5327769999894372,
+        "mean": 0.22287256250008713
+      },
+      "wakeup_failures": 0
+    },
+    "client": {
+      "wakeup": {
+        "n": 16,
+        "min": 0.039663999999106636,
+        "median": 0.12607400000064217,
+        "max": 0.6856759999891437,
+        "mean": 0.17254074999906166
+      },
+      "wakeup_failures": 0,
+      "episode_start": {
+        "n": 16,
+        "min": 10.01348399999813,
+        "median": 11.91330449999839,
+        "max": 16.389741000001123,
+        "mean": 11.924699812500217
+      },
+      "initialization_after_check": {
+        "n": 16,
+        "min": 9.804648999988785,
+        "median": 11.73838099999891,
+        "max": 16.28137299999821,
+        "mean": 11.752159062501155
+      },
+      "first_send": {
+        "n": 16,
+        "min": 10.158042000000478,
+        "median": 12.107426999996562,
+        "max": 16.638863000000725,
+        "mean": 12.106754937498687
+      },
+      "episode_start_failures": 0
+    }
+  },
+  "core_unchanged": true,
+  "timing_budget_observed_compatible": true,
+  "gpu_decision": "CONDITIONAL_ONLY_NOT_GPU_STABILITY_PROOF",
+  "real_inference_requests": 0,
+  "server_started": false
+}

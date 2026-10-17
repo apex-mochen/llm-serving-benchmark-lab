@@ -1,0 +1,10 @@
+BEGIN 2026-10-15T09:02:40.390669+00:00 ['research/experiments/run_trace_aa_control.py', '--execute']
+START A-r0 880
+DONE A-r0
+START B-r0 1447
+DONE B-r0
+START B-r1 2007
+DONE B-r1
+START A-r1 2653
+STOP AssertionError('Owned process release incomplete or foreign activity')
+END HOLD

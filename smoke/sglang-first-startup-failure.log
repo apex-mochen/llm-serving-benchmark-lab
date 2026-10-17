@@ -1,0 +1,32 @@
+/home/dcl/projects/sglang-42070/python/sglang/launch_server.py:71: UserWarning: 'python -m sglang.launch_server' is still supported, but 'sglang serve' is the recommended entrypoint.
+  Example: sglang serve --model-path <model> [options]
+  warnings.warn(
+[2026-10-02 17:13:29] [1;33m'--disable-cuda-graph' is deprecated and will be removed in a future release. Use '--cuda-graph-backend-{decode,prefill}=disabled' instead.[0m
+[2026-10-02 17:13:29] Registered linear attn model: config=GigaChat35Config, backend=GDNAttnBackend, archs=['GigaChat35ForCausalLM', 'GigaChat35ForCausalLMNextN']
+[2026-10-02 17:13:33] kill_process_tree called: parent_pid=344, include_parent=False, pid=344
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/dcl/projects/sglang-42070/python/sglang/launch_server.py", line 84, in <module>
+    run_server(server_args)
+  File "/home/dcl/projects/sglang-42070/python/sglang/launch_server.py", line 29, in run_server
+    server_args.resolve_once()
+  File "/home/dcl/projects/sglang-42070/python/sglang/srt/server_args.py", line 251, in resolve_once
+    run_resolution_pipeline(self)
+  File "/home/dcl/projects/sglang-42070/python/sglang/srt/arg_groups/pipeline.py", line 125, in run_resolution_pipeline
+    from sglang.srt.arg_groups.expert_pack_hook import handle_expert_pack
+  File "/home/dcl/projects/sglang-42070/python/sglang/srt/arg_groups/expert_pack_hook.py", line 23, in <module>
+    from sglang.srt.model_loader.expert_pack_config import (
+  File "/home/dcl/projects/sglang-42070/python/sglang/srt/model_loader/__init__.py", line 11, in <module>
+    from sglang.srt.model_loader.loader import BaseModelLoader, get_model_loader
+  File "/home/dcl/projects/sglang-42070/python/sglang/srt/model_loader/loader.py", line 90, in <module>
+    from sglang.srt.layers.quantization.base_config import (
+  File "/home/dcl/projects/sglang-42070/python/sglang/srt/layers/quantization/__init__.py", line 18, in <module>
+    from sglang.srt.layers.quantization.compressed_tensors.compressed_tensors import (
+  File "/home/dcl/projects/sglang-42070/python/sglang/srt/layers/quantization/compressed_tensors/compressed_tensors.py", line 40, in <module>
+    from sglang.srt.layers.quantization.compressed_tensors.schemes import (
+  File "/home/dcl/projects/sglang-42070/python/sglang/srt/layers/quantization/compressed_tensors/schemes/__init__.py", line 15, in <module>
+    from .compressed_tensors_w8a8_int8 import (
+  File "/home/dcl/projects/sglang-42070/python/sglang/srt/layers/quantization/compressed_tensors/schemes/compressed_tensors_w8a8_int8.py", line 30, in <module>
+    from sgl_kernel import int8_scaled_mm
+ModuleNotFoundError: No module named 'sgl_kernel'

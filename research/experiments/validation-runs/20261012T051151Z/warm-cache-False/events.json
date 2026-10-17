@@ -1,0 +1,64 @@
+[
+  {
+    "request": "session-0-0",
+    "session": "session-0",
+    "event": "start",
+    "at_s": 0.0035906699995393865
+  },
+  {
+    "request": "session-1-0",
+    "session": "session-1",
+    "event": "start",
+    "at_s": 0.25113507700007176
+  },
+  {
+    "request": "session-0-0",
+    "session": "session-0",
+    "event": "finish",
+    "at_s": 1.3641826719995152
+  },
+  {
+    "request": "session-0-0",
+    "session": "session-0",
+    "event": "pause",
+    "at_s": 1.3641826719995152,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-1-0",
+    "session": "session-1",
+    "event": "finish",
+    "at_s": 1.3886524530007591
+  },
+  {
+    "request": "session-1-0",
+    "session": "session-1",
+    "event": "pause",
+    "at_s": 1.3886524530007591,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-1-1",
+    "session": "session-1",
+    "event": "resume",
+    "at_s": 1.6398598750001838
+  },
+  {
+    "request": "session-0-1",
+    "session": "session-0",
+    "event": "resume",
+    "at_s": 2.1142923080005858
+  },
+  {
+    "request": "session-1-1",
+    "session": "session-1",
+    "event": "finish",
+    "at_s": 2.8181774220010993
+  },
+  {
+    "request": "session-0-1",
+    "session": "session-0",
+    "event": "finish",
+    "at_s": 3.2355762320003123
+  }
+]

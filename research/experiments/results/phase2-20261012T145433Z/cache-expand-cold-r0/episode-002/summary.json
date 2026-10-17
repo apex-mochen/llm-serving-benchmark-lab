@@ -1,0 +1,22 @@
+{
+  "requests": 8,
+  "duration_s": 29.275377754001966,
+  "trace": true,
+  "cap": 4,
+  "mean_ttft_ms": 420.34644575005586,
+  "mean_tpot_ms": 110.09230389861582,
+  "mean_e2e_ms": 14403.038617625043,
+  "queue_hist_mean_ms": 0.027764249352912884,
+  "queue_request_mean_ms": 0.027764249352912884,
+  "queue_reconciliation_ms": 0.0,
+  "prefill_hist_mean_ms": 239.98453562489885,
+  "prefill_request_mean_ms": 239.98453562489885,
+  "prefill_reconciliation_ms": 0.0,
+  "decode_hist_mean_ms": 14030.447900374838,
+  "decode_request_mean_ms": 14030.447900374838,
+  "decode_reconciliation_ms": 0.0,
+  "min_ttft_residual_ms": 66.70803200177033,
+  "prefix_cache_queries_total_delta": 8192.0,
+  "prefix_cache_hits_total_delta": 1792.0,
+  "num_preemptions_total_delta": 0.0
+}

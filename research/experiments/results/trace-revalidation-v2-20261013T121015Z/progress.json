@@ -1,0 +1,80 @@
+[
+  {
+    "variant": "off",
+    "repeat": 0,
+    "summary": {
+      "mean_ttft_ms": 1402.73654221875,
+      "mean_tpot_ms": 27.085020212229345,
+      "mean_e2e_ms": 4842.9348570156235,
+      "requests": 64,
+      "duration_s": 61.985410224999896,
+      "requests_per_s": 1.0325010315764205,
+      "output_tokens_per_s": 132.16013204178182
+    }
+  },
+  {
+    "variant": "full",
+    "repeat": 0,
+    "summary": {
+      "mean_ttft_ms": 1572.1951169218728,
+      "mean_tpot_ms": 29.81873826094983,
+      "mean_e2e_ms": 5359.698584828126,
+      "requests": 64,
+      "duration_s": 67.76230132699999,
+      "requests_per_s": 0.9444779581961911,
+      "output_tokens_per_s": 120.89317864911246
+    }
+  },
+  {
+    "variant": "full",
+    "repeat": 1,
+    "summary": {
+      "mean_ttft_ms": 1523.8889684531262,
+      "mean_tpot_ms": 28.751744975147655,
+      "mean_e2e_ms": 5175.776578343745,
+      "requests": 64,
+      "duration_s": 65.46379451299975,
+      "requests_per_s": 0.9776396323511453,
+      "output_tokens_per_s": 125.1378729409466
+    }
+  },
+  {
+    "variant": "off",
+    "repeat": 1,
+    "summary": {
+      "mean_ttft_ms": 1466.1748359218834,
+      "mean_tpot_ms": 28.31621705548715,
+      "mean_e2e_ms": 5062.858089625,
+      "requests": 64,
+      "duration_s": 64.5711122649999,
+      "requests_per_s": 0.9911552977025384,
+      "output_tokens_per_s": 126.86787810592492
+    }
+  },
+  {
+    "variant": "off",
+    "repeat": 2,
+    "summary": {
+      "mean_ttft_ms": 1560.198529609373,
+      "mean_tpot_ms": 29.435669630167332,
+      "mean_e2e_ms": 5298.957528421874,
+      "requests": 64,
+      "duration_s": 66.86087681300012,
+      "requests_per_s": 0.9572114972257758,
+      "output_tokens_per_s": 122.5230716448993
+    }
+  },
+  {
+    "variant": "full",
+    "repeat": 2,
+    "summary": {
+      "mean_ttft_ms": 1592.2578150937507,
+      "mean_tpot_ms": 30.064792275959665,
+      "mean_e2e_ms": 5410.971210687492,
+      "requests": 64,
+      "duration_s": 68.31008999899996,
+      "requests_per_s": 0.9369040503523995,
+      "output_tokens_per_s": 119.92371844510714
+    }
+  }
+]

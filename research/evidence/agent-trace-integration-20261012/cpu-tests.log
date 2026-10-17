@@ -1,0 +1,14 @@
+test_cycle_rejected (__main__.TraceIntegration.test_cycle_rejected) ... ok
+test_dependency_and_tool_gap (__main__.TraceIntegration.test_dependency_and_tool_gap) ... ok
+test_duplicate_id_rejected (__main__.TraceIntegration.test_duplicate_id_rejected) ... ok
+test_missing_duration_rejected (__main__.TraceIntegration.test_missing_duration_rejected) ... ok
+test_nonfinite_duration_rejected (__main__.TraceIntegration.test_nonfinite_duration_rejected) ... ok
+test_worker_cancel_aborts_child (__main__.TraceIntegration.test_worker_cancel_aborts_child) ... ok
+test_worker_failure_aborts_child (__main__.TraceIntegration.test_worker_failure_aborts_child) ... ok
+test_worker_success_unlocks_child (__main__.TraceIntegration.test_worker_success_unlocks_child) ... ok
+test_worker_waits_before_dispatch (__main__.TraceIntegration.test_worker_waits_before_dispatch) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.026s
+
+OK

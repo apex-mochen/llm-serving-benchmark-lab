@@ -1,0 +1,82 @@
+[
+  {
+    "monotonic_s": 28852.253752018,
+    "metrics": {
+      "vllm:num_requests_running": 1.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.0024264705882353077,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 28852.80305296,
+    "metrics": {
+      "vllm:num_requests_running": 3.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.007499999999999951,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 28853.346094899,
+    "metrics": {
+      "vllm:num_requests_running": 4.0,
+      "vllm:num_requests_waiting": 1.0,
+      "vllm:num_requests_waiting_by_reason": 1.0,
+      "vllm:kv_cache_usage_perc": 0.010514705882352926,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 28853.895134396,
+    "metrics": {
+      "vllm:num_requests_running": 4.0,
+      "vllm:num_requests_waiting": 3.0,
+      "vllm:num_requests_waiting_by_reason": 3.0,
+      "vllm:kv_cache_usage_perc": 0.011323529411764732,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 28854.442233249,
+    "metrics": {
+      "vllm:num_requests_running": 4.0,
+      "vllm:num_requests_waiting": 2.0,
+      "vllm:num_requests_waiting_by_reason": 2.0,
+      "vllm:kv_cache_usage_perc": 0.010735294117647065,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 28854.985468782,
+    "metrics": {
+      "vllm:num_requests_running": 4.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.010220588235294148,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 28855.541457251,
+    "metrics": {
+      "vllm:num_requests_running": 4.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.011029411764705843,
+      "vllm:num_preemptions_total": 0.0
+    }
+  },
+  {
+    "monotonic_s": 28856.084610824,
+    "metrics": {
+      "vllm:num_requests_running": 3.0,
+      "vllm:num_requests_waiting": 0.0,
+      "vllm:num_requests_waiting_by_reason": 0.0,
+      "vllm:kv_cache_usage_perc": 0.008602941176470535,
+      "vllm:num_preemptions_total": 0.0
+    }
+  }
+]

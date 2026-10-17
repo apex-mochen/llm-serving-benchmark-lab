@@ -1,0 +1,80 @@
+[
+  {
+    "variant": "off",
+    "repeat": 0,
+    "summary": {
+      "mean_ttft_ms": 350.124226140625,
+      "mean_tpot_ms": 12.360499358144693,
+      "mean_e2e_ms": 1920.226512343752,
+      "requests": 64,
+      "duration_s": 31.545579376999996,
+      "requests_per_s": 2.0288104154036444,
+      "output_tokens_per_s": 259.6877331716665
+    }
+  },
+  {
+    "variant": "full",
+    "repeat": 0,
+    "summary": {
+      "mean_ttft_ms": 391.0800160468759,
+      "mean_tpot_ms": 12.921215999015732,
+      "mean_e2e_ms": 2032.369395906251,
+      "requests": 64,
+      "duration_s": 32.70551458599999,
+      "requests_per_s": 1.9568565365853012,
+      "output_tokens_per_s": 250.47763668291856
+    }
+  },
+  {
+    "variant": "full",
+    "repeat": 1,
+    "summary": {
+      "mean_ttft_ms": 387.9296158124985,
+      "mean_tpot_ms": 13.117693730684074,
+      "mean_e2e_ms": 2054.188481375002,
+      "requests": 64,
+      "duration_s": 33.135743023999964,
+      "requests_per_s": 1.9314490685675976,
+      "output_tokens_per_s": 247.2254807766525
+    }
+  },
+  {
+    "variant": "off",
+    "repeat": 1,
+    "summary": {
+      "mean_ttft_ms": 440.2234143281225,
+      "mean_tpot_ms": 13.540859379552183,
+      "mean_e2e_ms": 2160.183870031248,
+      "requests": 64,
+      "duration_s": 33.85097708199993,
+      "requests_per_s": 1.8906396658792946,
+      "output_tokens_per_s": 242.0018772325497
+    }
+  },
+  {
+    "variant": "off",
+    "repeat": 2,
+    "summary": {
+      "mean_ttft_ms": 414.1972232812527,
+      "mean_tpot_ms": 13.331063051058074,
+      "mean_e2e_ms": 2107.5304935468757,
+      "requests": 64,
+      "duration_s": 33.56900082599998,
+      "requests_per_s": 1.906520850344479,
+      "output_tokens_per_s": 244.03466884409332
+    }
+  },
+  {
+    "variant": "full",
+    "repeat": 2,
+    "summary": {
+      "mean_ttft_ms": 406.0504180000013,
+      "mean_tpot_ms": 13.074274447588566,
+      "mean_e2e_ms": 2066.7876825156286,
+      "requests": 64,
+      "duration_s": 32.99430683700007,
+      "requests_per_s": 1.9397285815451626,
+      "output_tokens_per_s": 248.2852584377808
+    }
+  }
+]

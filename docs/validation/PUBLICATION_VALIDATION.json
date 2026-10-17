@@ -1,0 +1,9 @@
+{
+  "core_cpu_tests": 15,
+  "baseline_files_verified": 128,
+  "rebuilt_numeric_report_equal": true,
+  "new_readme_links": "PASS",
+  "credential_pattern_scan": "no matching tokens found; not a guarantee of all secret types",
+  "evidence_scope": "Public snapshot and historical raw hashes checked; no new GPU runs",
+  "previous_rebuild_attempt": "First command used a nonexistent SGLang directory; corrected using actual directory inventory, first log retained"
+}

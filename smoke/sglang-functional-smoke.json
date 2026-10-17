@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "engine": "sglang",
+  "source_repo": "/home/dcl/projects/sglang-42070",
+  "engine_commit": "af5c0659c7c133b77aa0e1557c6db83a449d093d",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "command": [
+    "/home/dcl/projects/llm-serving-benchmark-lab/sglang-python",
+    "-m",
+    "sglang.launch_server",
+    "--model-path",
+    "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+    "--served-model-name",
+    "benchmark-model",
+    "--port",
+    "8019",
+    "--dtype",
+    "float16",
+    "--context-length",
+    "2048",
+    "--mem-fraction-static",
+    "0.45",
+    "--disable-radix-cache",
+    "--disable-cuda-graph",
+    "--attention-backend",
+    "triton",
+    "--sampling-backend",
+    "pytorch"
+  ],
+  "environment_overrides": {
+    "PYTHONPATH": "/home/dcl/projects/llm-serving-benchmark-lab/.sglang-deps:/home/dcl/projects/sglang-42070/python",
+    "CUDA_VISIBLE_DEVICES": "0"
+  },
+  "usage": {
+    "prompt_tokens": 1024,
+    "total_tokens": 1280,
+    "completion_tokens": 256,
+    "reasoning_tokens": 0
+  },
+  "ttft_s": 0.07845492100000229,
+  "elapsed_s": 5.982000756000005,
+  "limitation": "single-request functional smoke, not an engine comparison or performance result"
+}

@@ -1,0 +1,2 @@
+#!/bin/sh
+exec env CUDA_HOME=/home/dcl/projects/llm-serving-benchmark-lab/.cuda13-verified/nvidia/cu13 PATH=/home/dcl/projects/llm-serving-benchmark-lab/.sglang-deps/bin:/home/dcl/projects/llm-serving-benchmark-lab/.cuda13-verified/nvidia/cu13/bin:"$PATH" PYTHONPATH=/home/dcl/projects/llm-serving-benchmark-lab/.sglang-deps:/home/dcl/projects/sglang-42070/python /home/dcl/projects/vllm-v2-gpu-venv/bin/python "$@"

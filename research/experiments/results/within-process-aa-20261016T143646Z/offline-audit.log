@@ -1,0 +1,60 @@
+{
+  "total_requests": 64,
+  "measurement_requests": 24,
+  "complete_windows": 0,
+  "complete_abba_blocks": 0,
+  "native_trace_records": 0,
+  "local_samples": 37,
+  "host_samples": 5,
+  "observed_monitor_issues": [],
+  "process_ids": {
+    "client": 525,
+    "monitor": 696
+  },
+  "measured_ranges": {
+    "tpot_ms": {
+      "mean": 12.054664435695505,
+      "min": 11.917175499999995,
+      "max": 12.19344613484248
+    },
+    "front_ttft_ms": {
+      "mean": 48.15004199999843,
+      "min": 43.81603999999584,
+      "max": 54.545800250004106
+    },
+    "back_ttft_ms": {
+      "mean": 623.3591338333302,
+      "min": 568.5408510000016,
+      "max": 661.6696987499893
+    },
+    "all_ttft_ms": {
+      "mean": 335.7545879166643,
+      "min": 307.3145683749985,
+      "max": 358.10774949999666
+    },
+    "e2e_ms": {
+      "mean": 1866.9494567916634,
+      "min": 1821.0886252499954,
+      "max": 1906.9282656249982
+    }
+  },
+  "stop": {
+    "status": "HOLD",
+    "error": "RuntimeError('Episode start lateness >50ms')",
+    "primary_error": "RuntimeError('Episode start lateness >50ms')",
+    "cleanup_errors": [],
+    "completed_episodes": 8,
+    "measurement_episodes": 3,
+    "core_unchanged": true,
+    "stability_pass": null,
+    "trace_overhead_pass": null,
+    "phase2_expansion_executed": false
+  },
+  "warning": "Three measurement episodes only, no complete window; stopped wakeup lateness magnitude was not recorded.",
+  "log_matches": {
+    "OutOfMemoryError": 0,
+    "CUDA out of memory": 0,
+    "memory allocation failed with OOM": 0,
+    "semaphore": 1
+  }
+}

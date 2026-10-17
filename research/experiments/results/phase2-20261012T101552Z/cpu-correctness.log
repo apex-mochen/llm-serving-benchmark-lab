@@ -1,0 +1,9 @@
+test_cache_prefix_and_unique_suffix (__main__.Correctness.test_cache_prefix_and_unique_suffix) ... ok
+test_fixed_expansion_and_matrices (__main__.Correctness.test_fixed_expansion_and_matrices) ... ok
+test_native_boundary_formula (__main__.Correctness.test_native_boundary_formula) ... ok
+test_paired_lengths (__main__.Correctness.test_paired_lengths) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.095s
+
+OK

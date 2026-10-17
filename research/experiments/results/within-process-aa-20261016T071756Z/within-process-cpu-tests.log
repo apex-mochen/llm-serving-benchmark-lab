@@ -1,0 +1,14 @@
+test_absolute_clock_and_partial_raw (__main__.Tests.test_absolute_clock_and_partial_raw) ... ok
+test_host_memory_gate (__main__.Tests.test_host_memory_gate) ... ok
+test_labels (__main__.Tests.test_labels) ... ok
+test_legacy_signature_still_works (__main__.Tests.test_legacy_signature_still_works) ... ok
+test_missing_metrics_not_zero (__main__.Tests.test_missing_metrics_not_zero) ... ok
+test_monitor_failure_stops (__main__.Tests.test_monitor_failure_stops) ... ok
+test_nonzero_not_drained (__main__.Tests.test_nonzero_not_drained) ... ok
+test_summary_by_index_not_completion_order (__main__.Tests.test_summary_by_index_not_completion_order) ... ok
+test_valid_boundary (__main__.Tests.test_valid_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.003s
+
+OK

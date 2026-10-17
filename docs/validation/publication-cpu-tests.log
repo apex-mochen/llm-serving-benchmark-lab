@@ -1,0 +1,31 @@
+test_existing_output_not_overwritten (test_tail_report.TailEvidenceTests.test_existing_output_not_overwritten) ... ok
+test_linear_percentiles (test_tail_report.TailEvidenceTests.test_linear_percentiles) ... ok
+test_missing_misaligned_or_invalid_timings (test_tail_report.TailEvidenceTests.test_missing_misaligned_or_invalid_timings) ... ok
+test_queue_inclusive_tail_uses_per_request_sum (test_tail_report.TailEvidenceTests.test_queue_inclusive_tail_uses_per_request_sum) ... ok
+test_reject_hidden_request_failure (test_tail_report.TailEvidenceTests.test_reject_hidden_request_failure) ... ok
+test_reject_incomplete_batch (test_tail_report.TailEvidenceTests.test_reject_incomplete_batch) ... ok
+test_seconds_converted_to_ms (test_tail_report.TailEvidenceTests.test_seconds_converted_to_ms) ... ok
+test_ttft_cannot_exceed_total_latency (test_tail_report.TailEvidenceTests.test_ttft_cannot_exceed_total_latency) ... ok
+test_complete_fixture_generates_report_and_parseable_plot (test_validation.ReportIntegration.test_complete_fixture_generates_report_and_parseable_plot) ... /home/dcl/projects/llm-serving-benchmark-lab/.report-deps/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/home/dcl/projects/llm-serving-benchmark-lab/.report-deps/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/home/dcl/projects/llm-serving-benchmark-lab/.report-deps/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/home/dcl/projects/llm-serving-benchmark-lab/.report-deps/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /home/dcl/projects/llm-serving-benchmark-lab/.report-deps/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /home/dcl/projects/llm-serving-benchmark-lab/.report-deps/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+ok
+test_cross_gpu_comparison_is_rejected (test_validation.ReportIntegration.test_cross_gpu_comparison_is_rejected) ... ok
+test_all_success_required (test_validation.ResultValidation.test_all_success_required) ... ok
+test_completed_counter_cannot_hide_wrong_output_length (test_validation.ResultValidation.test_completed_counter_cannot_hide_wrong_output_length) ... ok
+test_detailed_lengths_required (test_validation.ResultValidation.test_detailed_lengths_required) ... ok
+test_nan_metric_rejected (test_validation.ResultValidation.test_nan_metric_rejected) ... ok
+test_verified_fixture_accepted (test_validation.ResultValidation.test_verified_fixture_accepted) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.306s
+
+OK
+/tmp/tmpfkds8f7z/reports/001-concurrency-study.md

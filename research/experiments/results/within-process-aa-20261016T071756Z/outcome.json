@@ -1,0 +1,11 @@
+{
+  "status": "HOLD",
+  "error": "RuntimeError('host_physical_below_3GiB')",
+  "cleanup_errors": [],
+  "completed_episodes": 0,
+  "measurement_episodes": 0,
+  "core_unchanged": true,
+  "stability_pass": null,
+  "trace_overhead_pass": null,
+  "phase2_expansion_executed": false
+}

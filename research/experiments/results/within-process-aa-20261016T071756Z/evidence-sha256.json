@@ -1,0 +1,19 @@
+{
+  "source-run_diagnosis_phase2.py": "372c79867654b44ac0b3bc49f5ddd3fb27c6120b417d5f9a852702832fd9d448",
+  "source-run_environment_stability.py": "490e9955b791ceb097abaf5b56b17cddb279d47dff104b26d7746a43891da610",
+  "within-process-cpu-tests.log": "6e9f74d22b7924e919e75356ad2f3d1c819e836f96dd91f476b166e18d43b2ec",
+  "EXECUTION_STATUS.md": "6b6996d3c648a49a3630c830d6fa076cf441e8285e1b2ba5cc60d8b9298f410e",
+  "runner.log": "ac2dea6ae40aec61a6d3321472e67f94015d6788e56e68671d587187f549a6bd",
+  "fixed-payload.json": "e5ad50f555494727bd03c680ed82f774afc1d580f16e91d40833cf2e1e0f5965",
+  "outcome.json": "a0685d6a68322cd968a0256f180608e84654da62c7e8bcd44cbc6c88ef9e4a3a",
+  "specification.json": "d1d9aafa12b200121fcdead46deb918ad30982cf5e0b2a6748ce7f99925f7f22",
+  "source-run_trace_aa_control.py": "0a2d252e8f3b2bf5194f852b04e79f9500109cc68ca766b622dc285ef98e274e",
+  "source-trace_cleanup.py": "44ba0cf8589ebf78f4372f73a8f828b3febe137b8f8ddbd372e02bee2f475d4c",
+  "host-preflight.json": "96534855f75f73f6912662c36aa64c0e3a0afa01379ca9667eafce6c278298b8",
+  "monitor-stop": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source-within_process_control.py": "9d16c6c727aa23e4c8b90231a09ed94ffc779d155b8431d62b6cec52202d6518",
+  "collector-functional-probe/monitor-hazard.json": "8ef37d44d9a7a3b558260a09328c13d8373fd29325df0c1043ea985be0227c6c",
+  "collector-functional-probe/resources.jsonl": "3fc87355c71d8b46e2a67fc70e9ad2c636ef9051a031ee43374bbca253e4567d",
+  "collector-functional-probe/monitor-ready.json": "937be286464b13a9af6b6c74fa10ab52ea75ad20184448aa99511f8b77469319",
+  "collector-functional-probe/host-resources.jsonl": "f3d9613845cf3d58f78e9881d0eb2554f1c625100e6b76dfd50a3e757ebf5b14"
+}

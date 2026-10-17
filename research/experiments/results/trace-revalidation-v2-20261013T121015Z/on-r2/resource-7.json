@@ -1,0 +1,2359 @@
+{
+  "utc": "2026-10-13T12:22:59.972426+00:00",
+  "monotonic_s": 886.078063099,
+  "boot_id": "c4de3fb3-353c-4893-8db5-e5bbae099cd3",
+  "gpu": {
+    "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver_version": "616.64",
+    "memory.total": 8188.0,
+    "memory.used": 7319.0,
+    "utilization.gpu": 73.0,
+    "temperature.gpu": "86",
+    "power.draw": "61.39",
+    "clocks.sm": "2205",
+    "clocks.mem": "8001"
+  },
+  "linux_memory": "MemTotal:       10178252 kB\nMemFree:         1124392 kB\nMemAvailable:    6270400 kB\nBuffers:          108004 kB\nCached:          5214688 kB\nSwapCached:            0 kB\nActive:          2518164 kB\nInactive:        5987816 kB\nActive(anon):       2928 kB\nInactive(anon):  3263712 kB\nActive(file):    2515236 kB\nInactive(file):  2724104 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:      16777216 kB\nSwapFree:       16777216 kB\nDirty:               332 kB\nWriteback:             0 kB\nAnonPages:       3183508 kB\nMapped:           825392 kB\nShmem:             83296 kB\nKReclaimable:     109988 kB\nSlab:             240424 kB\nSReclaimable:     109988 kB\nSUnreclaim:       130436 kB\nKernelStack:       11520 kB\nPageTables:        20072 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    21866340 kB\nCommitted_AS:   21136056 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       51296 kB\nVmallocChunk:          0 kB\nPercpu:            13568 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    761856 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       72704 kB\nDirectMap2M:     4120576 kB\nDirectMap1G:     7340032 kB\n",
+  "linux_processes": "    PID    PPID   RSS %CPU COMMAND\n      1       0 13112  0.0 systemd\n      2       1  2212  0.0 init-systemd(Ub\n      8       2  2144  0.0 init\n     41       1 17984  0.0 systemd-journal\n     92       1  6412  0.0 systemd-udevd\n    177       1 13216  0.0 systemd-resolve\n    178       1  8096  0.0 systemd-timesyn\n    185       1  2744  0.0 cron\n    186       1  5368  0.0 dbus-daemon\n    196       1  8816  0.0 systemd-logind\n    211       1  5644  0.0 rsyslogd\n    223       1 52056  0.1 containerd\n    231       1  1968  0.0 agetty\n    232       1 23228  0.0 unattended-upgr\n    310       1 84356  0.1 dockerd\n    558       2  1120  0.0 SessionLeader\n    559     558  1320  0.0 Relay(560)\n    560     559  3676  0.0 bash\n    561       2  4732  0.0 login\n    594       1 11484  0.0 systemd\n    595     594  3592  0.0 (sd-pam)\n    605     561  5344  0.0 bash\n    630     560 749808 3.2 python\n   3464     630 1433156 26.6 python\n   3572    3464 12768  0.0 python\n   3573    3464 2317076 118 VLLM::EngineCor\n   3943     630  4124  0.0 ps\n",
+  "compute_apps": "",
+  "host": {
+    "utc": "2026-10-13T12:23:01.4434298Z",
+    "memory": {
+      "TotalVisibleMemorySize": 16386548,
+      "FreePhysicalMemory": 874908,
+      "TotalVirtualMemorySize": 48898844,
+      "FreeVirtualMemory": 1320064
+    },
+    "processes": [
+      {
+        "Id": 15088,
+        "ProcessName": "AacAmbientLighting",
+        "WorkingSet64": 5013504,
+        "PrivateMemorySize64": 12849152
+      },
+      {
+        "Id": 25456,
+        "ProcessName": "ACE-Tray",
+        "WorkingSet64": 5054464,
+        "PrivateMemorySize64": 2260992
+      },
+      {
+        "Id": 16664,
+        "ProcessName": "AcPowerNotification",
+        "WorkingSet64": 68755456,
+        "PrivateMemorySize64": 47058944
+      },
+      {
+        "Id": 38936,
+        "ProcessName": "Agent",
+        "WorkingSet64": 16916480,
+        "PrivateMemorySize64": 28655616
+      },
+      {
+        "Id": 8880,
+        "ProcessName": "AggregatorHost",
+        "WorkingSet64": 4530176,
+        "PrivateMemorySize64": 2912256
+      },
+      {
+        "Id": 32468,
+        "ProcessName": "aha_doctor",
+        "WorkingSet64": 17641472,
+        "PrivateMemorySize64": 21139456
+      },
+      {
+        "Id": 10656,
+        "ProcessName": "AppActions",
+        "WorkingSet64": 35745792,
+        "PrivateMemorySize64": 13160448
+      },
+      {
+        "Id": 6848,
+        "ProcessName": "ArmouryCrate.Service",
+        "WorkingSet64": 10506240,
+        "PrivateMemorySize64": 67846144
+      },
+      {
+        "Id": 14648,
+        "ProcessName": "ArmouryCrate.UserSessionHelper",
+        "WorkingSet64": 16306176,
+        "PrivateMemorySize64": 52105216
+      },
+      {
+        "Id": 6892,
+        "ProcessName": "ArmouryCrateControlInterface",
+        "WorkingSet64": 897024,
+        "PrivateMemorySize64": 2453504
+      },
+      {
+        "Id": 15596,
+        "ProcessName": "ArmouryHtmlDebugServer",
+        "WorkingSet64": 307200,
+        "PrivateMemorySize64": 1433600
+      },
+      {
+        "Id": 17916,
+        "ProcessName": "ArmourySocketServer",
+        "WorkingSet64": 843776,
+        "PrivateMemorySize64": 3739648
+      },
+      {
+        "Id": 16672,
+        "ProcessName": "AsHotplugCtrl",
+        "WorkingSet64": 643072,
+        "PrivateMemorySize64": 1593344
+      },
+      {
+        "Id": 17032,
+        "ProcessName": "AsMonitorControl",
+        "WorkingSet64": 929792,
+        "PrivateMemorySize64": 1757184
+      },
+      {
+        "Id": 21896,
+        "ProcessName": "asus_framework",
+        "WorkingSet64": 17567744,
+        "PrivateMemorySize64": 78348288
+      },
+      {
+        "Id": 23260,
+        "ProcessName": "asus_framework",
+        "WorkingSet64": 3018752,
+        "PrivateMemorySize64": 16273408
+      },
+      {
+        "Id": 25596,
+        "ProcessName": "asus_framework",
+        "WorkingSet64": 1888256,
+        "PrivateMemorySize64": 15282176
+      },
+      {
+        "Id": 16812,
+        "ProcessName": "ASUS_WDL_Helper",
+        "WorkingSet64": 1097728,
+        "PrivateMemorySize64": 2600960
+      },
+      {
+        "Id": 6856,
+        "ProcessName": "AsusAppService",
+        "WorkingSet64": 4579328,
+        "PrivateMemorySize64": 5791744
+      },
+      {
+        "Id": 4736,
+        "ProcessName": "AsusCertService",
+        "WorkingSet64": 991232,
+        "PrivateMemorySize64": 1687552
+      },
+      {
+        "Id": 14848,
+        "ProcessName": "AsusHotkey",
+        "WorkingSet64": 778240,
+        "PrivateMemorySize64": 1495040
+      },
+      {
+        "Id": 15956,
+        "ProcessName": "AsusInputlocaleMonitor",
+        "WorkingSet64": 831488,
+        "PrivateMemorySize64": 1507328
+      },
+      {
+        "Id": 6872,
+        "ProcessName": "AsusNumPadService",
+        "WorkingSet64": 880640,
+        "PrivateMemorySize64": 2211840
+      },
+      {
+        "Id": 5380,
+        "ProcessName": "AsusOptimization",
+        "WorkingSet64": 663552,
+        "PrivateMemorySize64": 2375680
+      },
+      {
+        "Id": 14572,
+        "ProcessName": "AsusOptimizationStartupTask",
+        "WorkingSet64": 1753088,
+        "PrivateMemorySize64": 1789952
+      },
+      {
+        "Id": 17008,
+        "ProcessName": "ASUSSmartDisplayControl",
+        "WorkingSet64": 1789952,
+        "PrivateMemorySize64": 2183168
+      },
+      {
+        "Id": 6800,
+        "ProcessName": "AsusSoftwareManager",
+        "WorkingSet64": 4816896,
+        "PrivateMemorySize64": 4517888
+      },
+      {
+        "Id": 21332,
+        "ProcessName": "AsusSoftwareManagerAgent",
+        "WorkingSet64": 15663104,
+        "PrivateMemorySize64": 41025536
+      },
+      {
+        "Id": 6980,
+        "ProcessName": "AsusSwitch",
+        "WorkingSet64": 737280,
+        "PrivateMemorySize64": 2105344
+      },
+      {
+        "Id": 7036,
+        "ProcessName": "AsusSystemAnalysis",
+        "WorkingSet64": 1921024,
+        "PrivateMemorySize64": 4190208
+      },
+      {
+        "Id": 7144,
+        "ProcessName": "AsusSystemDiagnosis",
+        "WorkingSet64": 827392,
+        "PrivateMemorySize64": 2473984
+      },
+      {
+        "Id": 5688,
+        "ProcessName": "audiodg",
+        "WorkingSet64": 40574976,
+        "PrivateMemorySize64": 195645440
+      },
+      {
+        "Id": 6972,
+        "ProcessName": "AuraWallpaperService",
+        "WorkingSet64": 1744896,
+        "PrivateMemorySize64": 23621632
+      },
+      {
+        "Id": 25564,
+        "ProcessName": "Battle.net",
+        "WorkingSet64": 67035136,
+        "PrivateMemorySize64": 67661824
+      },
+      {
+        "Id": 33496,
+        "ProcessName": "Battle.net",
+        "WorkingSet64": 66977792,
+        "PrivateMemorySize64": 112324608
+      },
+      {
+        "Id": 39056,
+        "ProcessName": "Battle.net",
+        "WorkingSet64": 74489856,
+        "PrivateMemorySize64": 66433024
+      },
+      {
+        "Id": 39096,
+        "ProcessName": "Battle.net",
+        "WorkingSet64": 8560640,
+        "PrivateMemorySize64": 10137600
+      },
+      {
+        "Id": 39136,
+        "ProcessName": "Battle.net",
+        "WorkingSet64": 15626240,
+        "PrivateMemorySize64": 11952128
+      },
+      {
+        "Id": 39688,
+        "ProcessName": "Battle.net",
+        "WorkingSet64": 21008384,
+        "PrivateMemorySize64": 43745280
+      },
+      {
+        "Id": 40056,
+        "ProcessName": "Battle.net",
+        "WorkingSet64": 18051072,
+        "PrivateMemorySize64": 24719360
+      },
+      {
+        "Id": 5296,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 19603456,
+        "PrivateMemorySize64": 172994560
+      },
+      {
+        "Id": 5300,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 43118592,
+        "PrivateMemorySize64": 140038144
+      },
+      {
+        "Id": 8296,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 35966976,
+        "PrivateMemorySize64": 146886656
+      },
+      {
+        "Id": 9204,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 28475392,
+        "PrivateMemorySize64": 22151168
+      },
+      {
+        "Id": 9876,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 40792064,
+        "PrivateMemorySize64": 148234240
+      },
+      {
+        "Id": 11044,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 8339456,
+        "PrivateMemorySize64": 109207552
+      },
+      {
+        "Id": 11852,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 12288000,
+        "PrivateMemorySize64": 63840256
+      },
+      {
+        "Id": 12396,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 38187008,
+        "PrivateMemorySize64": 126226432
+      },
+      {
+        "Id": 13152,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 41459712,
+        "PrivateMemorySize64": 148783104
+      },
+      {
+        "Id": 22256,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 39923712,
+        "PrivateMemorySize64": 113045504
+      },
+      {
+        "Id": 24976,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 70365184,
+        "PrivateMemorySize64": 266575872
+      },
+      {
+        "Id": 25092,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 11075584,
+        "PrivateMemorySize64": 27017216
+      },
+      {
+        "Id": 25200,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 214474752,
+        "PrivateMemorySize64": 407154688
+      },
+      {
+        "Id": 25244,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 6344704,
+        "PrivateMemorySize64": 10104832
+      },
+      {
+        "Id": 25284,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 2695168,
+        "PrivateMemorySize64": 2379776
+      },
+      {
+        "Id": 25532,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 5230592,
+        "PrivateMemorySize64": 15536128
+      },
+      {
+        "Id": 27808,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 15917056,
+        "PrivateMemorySize64": 112783360
+      },
+      {
+        "Id": 27820,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 495767552,
+        "PrivateMemorySize64": 722759680
+      },
+      {
+        "Id": 28824,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 7413760,
+        "PrivateMemorySize64": 9011200
+      },
+      {
+        "Id": 29616,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 35823616,
+        "PrivateMemorySize64": 72245248
+      },
+      {
+        "Id": 30140,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 6307840,
+        "PrivateMemorySize64": 34676736
+      },
+      {
+        "Id": 30704,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 69971968,
+        "PrivateMemorySize64": 296693760
+      },
+      {
+        "Id": 30908,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 36270080,
+        "PrivateMemorySize64": 119029760
+      },
+      {
+        "Id": 32220,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 36458496,
+        "PrivateMemorySize64": 135258112
+      },
+      {
+        "Id": 33740,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 40640512,
+        "PrivateMemorySize64": 120156160
+      },
+      {
+        "Id": 34940,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 39796736,
+        "PrivateMemorySize64": 123633664
+      },
+      {
+        "Id": 35052,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 32382976,
+        "PrivateMemorySize64": 74010624
+      },
+      {
+        "Id": 35668,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 11530240,
+        "PrivateMemorySize64": 24272896
+      },
+      {
+        "Id": 36204,
+        "ProcessName": "ChatGPT",
+        "WorkingSet64": 20078592,
+        "PrivateMemorySize64": 169537536
+      },
+      {
+        "Id": 21128,
+        "ProcessName": "ChsIME",
+        "WorkingSet64": 1028096,
+        "PrivateMemorySize64": 1622016
+      },
+      {
+        "Id": 20968,
+        "ProcessName": "Clash for Windows",
+        "WorkingSet64": 17526784,
+        "PrivateMemorySize64": 39059456
+      },
+      {
+        "Id": 22400,
+        "ProcessName": "Clash for Windows",
+        "WorkingSet64": 11530240,
+        "PrivateMemorySize64": 14241792
+      },
+      {
+        "Id": 22424,
+        "ProcessName": "Clash for Windows",
+        "WorkingSet64": 43827200,
+        "PrivateMemorySize64": 61075456
+      },
+      {
+        "Id": 24828,
+        "ProcessName": "Clash for Windows",
+        "WorkingSet64": 8523776,
+        "PrivateMemorySize64": 13598720
+      },
+      {
+        "Id": 23996,
+        "ProcessName": "clash-win64",
+        "WorkingSet64": 35373056,
+        "PrivateMemorySize64": 59326464
+      },
+      {
+        "Id": 36024,
+        "ProcessName": "claude",
+        "WorkingSet64": 158633984,
+        "PrivateMemorySize64": 478515200
+      },
+      {
+        "Id": 15276,
+        "ProcessName": "cmd",
+        "WorkingSet64": 3293184,
+        "PrivateMemorySize64": 4747264
+      },
+      {
+        "Id": 27984,
+        "ProcessName": "codex",
+        "WorkingSet64": 146952192,
+        "PrivateMemorySize64": 254500864
+      },
+      {
+        "Id": 28636,
+        "ProcessName": "codex",
+        "WorkingSet64": 6590464,
+        "PrivateMemorySize64": 8212480
+      },
+      {
+        "Id": 4328,
+        "ProcessName": "codex-code-mode-host",
+        "WorkingSet64": 10723328,
+        "PrivateMemorySize64": 11112448
+      },
+      {
+        "Id": 29852,
+        "ProcessName": "codex-computer-use-swift",
+        "WorkingSet64": 6287360,
+        "PrivateMemorySize64": 62087168
+      },
+      {
+        "Id": 12188,
+        "ProcessName": "codex-windows-sandbox-service",
+        "WorkingSet64": 1179648,
+        "PrivateMemorySize64": 2232320
+      },
+      {
+        "Id": 2680,
+        "ProcessName": "conhost",
+        "WorkingSet64": 1904640,
+        "PrivateMemorySize64": 1220608
+      },
+      {
+        "Id": 3328,
+        "ProcessName": "conhost",
+        "WorkingSet64": 831488,
+        "PrivateMemorySize64": 1212416
+      },
+      {
+        "Id": 3828,
+        "ProcessName": "conhost",
+        "WorkingSet64": 700416,
+        "PrivateMemorySize64": 1224704
+      },
+      {
+        "Id": 5772,
+        "ProcessName": "conhost",
+        "WorkingSet64": 1839104,
+        "PrivateMemorySize64": 1236992
+      },
+      {
+        "Id": 8412,
+        "ProcessName": "conhost",
+        "WorkingSet64": 1847296,
+        "PrivateMemorySize64": 1212416
+      },
+      {
+        "Id": 14520,
+        "ProcessName": "conhost",
+        "WorkingSet64": 1519616,
+        "PrivateMemorySize64": 1241088
+      },
+      {
+        "Id": 14884,
+        "ProcessName": "conhost",
+        "WorkingSet64": 704512,
+        "PrivateMemorySize64": 1236992
+      },
+      {
+        "Id": 18664,
+        "ProcessName": "conhost",
+        "WorkingSet64": 9879552,
+        "PrivateMemorySize64": 1748992
+      },
+      {
+        "Id": 25400,
+        "ProcessName": "conhost",
+        "WorkingSet64": 7921664,
+        "PrivateMemorySize64": 1273856
+      },
+      {
+        "Id": 28092,
+        "ProcessName": "conhost",
+        "WorkingSet64": 720896,
+        "PrivateMemorySize64": 1232896
+      },
+      {
+        "Id": 28560,
+        "ProcessName": "conhost",
+        "WorkingSet64": 679936,
+        "PrivateMemorySize64": 1236992
+      },
+      {
+        "Id": 33096,
+        "ProcessName": "conhost",
+        "WorkingSet64": 3383296,
+        "PrivateMemorySize64": 1200128
+      },
+      {
+        "Id": 33644,
+        "ProcessName": "conhost",
+        "WorkingSet64": 2760704,
+        "PrivateMemorySize64": 1490944
+      },
+      {
+        "Id": 38580,
+        "ProcessName": "conhost",
+        "WorkingSet64": 9879552,
+        "PrivateMemorySize64": 1728512
+      },
+      {
+        "Id": 39472,
+        "ProcessName": "conhost",
+        "WorkingSet64": 3190784,
+        "PrivateMemorySize64": 1732608
+      },
+      {
+        "Id": 39888,
+        "ProcessName": "conhost",
+        "WorkingSet64": 7446528,
+        "PrivateMemorySize64": 1339392
+      },
+      {
+        "Id": 12096,
+        "ProcessName": "cowork-svc",
+        "WorkingSet64": 2019328,
+        "PrivateMemorySize64": 27250688
+      },
+      {
+        "Id": 40288,
+        "ProcessName": "CrashMailer_64",
+        "WorkingSet64": 3514368,
+        "PrivateMemorySize64": 1564672
+      },
+      {
+        "Id": 31196,
+        "ProcessName": "crashpad_handler",
+        "WorkingSet64": 6873088,
+        "PrivateMemorySize64": 6541312
+      },
+      {
+        "Id": 36304,
+        "ProcessName": "crashpad_handler",
+        "WorkingSet64": 6705152,
+        "PrivateMemorySize64": 6475776
+      },
+      {
+        "Id": 15480,
+        "ProcessName": "CrossDeviceResume",
+        "WorkingSet64": 5099520,
+        "PrivateMemorySize64": 54861824
+      },
+      {
+        "Id": 16484,
+        "ProcessName": "CrossDeviceService",
+        "WorkingSet64": 11853824,
+        "PrivateMemorySize64": 24084480
+      },
+      {
+        "Id": 1800,
+        "ProcessName": "csrss",
+        "WorkingSet64": 2822144,
+        "PrivateMemorySize64": 2609152
+      },
+      {
+        "Id": 1964,
+        "ProcessName": "csrss",
+        "WorkingSet64": 3305472,
+        "PrivateMemorySize64": 3219456
+      },
+      {
+        "Id": 20576,
+        "ProcessName": "ctfmon",
+        "WorkingSet64": 7172096,
+        "PrivateMemorySize64": 16441344
+      },
+      {
+        "Id": 15824,
+        "ProcessName": "cxstudy",
+        "WorkingSet64": 5656576,
+        "PrivateMemorySize64": 16707584
+      },
+      {
+        "Id": 25172,
+        "ProcessName": "cxstudy",
+        "WorkingSet64": 28246016,
+        "PrivateMemorySize64": 100331520
+      },
+      {
+        "Id": 26208,
+        "ProcessName": "cxstudy",
+        "WorkingSet64": 3538944,
+        "PrivateMemorySize64": 14098432
+      },
+      {
+        "Id": 31340,
+        "ProcessName": "cxstudy",
+        "WorkingSet64": 42065920,
+        "PrivateMemorySize64": 55152640
+      },
+      {
+        "Id": 32416,
+        "ProcessName": "cxstudy",
+        "WorkingSet64": 7585792,
+        "PrivateMemorySize64": 80969728
+      },
+      {
+        "Id": 33316,
+        "ProcessName": "cxstudy",
+        "WorkingSet64": 8630272,
+        "PrivateMemorySize64": 79695872
+      },
+      {
+        "Id": 34128,
+        "ProcessName": "cxstudy",
+        "WorkingSet64": 8577024,
+        "PrivateMemorySize64": 44916736
+      },
+      {
+        "Id": 34680,
+        "ProcessName": "cxstudy",
+        "WorkingSet64": 13684736,
+        "PrivateMemorySize64": 83218432
+      },
+      {
+        "Id": 11916,
+        "ProcessName": "dasHost",
+        "WorkingSet64": 28672,
+        "PrivateMemorySize64": 1515520
+      },
+      {
+        "Id": 7008,
+        "ProcessName": "DAX3API",
+        "WorkingSet64": 3088384,
+        "PrivateMemorySize64": 8146944
+      },
+      {
+        "Id": 14608,
+        "ProcessName": "DAX3API",
+        "WorkingSet64": 4059136,
+        "PrivateMemorySize64": 3391488
+      },
+      {
+        "Id": 3040,
+        "ProcessName": "dllhost",
+        "WorkingSet64": 8048640,
+        "PrivateMemorySize64": 3145728
+      },
+      {
+        "Id": 3684,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 2379776,
+        "PrivateMemorySize64": 3551232
+      },
+      {
+        "Id": 19624,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 10780672,
+        "PrivateMemorySize64": 290459648
+      },
+      {
+        "Id": 26576,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 62808064,
+        "PrivateMemorySize64": 91209728
+      },
+      {
+        "Id": 27532,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 7401472,
+        "PrivateMemorySize64": 10825728
+      },
+      {
+        "Id": 28524,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 11997184,
+        "PrivateMemorySize64": 16613376
+      },
+      {
+        "Id": 30008,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 11313152,
+        "PrivateMemorySize64": 51249152
+      },
+      {
+        "Id": 30564,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 70889472,
+        "PrivateMemorySize64": 141537280
+      },
+      {
+        "Id": 31860,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 30748672,
+        "PrivateMemorySize64": 25665536
+      },
+      {
+        "Id": 31912,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 8302592,
+        "PrivateMemorySize64": 16875520
+      },
+      {
+        "Id": 32268,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 309211136,
+        "PrivateMemorySize64": 497352704
+      },
+      {
+        "Id": 32292,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 13090816,
+        "PrivateMemorySize64": 14028800
+      },
+      {
+        "Id": 32644,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 71307264,
+        "PrivateMemorySize64": 139018240
+      },
+      {
+        "Id": 32724,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 9969664,
+        "PrivateMemorySize64": 42127360
+      },
+      {
+        "Id": 34668,
+        "ProcessName": "Doubao",
+        "WorkingSet64": 8052736,
+        "PrivateMemorySize64": 22659072
+      },
+      {
+        "Id": 2452,
+        "ProcessName": "dwm",
+        "WorkingSet64": 25374720,
+        "PrivateMemorySize64": 382533632
+      },
+      {
+        "Id": 30004,
+        "ProcessName": "DynamicDependencyLifetimeManagerShadow",
+        "WorkingSet64": 1073152,
+        "PrivateMemorySize64": 1073152
+      },
+      {
+        "Id": 14600,
+        "ProcessName": "explorer",
+        "WorkingSet64": 91963392,
+        "PrivateMemorySize64": 278884352
+      },
+      {
+        "Id": 7564,
+        "ProcessName": "FlashCenterSvc",
+        "WorkingSet64": 4571136,
+        "PrivateMemorySize64": 15519744
+      },
+      {
+        "Id": 2100,
+        "ProcessName": "fontdrvhost",
+        "WorkingSet64": 32768,
+        "PrivateMemorySize64": 2662400
+      },
+      {
+        "Id": 2108,
+        "ProcessName": "fontdrvhost",
+        "WorkingSet64": 7106560,
+        "PrivateMemorySize64": 12345344
+      },
+      {
+        "Id": 24088,
+        "ProcessName": "GameBarPresenceWriter",
+        "WorkingSet64": 3723264,
+        "PrivateMemorySize64": 1638400
+      },
+      {
+        "Id": 6436,
+        "ProcessName": "GameManagerService3",
+        "WorkingSet64": 23793664,
+        "PrivateMemorySize64": 65548288
+      },
+      {
+        "Id": 6956,
+        "ProcessName": "GameSDK",
+        "WorkingSet64": 942080,
+        "PrivateMemorySize64": 2064384
+      },
+      {
+        "Id": 7028,
+        "ProcessName": "GlideXNearService",
+        "WorkingSet64": 4112384,
+        "PrivateMemorySize64": 4059136
+      },
+      {
+        "Id": 7160,
+        "ProcessName": "GlideXRemoteService",
+        "WorkingSet64": 1249280,
+        "PrivateMemorySize64": 4935680
+      },
+      {
+        "Id": 7020,
+        "ProcessName": "GlideXService",
+        "WorkingSet64": 4091904,
+        "PrivateMemorySize64": 4927488
+      },
+      {
+        "Id": 7068,
+        "ProcessName": "GlideXServiceExt",
+        "WorkingSet64": 2551808,
+        "PrivateMemorySize64": 3018752
+      },
+      {
+        "Id": 4152,
+        "ProcessName": "HipsDaemon",
+        "WorkingSet64": 98484224,
+        "PrivateMemorySize64": 414621696
+      },
+      {
+        "Id": 3220,
+        "ProcessName": "HipsTray",
+        "WorkingSet64": 7647232,
+        "PrivateMemorySize64": 19492864
+      },
+      {
+        "Id": 0,
+        "ProcessName": "Idle",
+        "WorkingSet64": 8192,
+        "PrivateMemorySize64": 61440
+      },
+      {
+        "Id": 12520,
+        "ProcessName": "Intel_PIE_Service",
+        "WorkingSet64": 958464,
+        "PrivateMemorySize64": 2539520
+      },
+      {
+        "Id": 7100,
+        "ProcessName": "IntelAudioService",
+        "WorkingSet64": 2686976,
+        "PrivateMemorySize64": 41254912
+      },
+      {
+        "Id": 3096,
+        "ProcessName": "IntelCpHDCPSvc",
+        "WorkingSet64": 724992,
+        "PrivateMemorySize64": 1519616
+      },
+      {
+        "Id": 14640,
+        "ProcessName": "ipf_helper",
+        "WorkingSet64": 1507328,
+        "PrivateMemorySize64": 1896448
+      },
+      {
+        "Id": 7376,
+        "ProcessName": "ipf_uf",
+        "WorkingSet64": 630784,
+        "PrivateMemorySize64": 2109440
+      },
+      {
+        "Id": 6488,
+        "ProcessName": "ipfsvc",
+        "WorkingSet64": 368640,
+        "PrivateMemorySize64": 1720320
+      },
+      {
+        "Id": 6964,
+        "ProcessName": "jhi_service",
+        "WorkingSet64": 712704,
+        "PrivateMemorySize64": 1540096
+      },
+      {
+        "Id": 16756,
+        "ProcessName": "ledcontrolservice3",
+        "WorkingSet64": 1445888,
+        "PrivateMemorySize64": 3440640
+      },
+      {
+        "Id": 7116,
+        "ProcessName": "LightingService",
+        "WorkingSet64": 5283840,
+        "PrivateMemorySize64": 15163392
+      },
+      {
+        "Id": 5816,
+        "ProcessName": "Listary.Service",
+        "WorkingSet64": 6299648,
+        "PrivateMemorySize64": 24502272
+      },
+      {
+        "Id": 7348,
+        "ProcessName": "logi_lamparray_service",
+        "WorkingSet64": 925696,
+        "PrivateMemorySize64": 3948544
+      },
+      {
+        "Id": 1420,
+        "ProcessName": "LsaIso",
+        "WorkingSet64": 94208,
+        "PrivateMemorySize64": 1196032
+      },
+      {
+        "Id": 1512,
+        "ProcessName": "lsass",
+        "WorkingSet64": 14331904,
+        "PrivateMemorySize64": 12746752
+      },
+      {
+        "Id": 6988,
+        "ProcessName": "mDNSResponder",
+        "WorkingSet64": 1572864,
+        "PrivateMemorySize64": 2342912
+      },
+      {
+        "Id": 4988,
+        "ProcessName": "Memory Compression",
+        "WorkingSet64": 190836736,
+        "PrivateMemorySize64": 15568896
+      },
+      {
+        "Id": 31240,
+        "ProcessName": "MicrosoftStartFeedProvider",
+        "WorkingSet64": 8368128,
+        "PrivateMemorySize64": 10899456
+      },
+      {
+        "Id": 7172,
+        "ProcessName": "MpDefenderCoreService",
+        "WorkingSet64": 13312000,
+        "PrivateMemorySize64": 17264640
+      },
+      {
+        "Id": 5444,
+        "ProcessName": "msedge",
+        "WorkingSet64": 21143552,
+        "PrivateMemorySize64": 65482752
+      },
+      {
+        "Id": 11296,
+        "ProcessName": "msedge",
+        "WorkingSet64": 6086656,
+        "PrivateMemorySize64": 21016576
+      },
+      {
+        "Id": 21364,
+        "ProcessName": "msedge",
+        "WorkingSet64": 45387776,
+        "PrivateMemorySize64": 33841152
+      },
+      {
+        "Id": 25448,
+        "ProcessName": "msedge",
+        "WorkingSet64": 25141248,
+        "PrivateMemorySize64": 18759680
+      },
+      {
+        "Id": 26952,
+        "ProcessName": "msedge",
+        "WorkingSet64": 5197824,
+        "PrivateMemorySize64": 3047424
+      },
+      {
+        "Id": 28836,
+        "ProcessName": "msedge",
+        "WorkingSet64": 6451200,
+        "PrivateMemorySize64": 8859648
+      },
+      {
+        "Id": 34120,
+        "ProcessName": "msedge",
+        "WorkingSet64": 76197888,
+        "PrivateMemorySize64": 111099904
+      },
+      {
+        "Id": 34928,
+        "ProcessName": "msedge",
+        "WorkingSet64": 11968512,
+        "PrivateMemorySize64": 30257152
+      },
+      {
+        "Id": 35360,
+        "ProcessName": "msedge",
+        "WorkingSet64": 18710528,
+        "PrivateMemorySize64": 169603072
+      },
+      {
+        "Id": 3868,
+        "ProcessName": "msedgewebview2",
+        "WorkingSet64": 2199552,
+        "PrivateMemorySize64": 10174464
+      },
+      {
+        "Id": 11036,
+        "ProcessName": "msedgewebview2",
+        "WorkingSet64": 8171520,
+        "PrivateMemorySize64": 70160384
+      },
+      {
+        "Id": 11196,
+        "ProcessName": "msedgewebview2",
+        "WorkingSet64": 5128192,
+        "PrivateMemorySize64": 12492800
+      },
+      {
+        "Id": 19696,
+        "ProcessName": "msedgewebview2",
+        "WorkingSet64": 20398080,
+        "PrivateMemorySize64": 40329216
+      },
+      {
+        "Id": 19776,
+        "ProcessName": "msedgewebview2",
+        "WorkingSet64": 8187904,
+        "PrivateMemorySize64": 54845440
+      },
+      {
+        "Id": 20260,
+        "ProcessName": "msedgewebview2",
+        "WorkingSet64": 1556480,
+        "PrivateMemorySize64": 3047424
+      },
+      {
+        "Id": 7232,
+        "ProcessName": "MSOfficePLUSService",
+        "WorkingSet64": 8433664,
+        "PrivateMemorySize64": 33103872
+      },
+      {
+        "Id": 12124,
+        "ProcessName": "MSPCManagerService",
+        "WorkingSet64": 39436288,
+        "PrivateMemorySize64": 74711040
+      },
+      {
+        "Id": 40300,
+        "ProcessName": "NeacLoader",
+        "WorkingSet64": 13422592,
+        "PrivateMemorySize64": 10698752
+      },
+      {
+        "Id": 25164,
+        "ProcessName": "Nexus",
+        "WorkingSet64": 36851712,
+        "PrivateMemorySize64": 30494720
+      },
+      {
+        "Id": 7552,
+        "ProcessName": "node_repl",
+        "WorkingSet64": 2744320,
+        "PrivateMemorySize64": 3706880
+      },
+      {
+        "Id": 20720,
+        "ProcessName": "node_repl",
+        "WorkingSet64": 2920448,
+        "PrivateMemorySize64": 3715072
+      },
+      {
+        "Id": 25368,
+        "ProcessName": "node_repl",
+        "WorkingSet64": 2719744,
+        "PrivateMemorySize64": 3657728
+      },
+      {
+        "Id": 33732,
+        "ProcessName": "node_repl",
+        "WorkingSet64": 405504,
+        "PrivateMemorySize64": 3698688
+      },
+      {
+        "Id": 7152,
+        "ProcessName": "nvcontainer",
+        "WorkingSet64": 13533184,
+        "PrivateMemorySize64": 14360576
+      },
+      {
+        "Id": 12872,
+        "ProcessName": "nvcontainer",
+        "WorkingSet64": 9269248,
+        "PrivateMemorySize64": 21626880
+      },
+      {
+        "Id": 14704,
+        "ProcessName": "nvcontainer",
+        "WorkingSet64": 6021120,
+        "PrivateMemorySize64": 13996032
+      },
+      {
+        "Id": 20096,
+        "ProcessName": "nvcontainer",
+        "WorkingSet64": 27717632,
+        "PrivateMemorySize64": 45121536
+      },
+      {
+        "Id": 4640,
+        "ProcessName": "NVDisplay.Container",
+        "WorkingSet64": 21553152,
+        "PrivateMemorySize64": 28422144
+      },
+      {
+        "Id": 5988,
+        "ProcessName": "NVDisplay.Container",
+        "WorkingSet64": 15273984,
+        "PrivateMemorySize64": 168902656
+      },
+      {
+        "Id": 21132,
+        "ProcessName": "NVIDIA Overlay",
+        "WorkingSet64": 48427008,
+        "PrivateMemorySize64": 168165376
+      },
+      {
+        "Id": 22536,
+        "ProcessName": "NVIDIA Overlay",
+        "WorkingSet64": 11776000,
+        "PrivateMemorySize64": 12374016
+      },
+      {
+        "Id": 22620,
+        "ProcessName": "NVIDIA Overlay",
+        "WorkingSet64": 7602176,
+        "PrivateMemorySize64": 10035200
+      },
+      {
+        "Id": 23544,
+        "ProcessName": "NVIDIA Overlay",
+        "WorkingSet64": 20070400,
+        "PrivateMemorySize64": 101834752
+      },
+      {
+        "Id": 23608,
+        "ProcessName": "NVIDIA Overlay",
+        "WorkingSet64": 29646848,
+        "PrivateMemorySize64": 53989376
+      },
+      {
+        "Id": 22056,
+        "ProcessName": "nvsphelper64",
+        "WorkingSet64": 6737920,
+        "PrivateMemorySize64": 3878912
+      },
+      {
+        "Id": 7044,
+        "ProcessName": "OfficeClickToRun",
+        "WorkingSet64": 17195008,
+        "PrivateMemorySize64": 38912000
+      },
+      {
+        "Id": 7076,
+        "ProcessName": "OneApp.IGCC.WinService",
+        "WorkingSet64": 5255168,
+        "PrivateMemorySize64": 34959360
+      },
+      {
+        "Id": 13348,
+        "ProcessName": "OneDrive",
+        "WorkingSet64": 20422656,
+        "PrivateMemorySize64": 28639232
+      },
+      {
+        "Id": 8028,
+        "ProcessName": "ONENOTEM",
+        "WorkingSet64": 1900544,
+        "PrivateMemorySize64": 18804736
+      },
+      {
+        "Id": 30604,
+        "ProcessName": "OpenConsole",
+        "WorkingSet64": 3555328,
+        "PrivateMemorySize64": 4042752
+      },
+      {
+        "Id": 18168,
+        "ProcessName": "Overwatch",
+        "WorkingSet64": 1387413504,
+        "PrivateMemorySize64": 13458632704
+      },
+      {
+        "Id": 40440,
+        "ProcessName": "OWNeacClient",
+        "WorkingSet64": 40091648,
+        "PrivateMemorySize64": 55652352
+      },
+      {
+        "Id": 6248,
+        "ProcessName": "PddCoreService",
+        "WorkingSet64": 2187264,
+        "PrivateMemorySize64": 2039808
+      },
+      {
+        "Id": 7288,
+        "ProcessName": "PddService",
+        "WorkingSet64": 44761088,
+        "PrivateMemorySize64": 32657408
+      },
+      {
+        "Id": 24984,
+        "ProcessName": "powershell",
+        "WorkingSet64": 90738688,
+        "PrivateMemorySize64": 71180288
+      },
+      {
+        "Id": 35072,
+        "ProcessName": "PushNotificationsLongRunningTask",
+        "WorkingSet64": 2465792,
+        "PrivateMemorySize64": 2244608
+      },
+      {
+        "Id": 39892,
+        "ProcessName": "pwsh",
+        "WorkingSet64": 32243712,
+        "PrivateMemorySize64": 22196224
+      },
+      {
+        "Id": 9708,
+        "ProcessName": "QQ",
+        "WorkingSet64": 5300224,
+        "PrivateMemorySize64": 142036992
+      },
+      {
+        "Id": 10080,
+        "ProcessName": "QQ",
+        "WorkingSet64": 4837376,
+        "PrivateMemorySize64": 10997760
+      },
+      {
+        "Id": 13832,
+        "ProcessName": "QQ",
+        "WorkingSet64": 14716928,
+        "PrivateMemorySize64": 162197504
+      },
+      {
+        "Id": 16728,
+        "ProcessName": "QQ",
+        "WorkingSet64": 195547136,
+        "PrivateMemorySize64": 338182144
+      },
+      {
+        "Id": 16776,
+        "ProcessName": "QQ",
+        "WorkingSet64": 155078656,
+        "PrivateMemorySize64": 291737600
+      },
+      {
+        "Id": 17848,
+        "ProcessName": "QQ",
+        "WorkingSet64": 14274560,
+        "PrivateMemorySize64": 15630336
+      },
+      {
+        "Id": 21860,
+        "ProcessName": "QQ",
+        "WorkingSet64": 106569728,
+        "PrivateMemorySize64": 234598400
+      },
+      {
+        "Id": 23500,
+        "ProcessName": "QQ",
+        "WorkingSet64": 11067392,
+        "PrivateMemorySize64": 166195200
+      },
+      {
+        "Id": 23504,
+        "ProcessName": "QQ",
+        "WorkingSet64": 16277504,
+        "PrivateMemorySize64": 182050816
+      },
+      {
+        "Id": 5600,
+        "ProcessName": "QQEX",
+        "WorkingSet64": 14594048,
+        "PrivateMemorySize64": 76959744
+      },
+      {
+        "Id": 5812,
+        "ProcessName": "QQEX",
+        "WorkingSet64": 4042752,
+        "PrivateMemorySize64": 144859136
+      },
+      {
+        "Id": 16180,
+        "ProcessName": "QQEX",
+        "WorkingSet64": 59326464,
+        "PrivateMemorySize64": 243482624
+      },
+      {
+        "Id": 22384,
+        "ProcessName": "QQEX",
+        "WorkingSet64": 12759040,
+        "PrivateMemorySize64": 159391744
+      },
+      {
+        "Id": 35388,
+        "ProcessName": "QQEX",
+        "WorkingSet64": 13942784,
+        "PrivateMemorySize64": 13885440
+      },
+      {
+        "Id": 34664,
+        "ProcessName": "Rainmeter",
+        "WorkingSet64": 24432640,
+        "PrivateMemorySize64": 9371648
+      },
+      {
+        "Id": 30788,
+        "ProcessName": "razer_elevation_service",
+        "WorkingSet64": 3051520,
+        "PrivateMemorySize64": 3645440
+      },
+      {
+        "Id": 3596,
+        "ProcessName": "RazerAppEngine",
+        "WorkingSet64": 18563072,
+        "PrivateMemorySize64": 51159040
+      },
+      {
+        "Id": 8280,
+        "ProcessName": "RazerAppEngine",
+        "WorkingSet64": 11984896,
+        "PrivateMemorySize64": 15413248
+      },
+      {
+        "Id": 18968,
+        "ProcessName": "RazerAppEngine",
+        "WorkingSet64": 9515008,
+        "PrivateMemorySize64": 93405184
+      },
+      {
+        "Id": 29872,
+        "ProcessName": "RazerAppEngine",
+        "WorkingSet64": 22302720,
+        "PrivateMemorySize64": 39411712
+      },
+      {
+        "Id": 29984,
+        "ProcessName": "RazerAppEngine",
+        "WorkingSet64": 17895424,
+        "PrivateMemorySize64": 49565696
+      },
+      {
+        "Id": 31492,
+        "ProcessName": "RazerAppEngine",
+        "WorkingSet64": 46841856,
+        "PrivateMemorySize64": 138063872
+      },
+      {
+        "Id": 472,
+        "ProcessName": "Registry",
+        "WorkingSet64": 27324416,
+        "PrivateMemorySize64": 11497472
+      },
+      {
+        "Id": 7208,
+        "ProcessName": "ROGLiveService",
+        "WorkingSet64": 5947392,
+        "PrivateMemorySize64": 10948608
+      },
+      {
+        "Id": 7192,
+        "ProcessName": "RstMwService",
+        "WorkingSet64": 643072,
+        "PrivateMemorySize64": 2760704
+      },
+      {
+        "Id": 7260,
+        "ProcessName": "RtkAudUService64",
+        "WorkingSet64": 4538368,
+        "PrivateMemorySize64": 28200960
+      },
+      {
+        "Id": 15720,
+        "ProcessName": "RtkAudUService64",
+        "WorkingSet64": 3518464,
+        "PrivateMemorySize64": 25505792
+      },
+      {
+        "Id": 26056,
+        "ProcessName": "RtkAudUService64",
+        "WorkingSet64": 4136960,
+        "PrivateMemorySize64": 26472448
+      },
+      {
+        "Id": 18156,
+        "ProcessName": "RuntimeBroker",
+        "WorkingSet64": 9584640,
+        "PrivateMemorySize64": 7491584
+      },
+      {
+        "Id": 19428,
+        "ProcessName": "RuntimeBroker",
+        "WorkingSet64": 1789952,
+        "PrivateMemorySize64": 2535424
+      },
+      {
+        "Id": 27712,
+        "ProcessName": "RuntimeBroker",
+        "WorkingSet64": 3346432,
+        "PrivateMemorySize64": 2482176
+      },
+      {
+        "Id": 32020,
+        "ProcessName": "RuntimeBroker",
+        "WorkingSet64": 2076672,
+        "PrivateMemorySize64": 2457600
+      },
+      {
+        "Id": 30080,
+        "ProcessName": "RzEngineMon",
+        "WorkingSet64": 819200,
+        "PrivateMemorySize64": 1519616
+      },
+      {
+        "Id": 7968,
+        "ProcessName": "SearchFilterHost",
+        "WorkingSet64": 2281472,
+        "PrivateMemorySize64": 2740224
+      },
+      {
+        "Id": 13188,
+        "ProcessName": "SearchFilterHost",
+        "WorkingSet64": 3047424,
+        "PrivateMemorySize64": 2428928
+      },
+      {
+        "Id": 19092,
+        "ProcessName": "SearchFilterHost",
+        "WorkingSet64": 7532544,
+        "PrivateMemorySize64": 2347008
+      },
+      {
+        "Id": 38884,
+        "ProcessName": "SearchFilterHost",
+        "WorkingSet64": 7389184,
+        "PrivateMemorySize64": 2408448
+      },
+      {
+        "Id": 17304,
+        "ProcessName": "SearchHost",
+        "WorkingSet64": 18116608,
+        "PrivateMemorySize64": 82866176
+      },
+      {
+        "Id": 14232,
+        "ProcessName": "SearchIndexer",
+        "WorkingSet64": 25194496,
+        "PrivateMemorySize64": 27844608
+      },
+      {
+        "Id": 27004,
+        "ProcessName": "SearchProtocolHost",
+        "WorkingSet64": 14884864,
+        "PrivateMemorySize64": 4198400
+      },
+      {
+        "Id": 432,
+        "ProcessName": "Secure System",
+        "WorkingSet64": 60755968,
+        "PrivateMemorySize64": 180224
+      },
+      {
+        "Id": 24060,
+        "ProcessName": "SecurityHealthService",
+        "WorkingSet64": 8982528,
+        "PrivateMemorySize64": 13914112
+      },
+      {
+        "Id": 24508,
+        "ProcessName": "SecurityHealthSystray",
+        "WorkingSet64": 3014656,
+        "PrivateMemorySize64": 2052096
+      },
+      {
+        "Id": 2040,
+        "ProcessName": "services",
+        "WorkingSet64": 7708672,
+        "PrivateMemorySize64": 8323072
+      },
+      {
+        "Id": 24140,
+        "ProcessName": "ShellHost",
+        "WorkingSet64": 9908224,
+        "PrivateMemorySize64": 53776384
+      },
+      {
+        "Id": 14768,
+        "ProcessName": "sihost",
+        "WorkingSet64": 18706432,
+        "PrivateMemorySize64": 8167424
+      },
+      {
+        "Id": 1200,
+        "ProcessName": "smss",
+        "WorkingSet64": 40960,
+        "PrivateMemorySize64": 1196032
+      },
+      {
+        "Id": 27788,
+        "ProcessName": "snipaste",
+        "WorkingSet64": 65085440,
+        "PrivateMemorySize64": 127152128
+      },
+      {
+        "Id": 5592,
+        "ProcessName": "spoolsv",
+        "WorkingSet64": 2785280,
+        "PrivateMemorySize64": 8179712
+      },
+      {
+        "Id": 16584,
+        "ProcessName": "StartMenuExperienceHost",
+        "WorkingSet64": 17199104,
+        "PrivateMemorySize64": 118312960
+      },
+      {
+        "Id": 2144,
+        "ProcessName": "svchost",
+        "WorkingSet64": 21364736,
+        "PrivateMemorySize64": 12025856
+      },
+      {
+        "Id": 2308,
+        "ProcessName": "svchost",
+        "WorkingSet64": 14348288,
+        "PrivateMemorySize64": 10698752
+      },
+      {
+        "Id": 2348,
+        "ProcessName": "svchost",
+        "WorkingSet64": 2101248,
+        "PrivateMemorySize64": 1900544
+      },
+      {
+        "Id": 2352,
+        "ProcessName": "svchost",
+        "WorkingSet64": 5496832,
+        "PrivateMemorySize64": 4308992
+      },
+      {
+        "Id": 2512,
+        "ProcessName": "svchost",
+        "WorkingSet64": 806912,
+        "PrivateMemorySize64": 1482752
+      },
+      {
+        "Id": 2544,
+        "ProcessName": "svchost",
+        "WorkingSet64": 18153472,
+        "PrivateMemorySize64": 21643264
+      },
+      {
+        "Id": 2756,
+        "ProcessName": "svchost",
+        "WorkingSet64": 2146304,
+        "PrivateMemorySize64": 2084864
+      },
+      {
+        "Id": 2764,
+        "ProcessName": "svchost",
+        "WorkingSet64": 6074368,
+        "PrivateMemorySize64": 7290880
+      },
+      {
+        "Id": 2772,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3174400,
+        "PrivateMemorySize64": 5136384
+      },
+      {
+        "Id": 2796,
+        "ProcessName": "svchost",
+        "WorkingSet64": 7589888,
+        "PrivateMemorySize64": 4562944
+      },
+      {
+        "Id": 2940,
+        "ProcessName": "svchost",
+        "WorkingSet64": 10031104,
+        "PrivateMemorySize64": 6873088
+      },
+      {
+        "Id": 2948,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3649536,
+        "PrivateMemorySize64": 3862528
+      },
+      {
+        "Id": 2956,
+        "ProcessName": "svchost",
+        "WorkingSet64": 2785280,
+        "PrivateMemorySize64": 2883584
+      },
+      {
+        "Id": 2964,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3629056,
+        "PrivateMemorySize64": 2600960
+      },
+      {
+        "Id": 2984,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3792896,
+        "PrivateMemorySize64": 3362816
+      },
+      {
+        "Id": 2992,
+        "ProcessName": "svchost",
+        "WorkingSet64": 12353536,
+        "PrivateMemorySize64": 7708672
+      },
+      {
+        "Id": 3084,
+        "ProcessName": "svchost",
+        "WorkingSet64": 5926912,
+        "PrivateMemorySize64": 4063232
+      },
+      {
+        "Id": 3112,
+        "ProcessName": "svchost",
+        "WorkingSet64": 6053888,
+        "PrivateMemorySize64": 3112960
+      },
+      {
+        "Id": 3120,
+        "ProcessName": "svchost",
+        "WorkingSet64": 2228224,
+        "PrivateMemorySize64": 3362816
+      },
+      {
+        "Id": 3212,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1363968,
+        "PrivateMemorySize64": 2023424
+      },
+      {
+        "Id": 3316,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1699840,
+        "PrivateMemorySize64": 2252800
+      },
+      {
+        "Id": 3660,
+        "ProcessName": "svchost",
+        "WorkingSet64": 5238784,
+        "PrivateMemorySize64": 2273280
+      },
+      {
+        "Id": 3896,
+        "ProcessName": "svchost",
+        "WorkingSet64": 6041600,
+        "PrivateMemorySize64": 3567616
+      },
+      {
+        "Id": 4100,
+        "ProcessName": "svchost",
+        "WorkingSet64": 6692864,
+        "PrivateMemorySize64": 4706304
+      },
+      {
+        "Id": 4228,
+        "ProcessName": "svchost",
+        "WorkingSet64": 2875392,
+        "PrivateMemorySize64": 2260992
+      },
+      {
+        "Id": 4244,
+        "ProcessName": "svchost",
+        "WorkingSet64": 2891776,
+        "PrivateMemorySize64": 2740224
+      },
+      {
+        "Id": 4332,
+        "ProcessName": "svchost",
+        "WorkingSet64": 4186112,
+        "PrivateMemorySize64": 1712128
+      },
+      {
+        "Id": 4356,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1449984,
+        "PrivateMemorySize64": 2486272
+      },
+      {
+        "Id": 4448,
+        "ProcessName": "svchost",
+        "WorkingSet64": 21753856,
+        "PrivateMemorySize64": 22556672
+      },
+      {
+        "Id": 4680,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1437696,
+        "PrivateMemorySize64": 1794048
+      },
+      {
+        "Id": 4744,
+        "ProcessName": "svchost",
+        "WorkingSet64": 9789440,
+        "PrivateMemorySize64": 17297408
+      },
+      {
+        "Id": 4840,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1449984,
+        "PrivateMemorySize64": 2179072
+      },
+      {
+        "Id": 4848,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1490944,
+        "PrivateMemorySize64": 1581056
+      },
+      {
+        "Id": 4856,
+        "ProcessName": "svchost",
+        "WorkingSet64": 7237632,
+        "PrivateMemorySize64": 3371008
+      },
+      {
+        "Id": 5040,
+        "ProcessName": "svchost",
+        "WorkingSet64": 917504,
+        "PrivateMemorySize64": 2166784
+      },
+      {
+        "Id": 5064,
+        "ProcessName": "svchost",
+        "WorkingSet64": 14229504,
+        "PrivateMemorySize64": 5713920
+      },
+      {
+        "Id": 5152,
+        "ProcessName": "svchost",
+        "WorkingSet64": 11165696,
+        "PrivateMemorySize64": 5222400
+      },
+      {
+        "Id": 5196,
+        "ProcessName": "svchost",
+        "WorkingSet64": 2289664,
+        "PrivateMemorySize64": 2097152
+      },
+      {
+        "Id": 5284,
+        "ProcessName": "svchost",
+        "WorkingSet64": 8536064,
+        "PrivateMemorySize64": 2605056
+      },
+      {
+        "Id": 5340,
+        "ProcessName": "svchost",
+        "WorkingSet64": 8679424,
+        "PrivateMemorySize64": 7462912
+      },
+      {
+        "Id": 5388,
+        "ProcessName": "svchost",
+        "WorkingSet64": 2244608,
+        "PrivateMemorySize64": 3538944
+      },
+      {
+        "Id": 5792,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3063808,
+        "PrivateMemorySize64": 2686976
+      },
+      {
+        "Id": 5960,
+        "ProcessName": "svchost",
+        "WorkingSet64": 17784832,
+        "PrivateMemorySize64": 14229504
+      },
+      {
+        "Id": 6224,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1998848,
+        "PrivateMemorySize64": 1703936
+      },
+      {
+        "Id": 6604,
+        "ProcessName": "svchost",
+        "WorkingSet64": 4640768,
+        "PrivateMemorySize64": 2732032
+      },
+      {
+        "Id": 7084,
+        "ProcessName": "svchost",
+        "WorkingSet64": 25133056,
+        "PrivateMemorySize64": 28962816
+      },
+      {
+        "Id": 7108,
+        "ProcessName": "svchost",
+        "WorkingSet64": 19111936,
+        "PrivateMemorySize64": 29761536
+      },
+      {
+        "Id": 7132,
+        "ProcessName": "svchost",
+        "WorkingSet64": 4349952,
+        "PrivateMemorySize64": 3760128
+      },
+      {
+        "Id": 7200,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1040384,
+        "PrivateMemorySize64": 1466368
+      },
+      {
+        "Id": 7216,
+        "ProcessName": "svchost",
+        "WorkingSet64": 7159808,
+        "PrivateMemorySize64": 5148672
+      },
+      {
+        "Id": 7492,
+        "ProcessName": "svchost",
+        "WorkingSet64": 5517312,
+        "PrivateMemorySize64": 3534848
+      },
+      {
+        "Id": 9480,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1490944,
+        "PrivateMemorySize64": 2232320
+      },
+      {
+        "Id": 10088,
+        "ProcessName": "svchost",
+        "WorkingSet64": 4472832,
+        "PrivateMemorySize64": 2691072
+      },
+      {
+        "Id": 10148,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3244032,
+        "PrivateMemorySize64": 3772416
+      },
+      {
+        "Id": 11220,
+        "ProcessName": "svchost",
+        "WorkingSet64": 2383872,
+        "PrivateMemorySize64": 2748416
+      },
+      {
+        "Id": 11448,
+        "ProcessName": "svchost",
+        "WorkingSet64": 8228864,
+        "PrivateMemorySize64": 12722176
+      },
+      {
+        "Id": 11476,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3538944,
+        "PrivateMemorySize64": 2183168
+      },
+      {
+        "Id": 11752,
+        "ProcessName": "svchost",
+        "WorkingSet64": 4567040,
+        "PrivateMemorySize64": 4583424
+      },
+      {
+        "Id": 11760,
+        "ProcessName": "svchost",
+        "WorkingSet64": 10674176,
+        "PrivateMemorySize64": 6582272
+      },
+      {
+        "Id": 11768,
+        "ProcessName": "svchost",
+        "WorkingSet64": 6979584,
+        "PrivateMemorySize64": 10465280
+      },
+      {
+        "Id": 12068,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1503232,
+        "PrivateMemorySize64": 1888256
+      },
+      {
+        "Id": 12792,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1331200,
+        "PrivateMemorySize64": 1622016
+      },
+      {
+        "Id": 13296,
+        "ProcessName": "svchost",
+        "WorkingSet64": 5238784,
+        "PrivateMemorySize64": 2019328
+      },
+      {
+        "Id": 13328,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1331200,
+        "PrivateMemorySize64": 1794048
+      },
+      {
+        "Id": 13404,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1601536,
+        "PrivateMemorySize64": 2560000
+      },
+      {
+        "Id": 13780,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3031040,
+        "PrivateMemorySize64": 2277376
+      },
+      {
+        "Id": 13960,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1769472,
+        "PrivateMemorySize64": 2752512
+      },
+      {
+        "Id": 14364,
+        "ProcessName": "svchost",
+        "WorkingSet64": 11390976,
+        "PrivateMemorySize64": 6361088
+      },
+      {
+        "Id": 14368,
+        "ProcessName": "svchost",
+        "WorkingSet64": 7892992,
+        "PrivateMemorySize64": 11649024
+      },
+      {
+        "Id": 14388,
+        "ProcessName": "svchost",
+        "WorkingSet64": 7888896,
+        "PrivateMemorySize64": 2863104
+      },
+      {
+        "Id": 14440,
+        "ProcessName": "svchost",
+        "WorkingSet64": 18108416,
+        "PrivateMemorySize64": 4210688
+      },
+      {
+        "Id": 14856,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1417216,
+        "PrivateMemorySize64": 2256896
+      },
+      {
+        "Id": 14864,
+        "ProcessName": "svchost",
+        "WorkingSet64": 11702272,
+        "PrivateMemorySize64": 10420224
+      },
+      {
+        "Id": 15612,
+        "ProcessName": "svchost",
+        "WorkingSet64": 12967936,
+        "PrivateMemorySize64": 7614464
+      },
+      {
+        "Id": 16764,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1822720,
+        "PrivateMemorySize64": 1908736
+      },
+      {
+        "Id": 17188,
+        "ProcessName": "svchost",
+        "WorkingSet64": 6246400,
+        "PrivateMemorySize64": 2772992
+      },
+      {
+        "Id": 17296,
+        "ProcessName": "svchost",
+        "WorkingSet64": 6713344,
+        "PrivateMemorySize64": 10100736
+      },
+      {
+        "Id": 18144,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3235840,
+        "PrivateMemorySize64": 3010560
+      },
+      {
+        "Id": 18892,
+        "ProcessName": "svchost",
+        "WorkingSet64": 6197248,
+        "PrivateMemorySize64": 4976640
+      },
+      {
+        "Id": 19116,
+        "ProcessName": "svchost",
+        "WorkingSet64": 5746688,
+        "PrivateMemorySize64": 3989504
+      },
+      {
+        "Id": 19940,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3833856,
+        "PrivateMemorySize64": 2531328
+      },
+      {
+        "Id": 21212,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3878912,
+        "PrivateMemorySize64": 1998848
+      },
+      {
+        "Id": 22676,
+        "ProcessName": "svchost",
+        "WorkingSet64": 3596288,
+        "PrivateMemorySize64": 2396160
+      },
+      {
+        "Id": 25576,
+        "ProcessName": "svchost",
+        "WorkingSet64": 1687552,
+        "PrivateMemorySize64": 1449984
+      },
+      {
+        "Id": 25856,
+        "ProcessName": "svchost",
+        "WorkingSet64": 2408448,
+        "PrivateMemorySize64": 3276800
+      },
+      {
+        "Id": 28340,
+        "ProcessName": "svchost",
+        "WorkingSet64": 8130560,
+        "PrivateMemorySize64": 12099584
+      },
+      {
+        "Id": 30504,
+        "ProcessName": "svchost",
+        "WorkingSet64": 10334208,
+        "PrivateMemorySize64": 4075520
+      },
+      {
+        "Id": 31520,
+        "ProcessName": "svchost",
+        "WorkingSet64": 13611008,
+        "PrivateMemorySize64": 9216000
+      },
+      {
+        "Id": 31592,
+        "ProcessName": "svchost",
+        "WorkingSet64": 11190272,
+        "PrivateMemorySize64": 15474688
+      },
+      {
+        "Id": 33852,
+        "ProcessName": "svchost",
+        "WorkingSet64": 4481024,
+        "PrivateMemorySize64": 3686400
+      },
+      {
+        "Id": 41204,
+        "ProcessName": "svchost",
+        "WorkingSet64": 11497472,
+        "PrivateMemorySize64": 19398656
+      },
+      {
+        "Id": 4,
+        "ProcessName": "System",
+        "WorkingSet64": 3907584,
+        "PrivateMemorySize64": 110592
+      },
+      {
+        "Id": 16648,
+        "ProcessName": "taskhostw",
+        "WorkingSet64": 6684672,
+        "PrivateMemorySize64": 7131136
+      },
+      {
+        "Id": 41300,
+        "ProcessName": "taskhostw",
+        "WorkingSet64": 7147520,
+        "PrivateMemorySize64": 4079616
+      },
+      {
+        "Id": 7224,
+        "ProcessName": "TbtP2pShortcutService",
+        "WorkingSet64": 634880,
+        "PrivateMemorySize64": 1609728
+      },
+      {
+        "Id": 21208,
+        "ProcessName": "TextInputHost",
+        "WorkingSet64": 16834560,
+        "PrivateMemorySize64": 71106560
+      },
+      {
+        "Id": 7180,
+        "ProcessName": "ThunderboltService",
+        "WorkingSet64": 1683456,
+        "PrivateMemorySize64": 19120128
+      },
+      {
+        "Id": 33444,
+        "ProcessName": "TranslucentTB",
+        "WorkingSet64": 7524352,
+        "PrivateMemorySize64": 62111744
+      },
+      {
+        "Id": 13660,
+        "ProcessName": "unsecapp",
+        "WorkingSet64": 2428928,
+        "PrivateMemorySize64": 1662976
+      },
+      {
+        "Id": 9752,
+        "ProcessName": "vmcompute",
+        "WorkingSet64": 9265152,
+        "PrivateMemorySize64": 3104768
+      },
+      {
+        "Id": 25756,
+        "ProcessName": "vmmemWSL",
+        "WorkingSet64": 5394313216,
+        "PrivateMemorySize64": 13552160768
+      },
+      {
+        "Id": 27128,
+        "ProcessName": "vmwp",
+        "WorkingSet64": 11059200,
+        "PrivateMemorySize64": 31096832
+      },
+      {
+        "Id": 30408,
+        "ProcessName": "wallpaper32",
+        "WorkingSet64": 74907648,
+        "PrivateMemorySize64": 152121344
+      },
+      {
+        "Id": 17432,
+        "ProcessName": "WidgetBoard",
+        "WorkingSet64": 6631424,
+        "PrivateMemorySize64": 5066752
+      },
+      {
+        "Id": 31376,
+        "ProcessName": "WidgetService",
+        "WorkingSet64": 5922816,
+        "PrivateMemorySize64": 5357568
+      },
+      {
+        "Id": 9160,
+        "ProcessName": "WindowsTerminal",
+        "WorkingSet64": 16408576,
+        "PrivateMemorySize64": 78422016
+      },
+      {
+        "Id": 1956,
+        "ProcessName": "wininit",
+        "WorkingSet64": 966656,
+        "PrivateMemorySize64": 1773568
+      },
+      {
+        "Id": 1468,
+        "ProcessName": "winlogon",
+        "WorkingSet64": 1388544,
+        "PrivateMemorySize64": 2650112
+      },
+      {
+        "Id": 11904,
+        "ProcessName": "wlanext",
+        "WorkingSet64": 3461120,
+        "PrivateMemorySize64": 3121152
+      },
+      {
+        "Id": 6492,
+        "ProcessName": "WmiPrvSE",
+        "WorkingSet64": 29216768,
+        "PrivateMemorySize64": 25964544
+      },
+      {
+        "Id": 7636,
+        "ProcessName": "WmiPrvSE",
+        "WorkingSet64": 20279296,
+        "PrivateMemorySize64": 13717504
+      },
+      {
+        "Id": 7252,
+        "ProcessName": "WMIRegistrationService",
+        "WorkingSet64": 2596864,
+        "PrivateMemorySize64": 3239936
+      },
+      {
+        "Id": 31572,
+        "ProcessName": "wps",
+        "WorkingSet64": 37695488,
+        "PrivateMemorySize64": 68247552
+      },
+      {
+        "Id": 35876,
+        "ProcessName": "wsctrlsvc",
+        "WorkingSet64": 1650688,
+        "PrivateMemorySize64": 1736704
+      },
+      {
+        "Id": 37660,
+        "ProcessName": "wsl",
+        "WorkingSet64": 7991296,
+        "PrivateMemorySize64": 1392640
+      },
+      {
+        "Id": 39920,
+        "ProcessName": "wsl",
+        "WorkingSet64": 13185024,
+        "PrivateMemorySize64": 2584576
+      },
+      {
+        "Id": 37780,
+        "ProcessName": "wslhost",
+        "WorkingSet64": 11747328,
+        "PrivateMemorySize64": 1982464
+      },
+      {
+        "Id": 38004,
+        "ProcessName": "wslhost",
+        "WorkingSet64": 12140544,
+        "PrivateMemorySize64": 2109440
+      },
+      {
+        "Id": 7456,
+        "ProcessName": "wslrelay",
+        "WorkingSet64": 5918720,
+        "PrivateMemorySize64": 1912832
+      },
+      {
+        "Id": 7244,
+        "ProcessName": "wslservice",
+        "WorkingSet64": 15405056,
+        "PrivateMemorySize64": 8433664
+      },
+      {
+        "Id": 7516,
+        "ProcessName": "WsxService",
+        "WorkingSet64": 4313088,
+        "PrivateMemorySize64": 2711552
+      },
+      {
+        "Id": 2252,
+        "ProcessName": "WUDFHost",
+        "WorkingSet64": 1642496,
+        "PrivateMemorySize64": 5222400
+      },
+      {
+        "Id": 3236,
+        "ProcessName": "WUDFHost",
+        "WorkingSet64": 5070848,
+        "PrivateMemorySize64": 8503296
+      },
+      {
+        "Id": 12120,
+        "ProcessName": "WUDFHost",
+        "WorkingSet64": 5574656,
+        "PrivateMemorySize64": 4530176
+      },
+      {
+        "Id": 12688,
+        "ProcessName": "WUDFHost",
+        "WorkingSet64": 794624,
+        "PrivateMemorySize64": 2727936
+      }
+    ]
+  }
+}

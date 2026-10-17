@@ -1,0 +1,155 @@
+{
+  "requests": 384,
+  "native_requests": 192,
+  "checks": [
+    {
+      "variant": "off-r0",
+      "requests": 64,
+      "episodes": 8,
+      "oom": false
+    },
+    {
+      "variant": "on-r0",
+      "requests": 64,
+      "episodes": 8,
+      "oom": false
+    },
+    {
+      "variant": "off-r1",
+      "requests": 64,
+      "episodes": 8,
+      "oom": false
+    },
+    {
+      "variant": "on-r1",
+      "requests": 64,
+      "episodes": 8,
+      "oom": false
+    },
+    {
+      "variant": "off-r2",
+      "requests": 64,
+      "episodes": 8,
+      "oom": false
+    },
+    {
+      "variant": "on-r2",
+      "requests": 64,
+      "episodes": 8,
+      "oom": false
+    }
+  ],
+  "recomputed_comparison": {
+    "mean_ttft_ms": {
+      "paired_ratios": [
+        1.1208057034253098,
+        1.0393637451122628,
+        1.0205482090105573
+      ],
+      "paired_overhead_percent": [
+        12.080570342530983,
+        3.9363745112262816,
+        2.0548209010557317
+      ],
+      "median_overhead_percent": 3.9363745112262816
+    },
+    "mean_tpot_ms": {
+      "paired_ratios": [
+        1.1009309953361661,
+        1.0153808652761442,
+        1.0213727988422445
+      ],
+      "paired_overhead_percent": [
+        10.093099533616613,
+        1.538086527614424,
+        2.1372798842244523
+      ],
+      "median_overhead_percent": 2.1372798842244523
+    },
+    "mean_e2e_ms": {
+      "paired_ratios": [
+        1.1067046621665584,
+        1.0223033090637366,
+        1.0211388148828924
+      ],
+      "paired_overhead_percent": [
+        10.67046621665584,
+        2.2303309063736565,
+        2.1138814882892376
+      ],
+      "median_overhead_percent": 2.2303309063736565
+    },
+    "requests_per_s": {
+      "paired_ratios": [
+        0.9147477138634564,
+        0.9863637258634222,
+        0.9787847858783226
+      ],
+      "paired_overhead_percent": [
+        8.525228613654356,
+        1.3636274136577753,
+        2.1215214121677373
+      ],
+      "median_overhead_percent": 2.1215214121677373
+    },
+    "output_tokens_per_s": {
+      "paired_ratios": [
+        0.9147477138634564,
+        0.9863637258634222,
+        0.9787847858783226
+      ],
+      "paired_overhead_percent": [
+        8.525228613654356,
+        1.3636274136577753,
+        2.1215214121677373
+      ],
+      "median_overhead_percent": 2.1215214121677373
+    }
+  },
+  "resources": [
+    {
+      "variant": "off-r0",
+      "gpu_before_mib": 3655.0,
+      "gpu_after_mib": 3846.0,
+      "gpu_observed_max_mib": 7549.0,
+      "host_free_virtual_after_kib": 5000236
+    },
+    {
+      "variant": "off-r1",
+      "gpu_before_mib": 3926.0,
+      "gpu_after_mib": 3732.0,
+      "gpu_observed_max_mib": 7464.0,
+      "host_free_virtual_after_kib": 6640064
+    },
+    {
+      "variant": "off-r2",
+      "gpu_before_mib": 3732.0,
+      "gpu_after_mib": 3746.0,
+      "gpu_observed_max_mib": 7478.0,
+      "host_free_virtual_after_kib": 4997204
+    },
+    {
+      "variant": "on-r0",
+      "gpu_before_mib": 3846.0,
+      "gpu_after_mib": 3855.0,
+      "gpu_observed_max_mib": 7588.0,
+      "host_free_virtual_after_kib": 5847008
+    },
+    {
+      "variant": "on-r1",
+      "gpu_before_mib": 3855.0,
+      "gpu_after_mib": 3926.0,
+      "gpu_observed_max_mib": 7652.0,
+      "host_free_virtual_after_kib": 5727664
+    },
+    {
+      "variant": "on-r2",
+      "gpu_before_mib": 3746.0,
+      "gpu_after_mib": 3596.0,
+      "gpu_observed_max_mib": 7319.0,
+      "host_free_virtual_after_kib": 4989616
+    }
+  ],
+  "core_unchanged": true,
+  "limitation": "Periodic resource snapshots cannot exclude unobserved transient contention; no full response text/SSE archive; three pairs do not establish equivalence confidence interval."
+}

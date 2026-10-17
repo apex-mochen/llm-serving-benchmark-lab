@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+.web-venv/
+.report-deps/
+.mplconfig/
+config.local.json
+.env
+.env.*
+!.env.example
+.benchmark.lock
+*.pem
+*.key

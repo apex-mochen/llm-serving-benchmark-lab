@@ -1,0 +1,746 @@
+[
+  {
+    "request": "session-0-0",
+    "session": "session-0",
+    "event": "start",
+    "at_s": 0.00035710599877347704
+  },
+  {
+    "request": "session-1-0",
+    "session": "session-1",
+    "event": "start",
+    "at_s": 0.250355607999154
+  },
+  {
+    "request": "session-2-0",
+    "session": "session-2",
+    "event": "start",
+    "at_s": 0.5000410299999203
+  },
+  {
+    "request": "session-3-0",
+    "session": "session-3",
+    "event": "start",
+    "at_s": 0.7509300929996243
+  },
+  {
+    "request": "session-4-0",
+    "session": "session-4",
+    "event": "start",
+    "at_s": 1.0007171829984145
+  },
+  {
+    "request": "session-5-0",
+    "session": "session-5",
+    "event": "start",
+    "at_s": 1.250083700999312
+  },
+  {
+    "request": "session-0-0",
+    "session": "session-0",
+    "event": "finish",
+    "at_s": 1.3305610049992538
+  },
+  {
+    "request": "session-0-0",
+    "session": "session-0",
+    "event": "pause",
+    "at_s": 1.3305610049992538,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-6-0",
+    "session": "session-6",
+    "event": "start",
+    "at_s": 1.5006336099995679
+  },
+  {
+    "request": "session-1-0",
+    "session": "session-1",
+    "event": "finish",
+    "at_s": 1.5935382169991499
+  },
+  {
+    "request": "session-1-0",
+    "session": "session-1",
+    "event": "pause",
+    "at_s": 1.5935382169991499,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-7-0",
+    "session": "session-7",
+    "event": "start",
+    "at_s": 1.7504099489997316
+  },
+  {
+    "request": "session-2-0",
+    "session": "session-2",
+    "event": "finish",
+    "at_s": 1.78020594499867
+  },
+  {
+    "request": "session-2-0",
+    "session": "session-2",
+    "event": "pause",
+    "at_s": 1.78020594499867,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-1-1",
+    "session": "session-1",
+    "event": "resume",
+    "at_s": 1.843953113999305
+  },
+  {
+    "request": "session-8-0",
+    "session": "session-8",
+    "event": "start",
+    "at_s": 2.0009799499985093
+  },
+  {
+    "request": "session-0-1",
+    "session": "session-0",
+    "event": "resume",
+    "at_s": 2.0805675229985354
+  },
+  {
+    "request": "session-3-0",
+    "session": "session-3",
+    "event": "finish",
+    "at_s": 2.109337156998663
+  },
+  {
+    "request": "session-3-0",
+    "session": "session-3",
+    "event": "pause",
+    "at_s": 2.109337156998663,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-9-0",
+    "session": "session-9",
+    "event": "start",
+    "at_s": 2.2509192239995173
+  },
+  {
+    "request": "session-3-1",
+    "session": "session-3",
+    "event": "resume",
+    "at_s": 2.3598852879986225
+  },
+  {
+    "request": "session-4-0",
+    "session": "session-4",
+    "event": "finish",
+    "at_s": 2.3704375399993296
+  },
+  {
+    "request": "session-4-0",
+    "session": "session-4",
+    "event": "pause",
+    "at_s": 2.3704375399993296,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-10-0",
+    "session": "session-10",
+    "event": "start",
+    "at_s": 2.500867812999786
+  },
+  {
+    "request": "session-2-1",
+    "session": "session-2",
+    "event": "resume",
+    "at_s": 2.5302072419999604
+  },
+  {
+    "request": "session-5-0",
+    "session": "session-5",
+    "event": "finish",
+    "at_s": 2.658124544999737
+  },
+  {
+    "request": "session-5-0",
+    "session": "session-5",
+    "event": "pause",
+    "at_s": 2.658124544999737,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-11-0",
+    "session": "session-11",
+    "event": "start",
+    "at_s": 2.7502327599995624
+  },
+  {
+    "request": "session-5-1",
+    "session": "session-5",
+    "event": "resume",
+    "at_s": 2.9083567109992146
+  },
+  {
+    "request": "session-6-0",
+    "session": "session-6",
+    "event": "finish",
+    "at_s": 2.9137375829996017
+  },
+  {
+    "request": "session-6-0",
+    "session": "session-6",
+    "event": "pause",
+    "at_s": 2.9137375829996017,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-12-0",
+    "session": "session-12",
+    "event": "start",
+    "at_s": 3.000744057999327
+  },
+  {
+    "request": "session-4-1",
+    "session": "session-4",
+    "event": "resume",
+    "at_s": 3.1204501509982947
+  },
+  {
+    "request": "session-7-0",
+    "session": "session-7",
+    "event": "finish",
+    "at_s": 3.210681026999737
+  },
+  {
+    "request": "session-7-0",
+    "session": "session-7",
+    "event": "pause",
+    "at_s": 3.210681026999737,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-13-0",
+    "session": "session-13",
+    "event": "start",
+    "at_s": 3.2504330149986345
+  },
+  {
+    "request": "session-1-1",
+    "session": "session-1",
+    "event": "finish",
+    "at_s": 3.2737748859999556
+  },
+  {
+    "request": "session-8-0",
+    "session": "session-8",
+    "event": "finish",
+    "at_s": 3.3983927089993813
+  },
+  {
+    "request": "session-8-0",
+    "session": "session-8",
+    "event": "pause",
+    "at_s": 3.3983927089993813,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-0-1",
+    "session": "session-0",
+    "event": "finish",
+    "at_s": 3.4440750469984778
+  },
+  {
+    "request": "session-7-1",
+    "session": "session-7",
+    "event": "resume",
+    "at_s": 3.461181625998506
+  },
+  {
+    "request": "session-14-0",
+    "session": "session-14",
+    "event": "start",
+    "at_s": 3.5007629909996467
+  },
+  {
+    "request": "session-9-0",
+    "session": "session-9",
+    "event": "finish",
+    "at_s": 3.6276375369998277
+  },
+  {
+    "request": "session-9-0",
+    "session": "session-9",
+    "event": "pause",
+    "at_s": 3.6276375369998277,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-6-1",
+    "session": "session-6",
+    "event": "resume",
+    "at_s": 3.664148590998593
+  },
+  {
+    "request": "session-3-1",
+    "session": "session-3",
+    "event": "finish",
+    "at_s": 3.7482954319984856
+  },
+  {
+    "request": "session-15-0",
+    "session": "session-15",
+    "event": "start",
+    "at_s": 3.750399146998461
+  },
+  {
+    "request": "session-9-1",
+    "session": "session-9",
+    "event": "resume",
+    "at_s": 3.877638408999701
+  },
+  {
+    "request": "session-10-0",
+    "session": "session-10",
+    "event": "finish",
+    "at_s": 3.9031556679983623
+  },
+  {
+    "request": "session-10-0",
+    "session": "session-10",
+    "event": "pause",
+    "at_s": 3.9031556679983623,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-2-1",
+    "session": "session-2",
+    "event": "finish",
+    "at_s": 3.969300906999706
+  },
+  {
+    "request": "session-16-0",
+    "session": "session-16",
+    "event": "start",
+    "at_s": 4.000420114000008
+  },
+  {
+    "request": "session-8-1",
+    "session": "session-8",
+    "event": "resume",
+    "at_s": 4.148405470999933
+  },
+  {
+    "request": "session-11-0",
+    "session": "session-11",
+    "event": "finish",
+    "at_s": 4.171417001000009
+  },
+  {
+    "request": "session-11-0",
+    "session": "session-11",
+    "event": "pause",
+    "at_s": 4.171417001000009,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-17-0",
+    "session": "session-17",
+    "event": "start",
+    "at_s": 4.250895385999684
+  },
+  {
+    "request": "session-5-1",
+    "session": "session-5",
+    "event": "finish",
+    "at_s": 4.363205746998574
+  },
+  {
+    "request": "session-12-0",
+    "session": "session-12",
+    "event": "finish",
+    "at_s": 4.4156759479992616
+  },
+  {
+    "request": "session-12-0",
+    "session": "session-12",
+    "event": "pause",
+    "at_s": 4.4156759479992616,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-11-1",
+    "session": "session-11",
+    "event": "resume",
+    "at_s": 4.42141758499929
+  },
+  {
+    "request": "session-18-0",
+    "session": "session-18",
+    "event": "start",
+    "at_s": 4.5011579359997995
+  },
+  {
+    "request": "session-4-1",
+    "session": "session-4",
+    "event": "finish",
+    "at_s": 4.588583011998708
+  },
+  {
+    "request": "session-10-1",
+    "session": "session-10",
+    "event": "resume",
+    "at_s": 4.653439829999115
+  },
+  {
+    "request": "session-13-0",
+    "session": "session-13",
+    "event": "finish",
+    "at_s": 4.680725772999722
+  },
+  {
+    "request": "session-13-0",
+    "session": "session-13",
+    "event": "pause",
+    "at_s": 4.680725772999722,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-19-0",
+    "session": "session-19",
+    "event": "start",
+    "at_s": 4.750578002998736
+  },
+  {
+    "request": "session-13-1",
+    "session": "session-13",
+    "event": "resume",
+    "at_s": 4.930726084998241
+  },
+  {
+    "request": "session-7-1",
+    "session": "session-7",
+    "event": "finish",
+    "at_s": 4.9405225239988795
+  },
+  {
+    "request": "session-20-0",
+    "session": "session-20",
+    "event": "start",
+    "at_s": 5.000194175998331
+  },
+  {
+    "request": "session-14-0",
+    "session": "session-14",
+    "event": "finish",
+    "at_s": 5.007027522999124
+  },
+  {
+    "request": "session-14-0",
+    "session": "session-14",
+    "event": "pause",
+    "at_s": 5.007027522999124,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-6-1",
+    "session": "session-6",
+    "event": "finish",
+    "at_s": 5.146772960999442
+  },
+  {
+    "request": "session-12-1",
+    "session": "session-12",
+    "event": "resume",
+    "at_s": 5.165677593999135
+  },
+  {
+    "request": "session-15-0",
+    "session": "session-15",
+    "event": "finish",
+    "at_s": 5.19024228499984
+  },
+  {
+    "request": "session-15-0",
+    "session": "session-15",
+    "event": "pause",
+    "at_s": 5.19024228499984,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-21-0",
+    "session": "session-21",
+    "event": "start",
+    "at_s": 5.250274019999779
+  },
+  {
+    "request": "session-9-1",
+    "session": "session-9",
+    "event": "finish",
+    "at_s": 5.34889323599964
+  },
+  {
+    "request": "session-16-0",
+    "session": "session-16",
+    "event": "finish",
+    "at_s": 5.432389155999772
+  },
+  {
+    "request": "session-16-0",
+    "session": "session-16",
+    "event": "pause",
+    "at_s": 5.432389155999772,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-15-1",
+    "session": "session-15",
+    "event": "resume",
+    "at_s": 5.440644661999613
+  },
+  {
+    "request": "session-22-0",
+    "session": "session-22",
+    "event": "start",
+    "at_s": 5.500091137999334
+  },
+  {
+    "request": "session-8-1",
+    "session": "session-8",
+    "event": "finish",
+    "at_s": 5.61500994799826
+  },
+  {
+    "request": "session-17-0",
+    "session": "session-17",
+    "event": "finish",
+    "at_s": 5.680508892999569
+  },
+  {
+    "request": "session-17-0",
+    "session": "session-17",
+    "event": "pause",
+    "at_s": 5.680508892999569,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-23-0",
+    "session": "session-23",
+    "event": "start",
+    "at_s": 5.750482776998979
+  },
+  {
+    "request": "session-14-1",
+    "session": "session-14",
+    "event": "resume",
+    "at_s": 5.757912582999779
+  },
+  {
+    "request": "session-11-1",
+    "session": "session-11",
+    "event": "finish",
+    "at_s": 5.879637454998374
+  },
+  {
+    "request": "session-18-0",
+    "session": "session-18",
+    "event": "finish",
+    "at_s": 5.928277964998415
+  },
+  {
+    "request": "session-18-0",
+    "session": "session-18",
+    "event": "pause",
+    "at_s": 5.928277964998415,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-17-1",
+    "session": "session-17",
+    "event": "resume",
+    "at_s": 5.930517378999866
+  },
+  {
+    "request": "session-10-1",
+    "session": "session-10",
+    "event": "finish",
+    "at_s": 6.071054162999644
+  },
+  {
+    "request": "session-19-0",
+    "session": "session-19",
+    "event": "finish",
+    "at_s": 6.13524385799974
+  },
+  {
+    "request": "session-19-0",
+    "session": "session-19",
+    "event": "pause",
+    "at_s": 6.13524385799974,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-16-1",
+    "session": "session-16",
+    "event": "resume",
+    "at_s": 6.182692015998327
+  },
+  {
+    "request": "session-13-1",
+    "session": "session-13",
+    "event": "finish",
+    "at_s": 6.310246887998801
+  },
+  {
+    "request": "session-20-0",
+    "session": "session-20",
+    "event": "finish",
+    "at_s": 6.358215729998847
+  },
+  {
+    "request": "session-20-0",
+    "session": "session-20",
+    "event": "pause",
+    "at_s": 6.358215729998847,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-19-1",
+    "session": "session-19",
+    "event": "resume",
+    "at_s": 6.385439249999763
+  },
+  {
+    "request": "session-12-1",
+    "session": "session-12",
+    "event": "finish",
+    "at_s": 6.516757063998739
+  },
+  {
+    "request": "session-21-0",
+    "session": "session-21",
+    "event": "finish",
+    "at_s": 6.567001795998294
+  },
+  {
+    "request": "session-21-0",
+    "session": "session-21",
+    "event": "pause",
+    "at_s": 6.567001795998294,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-18-1",
+    "session": "session-18",
+    "event": "resume",
+    "at_s": 6.678430863999893
+  },
+  {
+    "request": "session-15-1",
+    "session": "session-15",
+    "event": "finish",
+    "at_s": 6.7465543809994415
+  },
+  {
+    "request": "session-22-0",
+    "session": "session-22",
+    "event": "finish",
+    "at_s": 6.7740471359993535
+  },
+  {
+    "request": "session-22-0",
+    "session": "session-22",
+    "event": "pause",
+    "at_s": 6.7740471359993535,
+    "duration_s": 0.75
+  },
+  {
+    "request": "session-21-1",
+    "session": "session-21",
+    "event": "resume",
+    "at_s": 6.817133840999304
+  },
+  {
+    "request": "session-23-0",
+    "session": "session-23",
+    "event": "finish",
+    "at_s": 7.001484625998273
+  },
+  {
+    "request": "session-23-0",
+    "session": "session-23",
+    "event": "pause",
+    "at_s": 7.001484625998273,
+    "duration_s": 0.25
+  },
+  {
+    "request": "session-14-1",
+    "session": "session-14",
+    "event": "finish",
+    "at_s": 7.0177159259983455
+  },
+  {
+    "request": "session-17-1",
+    "session": "session-17",
+    "event": "finish",
+    "at_s": 7.107536350998998
+  },
+  {
+    "request": "session-20-1",
+    "session": "session-20",
+    "event": "resume",
+    "at_s": 7.108667977998266
+  },
+  {
+    "request": "session-23-1",
+    "session": "session-23",
+    "event": "resume",
+    "at_s": 7.251650160998906
+  },
+  {
+    "request": "session-16-1",
+    "session": "session-16",
+    "event": "finish",
+    "at_s": 7.370988626998951
+  },
+  {
+    "request": "session-22-1",
+    "session": "session-22",
+    "event": "resume",
+    "at_s": 7.524186431999624
+  },
+  {
+    "request": "session-19-1",
+    "session": "session-19",
+    "event": "finish",
+    "at_s": 7.544882175998282
+  },
+  {
+    "request": "session-18-1",
+    "session": "session-18",
+    "event": "finish",
+    "at_s": 7.843008782998368
+  },
+  {
+    "request": "session-21-1",
+    "session": "session-21",
+    "event": "finish",
+    "at_s": 7.965245594999942
+  },
+  {
+    "request": "session-20-1",
+    "session": "session-20",
+    "event": "finish",
+    "at_s": 8.213316408999162
+  },
+  {
+    "request": "session-23-1",
+    "session": "session-23",
+    "event": "finish",
+    "at_s": 8.331957612999759
+  },
+  {
+    "request": "session-22-1",
+    "session": "session-22",
+    "event": "finish",
+    "at_s": 8.569333056999312
+  }
+]

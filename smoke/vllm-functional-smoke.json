@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "engine": "vllm",
+  "wheel_version": "0.30.0",
+  "engine_commit": "ced6857afa0ea7b2e3f0846a62e1394e90f15607",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "command": [
+    "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+    "--served-model-name",
+    "benchmark-model",
+    "--port",
+    "8019",
+    "--dtype",
+    "float16",
+    "--max-model-len",
+    "2048",
+    "--gpu-memory-utilization",
+    "0.45",
+    "--no-enable-prefix-caching",
+    "--enforce-eager"
+  ],
+  "environment_overrides": {
+    "VLLM_USE_FLASHINFER_SAMPLER": "0",
+    "CUDA_VISIBLE_DEVICES": "0"
+  },
+  "usage": {
+    "prompt_tokens": 1024,
+    "total_tokens": 1280,
+    "completion_tokens": 256
+  },
+  "ttft_s": 0.21793072799982838,
+  "elapsed_s": 6.181390155999907,
+  "limitation": "single-request functional smoke, not an engine comparison or performance result"
+}

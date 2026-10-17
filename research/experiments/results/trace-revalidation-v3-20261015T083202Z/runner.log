@@ -1,0 +1,3 @@
+BEGIN 2026-10-15T08:32:02.618957+00:00 ['research/experiments/run_trace_revalidation_v3.py', '--preflight-only']
+PREFLIGHT PASS; no model started
+END HOLD

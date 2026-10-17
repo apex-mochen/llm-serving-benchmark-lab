@@ -1,0 +1,7 @@
+usage: lab.py [-h] {run,report} ...
+
+positional arguments:
+  {run,report}
+
+options:
+  -h, --help    show this help message and exit

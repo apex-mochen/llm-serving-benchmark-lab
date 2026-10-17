@@ -1,0 +1,380 @@
+{
+  "generated_utc": "2026-10-12T15:06:48.797424+00:00",
+  "run": "/home/dcl/projects/llm-serving-benchmark-lab/research/experiments/results/phase2-20261012T145433Z",
+  "statuses": {
+    "metadata-preflight": {
+      "status": "completed",
+      "config": {
+        "client_python": "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+        "model_snapshot": "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "served_model_name": "benchmark-model",
+        "gpu_index": 0,
+        "seed": 20261002,
+        "num_prompts": 64,
+        "repeats": 3,
+        "results_dir": "results",
+        "engines": {
+          "vllm": {
+            "python": "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+            "repo": "/home/dcl/projects/vllm-upstream",
+            "base_url": "http://127.0.0.1:8019",
+            "server_command": [
+              "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+              "-m",
+              "vllm.entrypoints.openai.api_server",
+              "--model",
+              "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+              "--served-model-name",
+              "benchmark-model",
+              "--port",
+              "8019",
+              "--dtype",
+              "float16",
+              "--max-model-len",
+              "2048",
+              "--gpu-memory-utilization",
+              "0.45",
+              "--no-enable-prefix-caching",
+              "--enforce-eager"
+            ],
+            "server_environment": {
+              "VLLM_USE_FLASHINFER_SAMPLER": "0",
+              "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "server_parameters": {
+              "dtype": "float16",
+              "max_model_len": 2048,
+              "memory_fraction": 0.45,
+              "prefix_cache": false,
+              "tensor_parallel_size": 1,
+              "cuda_graphs": false
+            }
+          },
+          "sglang": {
+            "python": "/home/dcl/projects/llm-serving-benchmark-lab/sglang-python",
+            "repo": "/home/dcl/projects/sglang-42070",
+            "base_url": "http://127.0.0.1:8019",
+            "server_command": [
+              "/home/dcl/projects/llm-serving-benchmark-lab/sglang-python",
+              "-m",
+              "sglang.launch_server",
+              "--model-path",
+              "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+              "--served-model-name",
+              "benchmark-model",
+              "--port",
+              "8019",
+              "--dtype",
+              "float16",
+              "--context-length",
+              "2048",
+              "--mem-fraction-static",
+              "0.45",
+              "--disable-radix-cache",
+              "--disable-cuda-graph",
+              "--attention-backend",
+              "triton",
+              "--sampling-backend",
+              "pytorch"
+            ],
+            "server_parameters": {
+              "dtype": "float16",
+              "max_model_len": 2048,
+              "memory_fraction": 0.45,
+              "prefix_cache": false,
+              "tensor_parallel_size": 1,
+              "cuda_graphs": false
+            }
+          }
+        }
+      },
+      "mode": "preflight",
+      "core_sha256": {
+        "lab.py": "9f344ed38e1c445f416086241fed58f4565ecb7fb915aeaad92c6858a78068c6",
+        "study.py": "bfc9b72ee68bc9e0416675eee0e9a8ee9f27890afa34252b24da5892b3df03aa",
+        "tail_report.py": "bd5436cd57a069cfbe6bbd9106962a8a9d3c430fdd43407ddc6b2cc32e4a86e6",
+        "README.md": "a93223a54ab6d6be7d36788b36e532259960adc0b8d0b6dc44478c89f0a7cbe6"
+      },
+      "script_sha256": "ffda9d61ea6234ce4a7dc4fb677932087a3cf2b5ed27f385b44737ea2ec30168",
+      "gpu": {
+        "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+        "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "driver_version": "616.64",
+        "memory.total": 8188.0,
+        "memory.used": 1609.0,
+        "utilization.gpu": 8.0,
+        "temperature.gpu": "69",
+        "power.draw": "23.40",
+        "clocks.sm": "1890",
+        "clocks.mem": "8001"
+      },
+      "budget_minutes": 45,
+      "evidence_kind": "real_gpu_fixed_episode_native_request_metrics",
+      "engine_commit": "ced6857afa0ea7b2e3f0846a62e1394e90f15607"
+    },
+    "metadata-cache-expand": {
+      "status": "hold_environment_confounding",
+      "config": {
+        "client_python": "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+        "model_snapshot": "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+        "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "served_model_name": "benchmark-model",
+        "gpu_index": 0,
+        "seed": 20261002,
+        "num_prompts": 64,
+        "repeats": 3,
+        "results_dir": "results",
+        "engines": {
+          "vllm": {
+            "python": "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+            "repo": "/home/dcl/projects/vllm-upstream",
+            "base_url": "http://127.0.0.1:8019",
+            "server_command": [
+              "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+              "-m",
+              "vllm.entrypoints.openai.api_server",
+              "--model",
+              "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+              "--served-model-name",
+              "benchmark-model",
+              "--port",
+              "8019",
+              "--dtype",
+              "float16",
+              "--max-model-len",
+              "2048",
+              "--gpu-memory-utilization",
+              "0.45",
+              "--no-enable-prefix-caching",
+              "--enforce-eager"
+            ],
+            "server_environment": {
+              "VLLM_USE_FLASHINFER_SAMPLER": "0",
+              "CUDA_VISIBLE_DEVICES": "0"
+            },
+            "server_parameters": {
+              "dtype": "float16",
+              "max_model_len": 2048,
+              "memory_fraction": 0.45,
+              "prefix_cache": false,
+              "tensor_parallel_size": 1,
+              "cuda_graphs": false
+            }
+          },
+          "sglang": {
+            "python": "/home/dcl/projects/llm-serving-benchmark-lab/sglang-python",
+            "repo": "/home/dcl/projects/sglang-42070",
+            "base_url": "http://127.0.0.1:8019",
+            "server_command": [
+              "/home/dcl/projects/llm-serving-benchmark-lab/sglang-python",
+              "-m",
+              "sglang.launch_server",
+              "--model-path",
+              "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+              "--served-model-name",
+              "benchmark-model",
+              "--port",
+              "8019",
+              "--dtype",
+              "float16",
+              "--context-length",
+              "2048",
+              "--mem-fraction-static",
+              "0.45",
+              "--disable-radix-cache",
+              "--disable-cuda-graph",
+              "--attention-backend",
+              "triton",
+              "--sampling-backend",
+              "pytorch"
+            ],
+            "server_parameters": {
+              "dtype": "float16",
+              "max_model_len": 2048,
+              "memory_fraction": 0.45,
+              "prefix_cache": false,
+              "tensor_parallel_size": 1,
+              "cuda_graphs": false
+            }
+          }
+        }
+      },
+      "mode": "cache-expand",
+      "core_sha256": {
+        "lab.py": "9f344ed38e1c445f416086241fed58f4565ecb7fb915aeaad92c6858a78068c6",
+        "study.py": "bfc9b72ee68bc9e0416675eee0e9a8ee9f27890afa34252b24da5892b3df03aa",
+        "tail_report.py": "bd5436cd57a069cfbe6bbd9106962a8a9d3c430fdd43407ddc6b2cc32e4a86e6",
+        "README.md": "a93223a54ab6d6be7d36788b36e532259960adc0b8d0b6dc44478c89f0a7cbe6"
+      },
+      "script_sha256": "ffda9d61ea6234ce4a7dc4fb677932087a3cf2b5ed27f385b44737ea2ec30168",
+      "gpu": {
+        "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+        "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "driver_version": "616.64",
+        "memory.total": 8188.0,
+        "memory.used": 1505.0,
+        "utilization.gpu": 0.0,
+        "temperature.gpu": "67",
+        "power.draw": "19.51",
+        "clocks.sm": "1890",
+        "clocks.mem": "7001"
+      },
+      "budget_minutes": 45.0,
+      "evidence_kind": "real_gpu_quarantined_environment_confounded",
+      "engine_commit": "ced6857afa0ea7b2e3f0846a62e1394e90f15607",
+      "stop_reason": "Large within-condition timing variation with concurrent host compiler jobs observed; causality not established.",
+      "interruption": "SIGINT to owned runner; owned server/lock cleaned; incomplete episode excluded"
+    },
+    "status-matrix-a": {
+      "status": "not_executed",
+      "reason": "Controlled environment and instrumented/performance group separation need validation first"
+    },
+    "status-expand": {
+      "status": "not_executed",
+      "reason": "Controlled environment and instrumented/performance group separation need validation first"
+    },
+    "status-matrix-b": {
+      "status": "not_executed",
+      "reason": "Controlled environment and instrumented/performance group separation need validation first"
+    }
+  },
+  "preflight": {
+    "accuracy_pass": true,
+    "overhead": {
+      "mean_ttft_ms": {
+        "paired_ratios": [
+          1.055306960889356,
+          1.0728267269229468,
+          1.0514338216314476
+        ],
+        "median_ratio": 1.055306960889356,
+        "within_5pct": false
+      },
+      "mean_tpot_ms": {
+        "paired_ratios": [
+          1.0180410282824572,
+          1.0303672233737995,
+          0.9767786895076003
+        ],
+        "median_ratio": 1.0180410282824572,
+        "within_5pct": true
+      },
+      "mean_e2e_ms": {
+        "paired_ratios": [
+          1.0264683513476003,
+          1.0389842051118567,
+          0.9921004954573512
+        ],
+        "median_ratio": 1.0264683513476003,
+        "within_5pct": true
+      }
+    },
+    "overhead_5pct_pass": false,
+    "policy": "Expansion trace group remains instrumented; never merge with trace-off or Phase1 uninstrumented performance samples."
+  },
+  "cells": [
+    {
+      "configuration": {
+        "group": "cache-expand",
+        "condition": "cold",
+        "input_length": 1024,
+        "output_length": 128,
+        "cap": 4,
+        "cache": "cold",
+        "repeat": 0,
+        "episodes": 8,
+        "episode_requests": 8,
+        "arrival_rate": 4,
+        "seed_base": 20261012,
+        "native_prefill_boundary": "scheduled -> first output token; same as vLLM phase histogram, not GPU-only kernel time"
+      },
+      "requests": 40,
+      "episode_count": 5,
+      "graded_level_completed": false,
+      "nested_prefix": true,
+      "directory": "cache-expand-cold-r0",
+      "metrics": {
+        "ttft_ms": {
+          "mean": 231.05942152460557,
+          "p50": 173.2775929995114,
+          "p95": 591.7418733519297,
+          "p99": 697.3084282477066
+        },
+        "tpot_ms": {
+          "mean": 72.19141176004223,
+          "p50": 63.26491398031639,
+          "p95": 160.6757898283473,
+          "p99": 167.4735763982777
+        },
+        "e2e_ms": {
+          "mean": 9401.913988174692,
+          "p50": 8228.661121000187,
+          "p95": 20967.23303094932,
+          "p99": 21778.379731617315
+        },
+        "planned_e2e_ms": {
+          "mean": 13653.286228175148,
+          "p50": 11508.062846500252,
+          "p95": 27776.0105153493,
+          "p99": 27990.911966860003
+        },
+        "client_queue_ms": {
+          "mean": 4250.136376725277,
+          "p50": 624.9935289997666,
+          "p95": 19671.203601750494,
+          "p99": 19877.110911319796
+        },
+        "queue_ms": {
+          "mean": 0.019256024552305462,
+          "p50": 0.01595150024513714,
+          "p95": 0.047543748041789465,
+          "p99": 0.06520538008771837
+        },
+        "prefill_ms": {
+          "mean": 148.47940022527837,
+          "p50": 115.9572684991872,
+          "p95": 327.97557509984466,
+          "p99": 405.151351840941
+        },
+        "decode_ms": {
+          "mean": 9180.027004824842,
+          "p50": 8043.348007500754,
+          "p95": 20427.91444914892,
+          "p99": 21283.19771402992
+        }
+      },
+      "conditional_episode_bootstrap_p99": {
+        "lower_ms": 10524.690010350205,
+        "upper_ms": 22066.480235997005,
+        "relative_halfwidth": 0.2649827573924316,
+        "samples": 1000,
+        "limitation": "Conditional on this repeat; not an across-run confidence interval."
+      },
+      "measurement_duration_s": 99.40012169200054,
+      "requests_per_s": 0.40241399425991947,
+      "output_tokens_per_s": 51.50899126526969,
+      "prefix_hits": 8960.0,
+      "prefix_queries": 40960.0,
+      "prefix_hit_token_ratio": 0.21875,
+      "preemptions": 0,
+      "gpu": {
+        "memory.used": {
+          "mean": 5253.02205882353,
+          "max": 5257.0
+        },
+        "utilization.gpu": {
+          "mean": 15.352941176470589,
+          "max": 100.0
+        }
+      },
+      "server_sample_max": {
+        "vllm:num_preemptions_total": 0.0,
+        "vllm:num_requests_waiting": 0.0,
+        "vllm:kv_cache_usage_perc": 0.01764705882352946,
+        "vllm:num_requests_waiting_by_reason": 0.0,
+        "vllm:num_requests_running": 4.0
+      }
+    }
+  ]
+}

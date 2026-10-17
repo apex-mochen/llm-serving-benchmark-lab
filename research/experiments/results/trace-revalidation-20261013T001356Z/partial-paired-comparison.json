@@ -1,0 +1,64 @@
+{
+  "comparison": {
+    "mean_ttft_ms": {
+      "paired_ratios": [
+        1.1139847641514562,
+        0.9849422479746244
+      ],
+      "paired_overhead_percent": [
+        11.39847641514562,
+        -1.5057752025375626
+      ],
+      "median_overhead_percent": 4.946350606304028
+    },
+    "mean_tpot_ms": {
+      "paired_ratios": [
+        1.0684860348256007,
+        0.9731539238244409
+      ],
+      "paired_overhead_percent": [
+        6.848603482560067,
+        -2.684607617555912
+      ],
+      "median_overhead_percent": 2.0819979325020777
+    },
+    "mean_e2e_ms": {
+      "paired_ratios": [
+        1.0782667646628912,
+        0.9758242129368392
+      ],
+      "paired_overhead_percent": [
+        7.8266764662891175,
+        -2.4175787063160814
+      ],
+      "median_overhead_percent": 2.7045488799865183
+    },
+    "requests_per_s": {
+      "paired_ratios": [
+        0.9449742855055239,
+        1.0293545601824867
+      ],
+      "paired_overhead_percent": [
+        5.502571449447613,
+        -2.935456018248672
+      ],
+      "median_overhead_percent": 1.2835577155994704
+    },
+    "output_tokens_per_s": {
+      "paired_ratios": [
+        0.9449742855055239,
+        1.0293545601824867
+      ],
+      "paired_overhead_percent": [
+        5.502571449447613,
+        -2.935456018248672
+      ],
+      "median_overhead_percent": 1.2835577155994704
+    }
+  },
+  "pass_threshold": false,
+  "completed_repeats": [
+    0,
+    1
+  ]
+}

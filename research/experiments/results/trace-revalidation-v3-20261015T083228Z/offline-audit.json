@@ -1,0 +1,112 @@
+{
+  "requests": 384,
+  "native_requests": 192,
+  "warmup_requests": 48,
+  "complete_variants": 6,
+  "resource_samples": 175,
+  "host_samples": 22,
+  "errors": [],
+  "warnings": [
+    "off-r0: leaked semaphore warning",
+    "off-r1: leaked semaphore warning",
+    "off-r2: leaked semaphore warning",
+    "on-r0: leaked semaphore warning",
+    "on-r1: leaked semaphore warning",
+    "on-r2: leaked semaphore warning"
+  ],
+  "core_unchanged": true,
+  "configuration_and_payload_match_v2": true,
+  "comparison": {
+    "mean_ttft_ms": {
+      "paired_ratios": [
+        1.1169750244297614,
+        0.8812107743168641,
+        0.9803310963392927
+      ],
+      "paired_overhead_percent": [
+        11.697502442976138,
+        -11.878922568313588,
+        -1.9668903660707282
+      ],
+      "median_overhead_percent": -1.9668903660707282
+    },
+    "mean_tpot_ms": {
+      "paired_ratios": [
+        1.045363591277691,
+        0.9687489813602876,
+        0.9807375749041164
+      ],
+      "paired_overhead_percent": [
+        4.536359127769107,
+        -3.125101863971236,
+        -1.9262425095883606
+      ],
+      "median_overhead_percent": -1.9262425095883606
+    },
+    "mean_e2e_ms": {
+      "paired_ratios": [
+        1.0584008620033174,
+        0.9509322377012692,
+        0.9806679850393629
+      ],
+      "paired_overhead_percent": [
+        5.84008620033174,
+        -4.906776229873078,
+        -1.9332014960637078
+      ],
+      "median_overhead_percent": -1.9332014960637078
+    },
+    "requests_per_s": {
+      "paired_ratios": [
+        0.9645339563164519,
+        1.021584971173935,
+        1.0174179743141458
+      ],
+      "paired_overhead_percent": [
+        3.546604368354811,
+        -2.1584971173935097,
+        -1.7417974314145823
+      ],
+      "median_overhead_percent": -1.7417974314145823
+    },
+    "output_tokens_per_s": {
+      "paired_ratios": [
+        0.9645339563164519,
+        1.021584971173935,
+        1.0174179743141458
+      ],
+      "paired_overhead_percent": [
+        3.546604368354811,
+        -2.1584971173935097,
+        -1.7417974314145823
+      ],
+      "median_overhead_percent": -1.7417974314145823
+    }
+  },
+  "runner_outcome": {
+    "status": "HOLD",
+    "numeric_pass": true,
+    "all_pairs_below_five": false,
+    "error": null,
+    "completed_variants": 6,
+    "core_unchanged": true,
+    "monitor_errors": [],
+    "observed_interference": [],
+    "run_to_run_cv": {
+      "off/mean_ttft_ms": 0.11548542803772953,
+      "off/mean_tpot_ms": 0.04815277229378494,
+      "off/mean_e2e_ms": 0.06114382650802105,
+      "off/requests_per_s": 0.03893250820094456,
+      "off/output_tokens_per_s": 0.03893250820094456,
+      "full/mean_ttft_ms": 0.024509162953718844,
+      "full/mean_tpot_ms": 0.00791636784121507,
+      "full/mean_e2e_ms": 0.008489890665966232,
+      "full/requests_per_s": 0.006670167104637267,
+      "full/output_tokens_per_s": 0.006670167104637267
+    },
+    "preflight_only": false,
+    "observe_only": false,
+    "phase2_expansion_executed": false
+  },
+  "scope": "offline checks do not prove clock accuracy, zero unsampled interference, or absence of semaphore leaks"
+}

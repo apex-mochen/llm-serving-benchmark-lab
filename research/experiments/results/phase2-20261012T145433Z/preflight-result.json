@@ -1,0 +1,34 @@
+{
+  "accuracy_pass": true,
+  "overhead": {
+    "mean_ttft_ms": {
+      "paired_ratios": [
+        1.055306960889356,
+        1.0728267269229468,
+        1.0514338216314476
+      ],
+      "median_ratio": 1.055306960889356,
+      "within_5pct": false
+    },
+    "mean_tpot_ms": {
+      "paired_ratios": [
+        1.0180410282824572,
+        1.0303672233737995,
+        0.9767786895076003
+      ],
+      "median_ratio": 1.0180410282824572,
+      "within_5pct": true
+    },
+    "mean_e2e_ms": {
+      "paired_ratios": [
+        1.0264683513476003,
+        1.0389842051118567,
+        0.9921004954573512
+      ],
+      "median_ratio": 1.0264683513476003,
+      "within_5pct": true
+    }
+  },
+  "overhead_5pct_pass": false,
+  "policy": "Expansion trace group remains instrumented; never merge with trace-off or Phase1 uninstrumented performance samples."
+}

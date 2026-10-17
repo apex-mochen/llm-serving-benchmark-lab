@@ -1,0 +1,90 @@
+[
+  {
+    "tpot_ms": 12.458896324803138,
+    "front_ttft_ms": 61.327173749997854,
+    "back_ttft_ms": 696.9184714999983,
+    "all_ttft_ms": 379.1228226249981,
+    "e2e_ms": 1961.6564563749996,
+    "number": 0,
+    "phase": "warmup",
+    "label": null,
+    "window": null
+  },
+  {
+    "tpot_ms": 12.044045303149623,
+    "front_ttft_ms": 44.421721499997346,
+    "back_ttft_ms": 618.7447212499997,
+    "all_ttft_ms": 331.5832213749985,
+    "e2e_ms": 1861.4637183749992,
+    "number": 1,
+    "phase": "burn-in",
+    "label": null,
+    "window": null
+  },
+  {
+    "tpot_ms": 12.763756505905533,
+    "front_ttft_ms": 49.19448874998977,
+    "back_ttft_ms": 717.3214984999987,
+    "all_ttft_ms": 383.25799362499424,
+    "e2e_ms": 2004.5092522499956,
+    "number": 2,
+    "phase": "burn-in",
+    "label": null,
+    "window": null
+  },
+  {
+    "tpot_ms": 12.11589876476381,
+    "front_ttft_ms": 45.50387075000373,
+    "back_ttft_ms": 720.4723252499932,
+    "all_ttft_ms": 382.98809799999844,
+    "e2e_ms": 1921.9123167499959,
+    "number": 3,
+    "phase": "burn-in",
+    "label": null,
+    "window": null
+  },
+  {
+    "tpot_ms": 11.179733159448762,
+    "front_ttft_ms": 40.221801500003096,
+    "back_ttft_ms": 476.4070537500089,
+    "all_ttft_ms": 258.31442762500603,
+    "e2e_ms": 1678.335210875005,
+    "number": 4,
+    "phase": "burn-in",
+    "label": null,
+    "window": null
+  },
+  {
+    "tpot_ms": 12.053371672244038,
+    "front_ttft_ms": 43.81603999999584,
+    "back_ttft_ms": 639.8668517499999,
+    "all_ttft_ms": 341.8414458749979,
+    "e2e_ms": 1872.8314794999967,
+    "number": 5,
+    "phase": "measurement",
+    "label": "A",
+    "window": 0
+  },
+  {
+    "tpot_ms": 12.19344613484248,
+    "front_ttft_ms": 54.545800250004106,
+    "back_ttft_ms": 661.6696987499893,
+    "all_ttft_ms": 358.10774949999666,
+    "e2e_ms": 1906.9282656249982,
+    "number": 6,
+    "phase": "measurement",
+    "label": "A",
+    "window": 0
+  },
+  {
+    "tpot_ms": 11.917175499999995,
+    "front_ttft_ms": 46.08828574999535,
+    "back_ttft_ms": 568.5408510000016,
+    "all_ttft_ms": 307.3145683749985,
+    "e2e_ms": 1821.0886252499954,
+    "number": 7,
+    "phase": "measurement",
+    "label": "A",
+    "window": 0
+  }
+]

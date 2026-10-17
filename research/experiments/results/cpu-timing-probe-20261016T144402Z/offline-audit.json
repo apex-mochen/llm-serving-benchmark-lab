@@ -1,0 +1,17 @@
+{
+  "timing_recomputation": "PASS",
+  "fixed_order": "PASS",
+  "trials": 32,
+  "synthetic_client_episodes": 16,
+  "excluded_synthetic_warmup_episodes": 1,
+  "synthetic_requests": 136,
+  "inference_requests": 0,
+  "server_started": false,
+  "local_samples": 41,
+  "host_samples": 6,
+  "sampled_issues": [],
+  "distinct_pids": true,
+  "warmup_success": true,
+  "core_sha256_unchanged": true,
+  "caveat": "No causal attribution, no GPU-load validation, no inference latency evidence"
+}

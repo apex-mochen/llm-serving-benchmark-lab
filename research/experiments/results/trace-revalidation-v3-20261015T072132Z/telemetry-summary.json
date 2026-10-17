@@ -1,0 +1,12 @@
+{
+  "samples": 14,
+  "duration_between_samples_s": 29.643524393000007,
+  "gpu_utilization_min": 20.0,
+  "gpu_utilization_max": 28.0,
+  "gpu_utilization_mean": 22.714285714285715,
+  "host_samples": 2,
+  "host_free_physical_kib": [
+    975928,
+    1110904
+  ]
+}

@@ -1,0 +1,81 @@
+# Trace Overhead Revalidation v2
+
+实验日期：2026-10-13；离线核验日期：2026-10-14。数值门槛：**PASS**；阶段放行：**HOLD**。原始运行：`trace-revalidation-v2-20261013T121015Z`。
+
+## 实验与配置
+
+RTX4060 Laptop / Qwen2.5-0.5B-Instruct / 实际安装 vLLM，版本、CUDA和路径见 runtime.json。FP16、eager、GPU budget 0.45、max-model-len 2048、max-num-seqs 4、chunked prefill、prefix cache OFF。
+固定512输入/128输出、cap8、4 requests/s；8请求episode×8=64/variant；OFF→ON、ON→OFF、OFF→ON，预热单列。负载seed20261013，采样seed20261012。
+两组共同开启引擎统计、DEV_MODE=0、uvicorn warning、INFO非debug；无外部profiler。ON增加per-request metrics/request-id headers/prompt-token details三项。
+安装源码 cli_args.py 明确禁止 per-request metrics 与 disable-log-stats 并用，因此此配置不能视作先前统计关闭的稳定性组。没有修改原config或核心。
+
+## 实测结果
+
+完整variant：6/6；已保存测量请求：384；native timing：192。异常：`None`。
+
+| 指标 | 三轮开销 % | 中位数 % |
+|---|---|---|
+| mean_ttft_ms | 12.081 / 3.936 / 2.055 | 3.936 |
+| mean_tpot_ms | 10.093 / 1.538 / 2.137 | 2.137 |
+| mean_e2e_ms | 10.670 / 2.230 / 2.114 | 2.230 |
+| requests_per_s | 8.525 / 1.364 / 2.122 | 2.122 |
+| output_tokens_per_s | 8.525 / 1.364 / 2.122 | 2.122 |
+
+| Variant | GPU before/after MiB | 采样观察最大 MiB |
+|---|---|---|
+| off-r0 | 3655.0/3846.0 | 7549.0 |
+| off-r1 | 3926.0/3732.0 | 7464.0 |
+| off-r2 | 3732.0/3746.0 | 7478.0 |
+| on-r0 | 3846.0/3855.0 | 7588.0 |
+| on-r1 | 3855.0/3926.0 | 7652.0 |
+| on-r2 | 3746.0/3596.0 | 7319.0 |
+
+GPU观察最大值来自episode间快照，不能称为连续峰值；主机资源原值见 before/after/resource JSON。桌面GPU活动及未采样瞬时竞争不能排除。
+延迟开销=(ON/OFF−1)×100；吞吐损失=(1−ON/OFF)×100。吞吐分母为8个episode测量时长之和，不含启动/预热/采集间隙，不能当成连续饱和吞吐。所有五项中位数必须严格<5%，三轮须完整；负值只表示这次测量的方向，不能声称trace提升性能。
+
+## 证据与边界
+
+配置、固定payload、执行时runtime、脚本副本、server命令/日志、请求时序/usage、资源快照、server stdout/stderr与离线复算保留在运行目录。
+真实性：实际运行且请求级核验；可复现性：命令/关键runtime已记录，但完整继承环境、瞬时系统活动和完整SSE未保存，精确环境重放UNKNOWN；结论边界：仅此模型/卡/负载，不证明一般无开销或其他机器表现。
+missing：runner控制台重定向到/tmp/trace-v2-console.log，续接时文件已不存在，不能补造；server stdout/stderr已保留。第一轮全部指标超过5%，中位数通过不等于各轮稳定通过。
+三对独立server启动仅小样本，未达到统计等价性研究标准；不将384请求当384个独立实验重复。未运行Phase2扩样、混合矩阵、自动归因或KV可靠性模块。历史OOM/中断证据未覆盖。
+
+## 阶段审查
+
+### 1. 本阶段实际完成了什么
+新鲜配对运行、计时/ID/usage离线检查、配置版本留档；完整数见上。
+### 2. 原目标 vs 实际结果
+目标3轮trace门槛；实际PASS，不等于科研假设已验证。
+### 3. Correctness Review
+已验证：请求公式/固定payload/native字段；未验证：完整SSE、独立服务端时钟精度；风险：流式chunk与token边界不同。
+### 4. Architecture Review
+收益：仅实验脚本复用；弱点：主机快照周期性；替代：独立采样sidecar，本轮不实现。
+### 5. Performance Review
+仅上表描述；不外推性能提升。
+### 6. Bottleneck Analysis
+若差异超门槛→候选观测路径/环境波动→新配对关闭单一组件→证据成立才最小缓解；未定位根因。
+### 7. 10× Scale Test
+未执行；当前不允许扩样代替门槛。
+### 8. Alternative Design
+Current同步周期快照：复杂度低/性能扰动未量化/内存低/扩展低/维护低/故障隔离低/成本低；A独立sidecar：中/待测/低/中/中/中/中；B外部profiler：高/开销待测/中/高/高/中/高。未实施A/B。
+### 9. Optimization Opportunities
+P0补齐持久日志与静默环境证据，三轮完整且干扰门可核验为成功指标；P1若超门槛仅组件配对；P2再扩矩阵；P3质量模块Parking Lot。无本轮调优。
+### 10. 与基础知识的联系
+配对实验控制、OS内存回收、流式网络测量边界、GPU分配生命周期。
+### 11. 与其他开源项目的联系
+vLLM原生stats与请求metrics依赖；SGLang并未纳入此实验。
+### 12. 新产生的想法
+立即可验证：单组件开销配对；未来研究：跨版本trace契约；Parking Lot：相位可靠性。
+### 13. Resume Value Review
+可展示可审计实验流程；不能写瓶颈定位算法/性能收益。
+### 14. Interview Review
+为何两组统计必须一致？为何chunk不等于token？为何请求数不是重复数？为何负开销非提升？如何保护外部服务？
+### 15. Failure / Mistake Review
+初始脚本传输shell引号错误已在执行前重写并编译检查；不将该错误解释为GPU问题。旧OOM不隐去。
+### 16. 独立能力检查
+A可读原始证据；B可复算百分比；C需用户复现命令检验；D独立诊断/优化能力未验证。
+### 17. 下一步最有价值实验
+唯一实验：仅重做同配置trace OFF/ON配对：先验证无后台GPU任务，并将runner stdout/stderr写入持久运行目录。s=小样本校准结果，a=上述最小验证，30–120分钟，无租卡；Q最高因为减少错误归因风险。
+### 18. 是否允许进入下一阶段
+HOLD。数值门通过，但后台GPU竞争无法完整排除、首轮差异显著、runner日志missing；不能据此恢复大规模Phase2，也不放行对外定量声明。唯一补救同第17节。
+

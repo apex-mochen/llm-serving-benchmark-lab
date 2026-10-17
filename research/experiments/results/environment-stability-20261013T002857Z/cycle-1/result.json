@@ -1,0 +1,19 @@
+{
+  "workload_complete": true,
+  "oom_detected": false,
+  "owned_resources_released": true,
+  "gpu_memory_delta_mib": 0.0,
+  "host_free_virtual_loss_mib": -442.6015625,
+  "pass_cycle": true,
+  "release_stable_samples": 3,
+  "cycle": 1,
+  "error": null,
+  "allocation_log_lines": [
+    "(EngineCore pid=1519) INFO 10-13 08:30:57 [model_runner.py:428] Model loading took 0.93 GiB memory and 1.968863 seconds",
+    "(EngineCore pid=1519) INFO 10-13 08:30:58 [gpu_worker.py:640] Available KV cache memory: 2.49 GiB",
+    "(EngineCore pid=1519) INFO 10-13 08:30:58 [kv_cache_utils.py:2395] GPU KV cache size: 217,616 tokens, Maximum concurrency for 2,048 tokens per request: 106.26x",
+    "(EngineCore pid=1519) INFO 10-13 08:30:59 [gpu_worker.py:888] Free memory on device (6.93/8.0 GiB) on startup. Desired GPU memory utilization is (0.45, 3.6 GiB). Actual usage is 1.04 GiB for consumed memory (weights + non-torch), 0.07 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=2516973568` (2.34 GiB) to fit into requested memory, or `--kv-cache-memory=6094321664` (5.68 GiB) to fully utilize gpu memory. Current kv cache memory in use is 2.49 GiB."
+  ],
+  "during_sample_count": 28,
+  "gpu_peak_mib": 5246.0
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "request_id": "session-0-0",
+    "session_id": "session-0",
+    "stage": 0,
+    "parent": null,
+    "target_s": 0.0,
+    "sent_s": 0.0024390750004386064,
+    "input_tokens": 1024,
+    "prompt_sha256": "c353230b5f21a335a354987e74a5ca624b9407c7c0181d788a297e2081c9ecf2",
+    "success": true,
+    "usage": {
+      "prompt_tokens": 1024,
+      "total_tokens": 1088,
+      "completion_tokens": 64
+    },
+    "ttft_s": 0.3958668769992073,
+    "tpot_s": 0.01423715215874143,
+    "e2e_s": 1.2944282609987567,
+    "content_chunks": 64,
+    "end_s": 1.2968695220006339
+  },
+  {
+    "request_id": "session-1-0",
+    "session_id": "session-1",
+    "stage": 0,
+    "parent": null,
+    "target_s": 0.25,
+    "sent_s": 0.2513852779993613,
+    "input_tokens": 1024,
+    "prompt_sha256": "697ac5a87dcf7a1b22f2adb32e6c533a654a677ccef53a2fd00f74e8d741eb7a",
+    "success": true,
+    "usage": {
+      "prompt_tokens": 1024,
+      "total_tokens": 1088,
+      "completion_tokens": 64
+    },
+    "ttft_s": 0.17261632299960183,
+    "tpot_s": 0.014147899301586596,
+    "e2e_s": 1.0641659600005369,
+    "content_chunks": 64,
+    "end_s": 1.315553115999137
+  },
+  {
+    "request_id": "session-1-1",
+    "session_id": "session-1",
+    "stage": 1,
+    "parent": "session-1-0",
+    "target_s": 1.5655531883239746,
+    "sent_s": 1.5656468750003114,
+    "input_tokens": 1152,
+    "prompt_sha256": "5729d8f21de505f47ddbab9bb00bd6c017b0c595ab7204c1581a2496b8515bea",
+    "success": true,
+    "usage": {
+      "prompt_tokens": 1152,
+      "total_tokens": 1216,
+      "completion_tokens": 64
+    },
+    "ttft_s": 0.06941504099995655,
+    "tpot_s": 0.014962535571410425,
+    "e2e_s": 1.012466456999391,
+    "content_chunks": 64,
+    "end_s": 2.578115307000189
+  },
+  {
+    "request_id": "session-0-1",
+    "session_id": "session-0",
+    "stage": 1,
+    "parent": "session-0-0",
+    "target_s": 2.0468695163726807,
+    "sent_s": 2.0473495030000777,
+    "input_tokens": 1152,
+    "prompt_sha256": "f184511cbbd11d32a2b84de0562f4d21153af9b804e79b55f094fd82ecb41fae",
+    "success": true,
+    "usage": {
+      "prompt_tokens": 1152,
+      "total_tokens": 1216,
+      "completion_tokens": 64
+    },
+    "ttft_s": 0.06971866499952739,
+    "tpot_s": 0.014557560333323347,
+    "e2e_s": 0.9870156759989186,
+    "content_chunks": 64,
+    "end_s": 3.0343674710002233
+  }
+]

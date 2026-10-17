@@ -1,0 +1,38 @@
+{
+  "command": [
+    "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+    "-m",
+    "vllm.entrypoints.openai.api_server",
+    "--model",
+    "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+    "--served-model-name",
+    "benchmark-model",
+    "--port",
+    "8019",
+    "--dtype",
+    "float16",
+    "--max-model-len",
+    "2048",
+    "--gpu-memory-utilization",
+    "0.45",
+    "--no-enable-prefix-caching",
+    "--enforce-eager",
+    "--enable-per-request-metrics",
+    "--enable-request-id-headers",
+    "--enable-prompt-tokens-details",
+    "--host",
+    "127.0.0.1",
+    "--max-num-seqs",
+    "4",
+    "--max-num-batched-tokens",
+    "2048",
+    "--enable-chunked-prefill"
+  ],
+  "environment_overrides": {
+    "VLLM_USE_FLASHINFER_SAMPLER": "0",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "VLLM_SERVER_DEV_MODE": "1"
+  },
+  "trace": false,
+  "cache": false
+}

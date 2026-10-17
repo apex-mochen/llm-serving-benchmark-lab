@@ -1,0 +1,13 @@
+{
+  "clock": {
+    "start_monotonic_s": 10.808576196,
+    "utc_anchor": "2026-10-16T14:44:02.624957+00:00",
+    "client_pid": 666,
+    "boot_id": "a9ee61b8-ffd0-4ca7-83e2-1ede091713a9",
+    "end_monotonic_s": 12.588198582
+  },
+  "duration_s": 1.7796223859999998,
+  "requests": 8,
+  "all_success": true,
+  "phase": "excluded predeclared warmup"
+}

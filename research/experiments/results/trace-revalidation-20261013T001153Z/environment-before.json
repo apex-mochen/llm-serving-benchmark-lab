@@ -1,0 +1,24 @@
+{
+  "monotonic_s": 30877.911101284,
+  "processes": "    PID    PPID %CPU COMMAND\n      1       0  0.3 systemd\n      2       1  0.0 init-systemd(Ub\n      8       2  0.0 init\n     41       1  0.2 systemd-journal\n     68       1  0.1 systemd-udevd\n    197       1  0.0 systemd-resolve\n    198       1  0.0 systemd-timesyn\n    208       1  0.0 cron\n    209       1  0.0 dbus-daemon\n    216       1  0.0 systemd-logind\n    225       1  0.0 wsl-pro-service\n    242       1  0.0 rsyslogd\n    248       1  0.1 containerd\n    251       1  0.0 agetty\n    254       1  0.0 unattended-upgr\n    307       1  0.1 dockerd\n    577       2  0.0 login\n    610       1  0.0 systemd\n    611     610  0.0 (sd-pam)\n    624     577  0.0 bash\n   1062      68  0.0 (udev-worker)\n   1063      68  0.0 (udev-worker)\n   1064      68  0.0 (udev-worker)\n   1065      68  0.0 (udev-worker)\n   1072       2  0.0 SessionLeader\n   1073    1072  0.0 Relay(1074)\n   1074    1073 72.2 python\n   1081    1074  0.0 ps\n",
+  "compiler_jobs": [],
+  "compute_apps": "",
+  "gpu": {
+    "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver_version": "616.64",
+    "memory.total": 8188.0,
+    "memory.used": 1391.0,
+    "utilization.gpu": 8.0,
+    "temperature.gpu": "64",
+    "power.draw": "22.60",
+    "clocks.sm": "1890",
+    "clocks.mem": "8001"
+  },
+  "cpu_load": [
+    0.30126953125,
+    0.423828125,
+    1.0341796875
+  ],
+  "memory": "MemTotal:       10178272 kB\nMemFree:         8469856 kB\nMemAvailable:    9453156 kB\nBuffers:          273316 kB\nCached:           834136 kB\nSwapCached:           76 kB\nActive:           878704 kB\nInactive:         322300 kB\nActive(anon):       3120 kB\nInactive(anon):    93992 kB\nActive(file):     875584 kB\nInactive(file):   228308 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:      16777216 kB\nSwapFree:       16776424 kB\nDirty:               248 kB\nWriteback:             0 kB\nAnonPages:         94172 kB\nMapped:           142120 kB\nShmem:              3128 kB\nKReclaimable:      71516 kB\nSlab:             242356 kB\nSReclaimable:      71516 kB\nSUnreclaim:       170840 kB\nKernelStack:        7376 kB\nPageTables:         5240 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    21866352 kB\nCommitted_AS:     600540 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       48092 kB\nVmallocChunk:          0 kB\nPercpu:            24320 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       78848 kB\nDirectMap2M:     4114432 kB\nDirectMap1G:     7340032 kB\n"
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "variant": "A",
+    "repeat": 0,
+    "summary": {
+      "mean_ttft_ms": 344.84368043750015,
+      "mean_tpot_ms": 12.197065308439946,
+      "mean_e2e_ms": 1894.1318998749973,
+      "requests": 64,
+      "duration_s": 31.18854835200011,
+      "requests_per_s": 2.0520352302929705,
+      "output_tokens_per_s": 262.6605094775002
+    }
+  },
+  {
+    "variant": "B",
+    "repeat": 0,
+    "summary": {
+      "mean_ttft_ms": 368.2162689374939,
+      "mean_tpot_ms": 12.634849231299265,
+      "mean_e2e_ms": 1973.120495749999,
+      "requests": 64,
+      "duration_s": 32.04320943000005,
+      "requests_per_s": 1.99730305229915,
+      "output_tokens_per_s": 255.6547906942912
+    }
+  },
+  {
+    "variant": "B",
+    "repeat": 1,
+    "summary": {
+      "mean_ttft_ms": 411.2472686718771,
+      "mean_tpot_ms": 13.151295787401548,
+      "mean_e2e_ms": 2081.736844796871,
+      "requests": 64,
+      "duration_s": 33.14317283600002,
+      "requests_per_s": 1.931016089397554,
+      "output_tokens_per_s": 247.17005944288692
+    }
+  }
+]

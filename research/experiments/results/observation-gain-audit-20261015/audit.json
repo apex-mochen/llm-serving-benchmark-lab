@@ -1,0 +1,620 @@
+{
+  "utc": "2026-10-15T02:29:24.248625+00:00",
+  "source_sha256": {
+    "research/experiments/results/signatures-20261012T053318Z/aggregate.json": "6f89a09e2e021e710080a679a547350076ef6942a2df81cfec8651dd596c76f0",
+    "research/experiments/results/signatures-20261012T053318Z/prefill-128-r0/requests.json": "eb139597987a83e67b85a7ec6e162bbe1a3898d7a142b9c5d26d047d65fe4bec",
+    "research/experiments/results/signatures-20261012T053318Z/prefill-512-r0/requests.json": "5d55a07b4552f29941237bbae5d09b5eef061750c9d6d4211a7a792a3e2118d7",
+    "research/experiments/results/signatures-20261012T053318Z/prefill-1536-r0/requests.json": "e49d08784724ecffa237c8d527ed04e8940feb269c8834c607c37689404846d1",
+    "research/experiments/results/signatures-20261012T053318Z/decode-32-r0/requests.json": "dae9f55360e67b094589a0f6972696481b88873486f65de31267cdc8570afd9e",
+    "research/experiments/results/signatures-20261012T053318Z/decode-128-r0/requests.json": "12b4ed967acd754964cb1febddd700706702203a5b7016cbf09bdcc799b82ad1",
+    "research/experiments/results/signatures-20261012T053318Z/decode-256-r0/requests.json": "fe975ef69969082f7cfea3ca05293a041e23c77b2beb3f0ad932e52edb61d207",
+    "research/experiments/results/signatures-20261012T053318Z/queue-1-r0/requests.json": "31bd68d8eddaa4cd4d20f040719f98eaeee23cc993e8579a560f5ba7193047fc",
+    "research/experiments/results/signatures-20261012T053318Z/queue-4-r0/requests.json": "5a69624f6d0ac295e95f27165868f0e21b9f91e85733035a1f10d7d5f45b98c5",
+    "research/experiments/results/signatures-20261012T053318Z/queue-8-r0/requests.json": "ea29617db93839e144bc74ed56654795484d3aebfbfc1806849e529025920d3f",
+    "research/experiments/results/signatures-20261012T053318Z/cache-disabled-r0/requests.json": "ed2b0b5a10c29c469f30518e06129fce451495ad6795cad4089f288ed03cbb4a",
+    "research/experiments/results/signatures-20261012T053318Z/cache-disabled-r1/requests.json": "7fef1b05e5437881541143d59825211cfa5ca710ad620d2eff4354767863f4e5",
+    "research/experiments/results/signatures-20261012T053318Z/queue-8-r1/requests.json": "2ad66f2f9d26d64d7566874317ec190192338af87e690c6e5571c8641dbb53a3",
+    "research/experiments/results/signatures-20261012T053318Z/queue-4-r1/requests.json": "ce0cfc76ec23c0a823fd5e6da4ab10cfe5abda15eef13aec63b57251c02cb326",
+    "research/experiments/results/signatures-20261012T053318Z/queue-1-r1/requests.json": "814f8bdfb569f50bc4fddef35a028161b97ccca0ae4f28cb2bfc0507c661e827",
+    "research/experiments/results/signatures-20261012T053318Z/decode-256-r1/requests.json": "ee9dbfe39339682d5d38ede946d913296101dc6379a49dd798be9be8b894ebe5",
+    "research/experiments/results/signatures-20261012T053318Z/decode-128-r1/requests.json": "912bf9e2b5915c830e02d9918aafb463ff20c132e3efe62fe918cb818ffb7e88",
+    "research/experiments/results/signatures-20261012T053318Z/decode-32-r1/requests.json": "bc7f67f4201b81d1e3d92a9a296037e0348b0f715711f8fe85bfa9184d6538cf",
+    "research/experiments/results/signatures-20261012T053318Z/prefill-1536-r1/requests.json": "bfb5abe7e2f7a1bcaf21748578bb5526ca1218499fdace6d38ae7be83d37667e",
+    "research/experiments/results/signatures-20261012T053318Z/prefill-512-r1/requests.json": "6a99e5377c877c9619c875a780a54608d11b50f2683684f1b5c0a0608f8a551b",
+    "research/experiments/results/signatures-20261012T053318Z/prefill-128-r1/requests.json": "ef0e147989e9465b9b4e539db37b52039ef91f9cc94894e743cca27003a28a1d",
+    "research/experiments/results/signatures-20261012T053318Z/prefill-128-r2/requests.json": "6600686a7737223174a34d51311f78d05489ca632603cf55e634f74381def108",
+    "research/experiments/results/signatures-20261012T053318Z/prefill-512-r2/requests.json": "2e97c9806d4c311d077feef8779fbf66358c679c43429b27484905d76849b2e4",
+    "research/experiments/results/signatures-20261012T053318Z/prefill-1536-r2/requests.json": "c141670a8aa8a23c31fad120abef12a3fba03527dcc640c994c72c2bef46571b",
+    "research/experiments/results/signatures-20261012T053318Z/decode-32-r2/requests.json": "3f4c7abff283263569547dcaf5fa9450a842da2ba46b794da7dc3295c14c6f0b",
+    "research/experiments/results/signatures-20261012T053318Z/decode-128-r2/requests.json": "892cefc2871a2ce7bd16227e87e8ab15151adb0d629f834ac1674c14dec9533a",
+    "research/experiments/results/signatures-20261012T053318Z/decode-256-r2/requests.json": "fffe568e37a3749ce806d0320c7bd66f45a79c1a251f5ba81ea27813fb837093",
+    "research/experiments/results/signatures-20261012T053318Z/queue-1-r2/requests.json": "dff3cf2576f4aa6c24ff57af69bd218fdce99821f4a38f1d53ed38c8ad86588b",
+    "research/experiments/results/signatures-20261012T053318Z/queue-4-r2/requests.json": "08b79c3e1da734b5eb1ab82208e841724b340335ffe45883df95d451b71d1670",
+    "research/experiments/results/signatures-20261012T053318Z/queue-8-r2/requests.json": "10395131455b6959a88bb72d8d2c224f0482be5d38271c270e1b0dd4fdda1556",
+    "research/experiments/results/signatures-20261012T053318Z/cache-disabled-r2/requests.json": "edba83698db9440c07bacf919640cb0bf7e2dd636f9e355acbab7a1e10c356a8",
+    "research/experiments/results/signatures-20261012T053318Z/cache-cold-r0/requests.json": "3b967370b5281836f1e17f2b6d58f3b9a8df9a83fb63c9c0bda5f8bc57159737",
+    "research/experiments/results/signatures-20261012T053318Z/cache-warm-r0/requests.json": "2fd6aa061bef6febb5c29ed336e30f880358770df6d63e437e4ee0ac0d8dd11d",
+    "research/experiments/results/signatures-20261012T053318Z/cache-warm-r1/requests.json": "a85928c4d3b741bf19f1408ad651be154abb1c132f1a5ad9876ff4c447bd4f17",
+    "research/experiments/results/signatures-20261012T053318Z/cache-cold-r1/requests.json": "39e308ef82f89d13393002612b8a0489d503c9c8629f82df96161920a963ab71",
+    "research/experiments/results/signatures-20261012T053318Z/cache-cold-r2/requests.json": "0d1c8d6e8c03c22a938da782848d245c1bbf0e849766cfa8e28da69dabacd8da",
+    "research/experiments/results/signatures-20261012T053318Z/cache-warm-r2/requests.json": "e9d99e23b229fd10cd23196427197f2156cb0cc02b89e2deb812ad002421e19a",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r0/episode-0.json": "de2f403c8ebdd8a1108a3ff1ed2c0f7c733bea06541051191c08b8d6ea568c36",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r0/episode-1.json": "e59e7507aa066a076c33e0b11155e7432c99aab89ee8b55f8480c7344dbee1a9",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r0/episode-2.json": "bcfba51627153b3fcadfa00cb465bfd59ed98f520da3157f6f70a2625e73249f",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r0/episode-3.json": "b9e2a42f89075a3d28d510f1c5120b15f98679ddf35ca534d587974f6ae80d41",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r0/episode-4.json": "7ce1df889ef5c7c005fd8dd3df8a5f1423f3d642feaaba5d93cd32345ce4e816",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r0/episode-5.json": "002b4bdecc3d1b6fdb98cc2138fd41dd48422e2af67b43fe3e014f04acca47ed",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r0/episode-6.json": "0302799d3945735e26ee06534a47200e479e2b5f1d4585381718c8ba0d6ac631",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r0/episode-7.json": "a68daf6fafcc7cf1eb030abcdfc082df9d6f886617729f5a3431e92f381e99c9",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r1/episode-0.json": "a02347b9e45cdad8b511a1fd8b6cd7a38983c3d1004d6aee895c5f199f3cd97d",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r1/episode-1.json": "e862af22d7fcb32c675bbe7b25806b757b21941a7a23313933ca2a9ab6f10af2",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r1/episode-2.json": "5947fbabda9f125b2d9e751ac90ab2fbd07b0b75d8bd5041357b480fa0f18ed2",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r1/episode-3.json": "8a3175d7fac417d7368ff27e2cf417b6924d4a4428ab66e18ed6ffbedb7228ea",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r1/episode-4.json": "2b536fd55275d3f10fa30300c7b077a0cd7433fd072947ca7b08b8b8d06d55c9",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r1/episode-5.json": "87f198e1cd542be0ceb772f4b187954f27ef4946002483aec34850b27928cb64",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r1/episode-6.json": "b482d3c5b3a8daa60970ea22cfb4e2f6c00def2096c660af7b4680abe10571f5",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r1/episode-7.json": "fbf336525ed2cf7c93d571f996fed2c04b1aee944896693ee394bd1c103581a0",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r2/episode-0.json": "8a8672dc695adbe5330b85a102d364b8e600a7d33da8d8b341ee51631def77d6",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r2/episode-1.json": "12c70e25512ccac1c448464cc46bdd4343189022633eb70dc8daed294d8e1da5",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r2/episode-2.json": "c0e1dbd5f917b8e572b3df5d350ca4ac5d4959e7a3eef9f7a4cdd166b0f1c95a",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r2/episode-3.json": "db5da265776ebd392b4e2994fca41a83d07cfa6c370b9fc20be6592f52836c98",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r2/episode-4.json": "307b7b1296861197f20be29bc64c3121a5b056d96b0f7dd0b4f0d1ce92acea19",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r2/episode-5.json": "7cf0feaea0edae57b23d5ff788166e5ef92e3dade5911f02d35f2ab115dc824f",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r2/episode-6.json": "2700efe3bdf49c34991ef4ab85feacd80060c9973f98915e6e072574df06bbe5",
+    "research/experiments/results/trace-revalidation-v2-20261013T121015Z/on-r2/episode-7.json": "bec5dad36dfc3fca92e313b7b0a04b2ab39cb04c92264f4093a6e9250e338c0c"
+  },
+  "scope": "offline audit of historical real-GPU synthetic workload records",
+  "cells": 36,
+  "requests": 288,
+  "conditions": [
+    {
+      "name": "cache/cold",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 1024,
+        "output_length": 128,
+        "concurrency": 4,
+        "arrival_rate": 4.0,
+        "cache_state": "cold"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 64.00577024987797,
+        "mean_tpot_ms": 15.23835255807171,
+        "p95_e2e_ms": 2039.4806190000963,
+        "mean_client_queue_ms": 513.5680352498184,
+        "queue_mean_ms": 0.007418500217681867,
+        "prefill_mean_ms": 48.40098212457633,
+        "decode_mean_ms": 1935.659254000484,
+        "gpu_utilization_mean_pct": 40.55555555555556,
+        "gpu_memory_peak_mib": 5785.0
+      }
+    },
+    {
+      "name": "cache/disabled",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 1024,
+        "output_length": 128,
+        "concurrency": 4,
+        "arrival_rate": 4.0,
+        "cache_state": "disabled"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 70.35039137508647,
+        "mean_tpot_ms": 17.049397104331966,
+        "p95_e2e_ms": 2365.214973849743,
+        "mean_client_queue_ms": 676.3623101248868,
+        "queue_mean_ms": 0.009457749456487363,
+        "prefill_mean_ms": 56.97594699995534,
+        "decode_mean_ms": 2165.5808226253157,
+        "gpu_utilization_mean_pct": 36.6,
+        "gpu_memory_peak_mib": 6169.0
+      }
+    },
+    {
+      "name": "cache/warm",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 1024,
+        "output_length": 128,
+        "concurrency": 4,
+        "arrival_rate": 4.0,
+        "cache_state": "warm"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 45.07242175054671,
+        "mean_tpot_ms": 16.128129501969774,
+        "p95_e2e_ms": 2171.234760200332,
+        "mean_client_queue_ms": 523.8153298751058,
+        "queue_mean_ms": 0.007871749858168187,
+        "prefill_mean_ms": 29.60552624972479,
+        "decode_mean_ms": 2048.76164362463,
+        "gpu_utilization_mean_pct": 37.77777777777778,
+        "gpu_memory_peak_mib": 5804.0
+      }
+    },
+    {
+      "name": "decode/128",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 512,
+        "output_length": 128,
+        "concurrency": 1,
+        "arrival_rate": null,
+        "cache_state": "disabled"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 41.68714037496102,
+        "mean_tpot_ms": 15.322398376969158,
+        "p95_e2e_ms": 2109.6793376003006,
+        "mean_client_queue_ms": 6945.757982500027,
+        "queue_mean_ms": 0.012526375030574854,
+        "prefill_mean_ms": 36.947701375311226,
+        "decode_mean_ms": 1946.5883991249484,
+        "gpu_utilization_mean_pct": 38.0,
+        "gpu_memory_peak_mib": 5992.0
+      }
+    },
+    {
+      "name": "decode/256",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 512,
+        "output_length": 256,
+        "concurrency": 1,
+        "arrival_rate": null,
+        "cache_state": "disabled"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 42.512919374757985,
+        "mean_tpot_ms": 15.663394125979668,
+        "p95_e2e_ms": 4299.550994250603,
+        "mean_client_queue_ms": 14196.339966124697,
+        "queue_mean_ms": 0.01287862528442929,
+        "prefill_mean_ms": 38.42509612491085,
+        "decode_mean_ms": 3995.5899811252493,
+        "gpu_utilization_mean_pct": 37.45762711864407,
+        "gpu_memory_peak_mib": 6050.0
+      }
+    },
+    {
+      "name": "decode/32",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 512,
+        "output_length": 32,
+        "concurrency": 1,
+        "arrival_rate": null,
+        "cache_state": "disabled"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 40.14126137508356,
+        "mean_tpot_ms": 15.143575338705036,
+        "p95_e2e_ms": 541.122321750936,
+        "mean_client_queue_ms": 1766.9019762497555,
+        "queue_mean_ms": 0.012862624771514675,
+        "prefill_mean_ms": 35.69320312499258,
+        "decode_mean_ms": 470.3802778747104,
+        "gpu_utilization_mean_pct": 40.75,
+        "gpu_memory_peak_mib": 5970.0
+      }
+    },
+    {
+      "name": "prefill/128",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 128,
+        "output_length": 128,
+        "concurrency": 1,
+        "arrival_rate": null,
+        "cache_state": "disabled"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 35.930116875078966,
+        "mean_tpot_ms": 14.881130947835446,
+        "p95_e2e_ms": 2097.341141600282,
+        "mean_client_queue_ms": 6983.243132375037,
+        "queue_mean_ms": 0.012217874655107153,
+        "prefill_mean_ms": 31.56884562531559,
+        "decode_mean_ms": 1890.3539002501475,
+        "gpu_utilization_mean_pct": 37.892857142857146,
+        "gpu_memory_peak_mib": 5794.0
+      }
+    },
+    {
+      "name": "prefill/1536",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 1536,
+        "output_length": 128,
+        "concurrency": 1,
+        "arrival_rate": null,
+        "cache_state": "disabled"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 73.96849124984328,
+        "mean_tpot_ms": 15.015922169289647,
+        "p95_e2e_ms": 2070.6255722991955,
+        "mean_client_queue_ms": 6872.5569990003805,
+        "queue_mean_ms": 0.011934375152122811,
+        "prefill_mean_ms": 68.63687537475016,
+        "decode_mean_ms": 1908.2791875005114,
+        "gpu_utilization_mean_pct": 39.275862068965516,
+        "gpu_memory_peak_mib": 5948.0
+      }
+    },
+    {
+      "name": "prefill/512",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 512,
+        "output_length": 128,
+        "concurrency": 1,
+        "arrival_rate": null,
+        "cache_state": "disabled"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 40.37659187474674,
+        "mean_tpot_ms": 15.339612077756946,
+        "p95_e2e_ms": 2063.5661836003237,
+        "mean_client_queue_ms": 6986.778558125025,
+        "queue_mean_ms": 0.012042124808431254,
+        "prefill_mean_ms": 35.70108137500938,
+        "decode_mean_ms": 1949.1759756253941,
+        "gpu_utilization_mean_pct": 37.90625,
+        "gpu_memory_peak_mib": 5962.0
+      }
+    },
+    {
+      "name": "queue/1",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 512,
+        "output_length": 128,
+        "concurrency": 1,
+        "arrival_rate": 4.0,
+        "cache_state": "disabled"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 42.9904262502987,
+        "mean_tpot_ms": 16.082570951766684,
+        "p95_e2e_ms": 2450.9463033006796,
+        "mean_client_queue_ms": 6319.592700999692,
+        "queue_mean_ms": 0.014308624940895243,
+        "prefill_mean_ms": 38.537299375093426,
+        "decode_mean_ms": 2043.0740898748354,
+        "gpu_utilization_mean_pct": 37.41935483870968,
+        "gpu_memory_peak_mib": 6016.0
+      }
+    },
+    {
+      "name": "queue/4",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 512,
+        "output_length": 128,
+        "concurrency": 4,
+        "arrival_rate": 4.0,
+        "cache_state": "disabled"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 51.92449175024194,
+        "mean_tpot_ms": 15.886721654529236,
+        "p95_e2e_ms": 2144.279706049929,
+        "mean_client_queue_ms": 562.2067411247826,
+        "queue_mean_ms": 0.007786874903104035,
+        "prefill_mean_ms": 38.00236162510373,
+        "decode_mean_ms": 2017.525009875044,
+        "gpu_utilization_mean_pct": 35.77777777777778,
+        "gpu_memory_peak_mib": 6030.0
+      }
+    },
+    {
+      "name": "queue/8",
+      "repeats": 3,
+      "effective_configuration": {
+        "input_length": 512,
+        "output_length": 128,
+        "concurrency": 8,
+        "arrival_rate": 4.0,
+        "cache_state": "disabled"
+      },
+      "symptom_and_observation_medians": {
+        "mean_ttft_ms": 631.7782608746256,
+        "mean_tpot_ms": 16.48523300098632,
+        "p95_e2e_ms": 3298.1057909494666,
+        "mean_client_queue_ms": 0.005606374998023966,
+        "queue_mean_ms": 580.8242802495442,
+        "prefill_mean_ms": 38.27476799961005,
+        "decode_mean_ms": 2093.782422250797,
+        "gpu_utilization_mean_pct": 35.22222222222222,
+        "gpu_memory_peak_mib": 6080.0
+      }
+    }
+  ],
+  "per_request_stage_records_in_phase1": 0,
+  "cells_with_aggregate_stages": 36,
+  "trace_v2_native_measurement_requests": 192,
+  "trace_v2_input_output_settings": [
+    [
+      512,
+      128
+    ]
+  ],
+  "exploration_tolerance": 0.2,
+  "similar_symptom_candidates": [
+    {
+      "left": "cache/disabled",
+      "right": "prefill/1536",
+      "symptom_relative_gaps": {
+        "mean_ttft_ms": 0.048914068863943116,
+        "mean_tpot_ms": 0.11926960951162591,
+        "p95_e2e_ms": 0.1245507933983095
+      },
+      "left_observations": {
+        "mean_ttft_ms": 70.35039137508647,
+        "mean_tpot_ms": 17.049397104331966,
+        "p95_e2e_ms": 2365.214973849743,
+        "mean_client_queue_ms": 676.3623101248868,
+        "queue_mean_ms": 0.009457749456487363,
+        "prefill_mean_ms": 56.97594699995534,
+        "decode_mean_ms": 2165.5808226253157,
+        "gpu_utilization_mean_pct": 36.6,
+        "gpu_memory_peak_mib": 6169.0
+      },
+      "right_observations": {
+        "mean_ttft_ms": 73.96849124984328,
+        "mean_tpot_ms": 15.015922169289647,
+        "p95_e2e_ms": 2070.6255722991955,
+        "mean_client_queue_ms": 6872.5569990003805,
+        "queue_mean_ms": 0.011934375152122811,
+        "prefill_mean_ms": 68.63687537475016,
+        "decode_mean_ms": 1908.2791875005114,
+        "gpu_utilization_mean_pct": 39.275862068965516,
+        "gpu_memory_peak_mib": 5948.0
+      },
+      "interpretation": "candidate workload similarity; no ground-truth cause"
+    },
+    {
+      "left": "decode/128",
+      "right": "prefill/128",
+      "symptom_relative_gaps": {
+        "mean_ttft_ms": 0.13810070559169257,
+        "mean_tpot_ms": 0.028798848475116875,
+        "p95_e2e_ms": 0.005848375049287414
+      },
+      "left_observations": {
+        "mean_ttft_ms": 41.68714037496102,
+        "mean_tpot_ms": 15.322398376969158,
+        "p95_e2e_ms": 2109.6793376003006,
+        "mean_client_queue_ms": 6945.757982500027,
+        "queue_mean_ms": 0.012526375030574854,
+        "prefill_mean_ms": 36.947701375311226,
+        "decode_mean_ms": 1946.5883991249484,
+        "gpu_utilization_mean_pct": 38.0,
+        "gpu_memory_peak_mib": 5992.0
+      },
+      "right_observations": {
+        "mean_ttft_ms": 35.930116875078966,
+        "mean_tpot_ms": 14.881130947835446,
+        "p95_e2e_ms": 2097.341141600282,
+        "mean_client_queue_ms": 6983.243132375037,
+        "queue_mean_ms": 0.012217874655107153,
+        "prefill_mean_ms": 31.56884562531559,
+        "decode_mean_ms": 1890.3539002501475,
+        "gpu_utilization_mean_pct": 37.892857142857146,
+        "gpu_memory_peak_mib": 5794.0
+      },
+      "interpretation": "candidate workload similarity; no ground-truth cause"
+    },
+    {
+      "left": "decode/128",
+      "right": "queue/1",
+      "symptom_relative_gaps": {
+        "mean_ttft_ms": 0.030315723499685546,
+        "mean_tpot_ms": 0.047266856591359874,
+        "p95_e2e_ms": 0.13923885857507204
+      },
+      "left_observations": {
+        "mean_ttft_ms": 41.68714037496102,
+        "mean_tpot_ms": 15.322398376969158,
+        "p95_e2e_ms": 2109.6793376003006,
+        "mean_client_queue_ms": 6945.757982500027,
+        "queue_mean_ms": 0.012526375030574854,
+        "prefill_mean_ms": 36.947701375311226,
+        "decode_mean_ms": 1946.5883991249484,
+        "gpu_utilization_mean_pct": 38.0,
+        "gpu_memory_peak_mib": 5992.0
+      },
+      "right_observations": {
+        "mean_ttft_ms": 42.9904262502987,
+        "mean_tpot_ms": 16.082570951766684,
+        "p95_e2e_ms": 2450.9463033006796,
+        "mean_client_queue_ms": 6319.592700999692,
+        "queue_mean_ms": 0.014308624940895243,
+        "prefill_mean_ms": 38.537299375093426,
+        "decode_mean_ms": 2043.0740898748354,
+        "gpu_utilization_mean_pct": 37.41935483870968,
+        "gpu_memory_peak_mib": 6016.0
+      },
+      "interpretation": "candidate workload similarity; no ground-truth cause"
+    },
+    {
+      "left": "decode/128",
+      "right": "queue/4",
+      "symptom_relative_gaps": {
+        "mean_ttft_ms": 0.19715843198856584,
+        "mean_tpot_ms": 0.03552169477326946,
+        "p95_e2e_ms": 0.016136126435373956
+      },
+      "left_observations": {
+        "mean_ttft_ms": 41.68714037496102,
+        "mean_tpot_ms": 15.322398376969158,
+        "p95_e2e_ms": 2109.6793376003006,
+        "mean_client_queue_ms": 6945.757982500027,
+        "queue_mean_ms": 0.012526375030574854,
+        "prefill_mean_ms": 36.947701375311226,
+        "decode_mean_ms": 1946.5883991249484,
+        "gpu_utilization_mean_pct": 38.0,
+        "gpu_memory_peak_mib": 5992.0
+      },
+      "right_observations": {
+        "mean_ttft_ms": 51.92449175024194,
+        "mean_tpot_ms": 15.886721654529236,
+        "p95_e2e_ms": 2144.279706049929,
+        "mean_client_queue_ms": 562.2067411247826,
+        "queue_mean_ms": 0.007786874903104035,
+        "prefill_mean_ms": 38.00236162510373,
+        "decode_mean_ms": 2017.525009875044,
+        "gpu_utilization_mean_pct": 35.77777777777778,
+        "gpu_memory_peak_mib": 6030.0
+      },
+      "interpretation": "candidate workload similarity; no ground-truth cause"
+    },
+    {
+      "left": "prefill/128",
+      "right": "prefill/512",
+      "symptom_relative_gaps": {
+        "mean_ttft_ms": 0.11012506982910532,
+        "mean_tpot_ms": 0.029888704329512752,
+        "p95_e2e_ms": 0.016103702602328046
+      },
+      "left_observations": {
+        "mean_ttft_ms": 35.930116875078966,
+        "mean_tpot_ms": 14.881130947835446,
+        "p95_e2e_ms": 2097.341141600282,
+        "mean_client_queue_ms": 6983.243132375037,
+        "queue_mean_ms": 0.012217874655107153,
+        "prefill_mean_ms": 31.56884562531559,
+        "decode_mean_ms": 1890.3539002501475,
+        "gpu_utilization_mean_pct": 37.892857142857146,
+        "gpu_memory_peak_mib": 5794.0
+      },
+      "right_observations": {
+        "mean_ttft_ms": 40.37659187474674,
+        "mean_tpot_ms": 15.339612077756946,
+        "p95_e2e_ms": 2063.5661836003237,
+        "mean_client_queue_ms": 6986.778558125025,
+        "queue_mean_ms": 0.012042124808431254,
+        "prefill_mean_ms": 35.70108137500938,
+        "decode_mean_ms": 1949.1759756253941,
+        "gpu_utilization_mean_pct": 37.90625,
+        "gpu_memory_peak_mib": 5962.0
+      },
+      "interpretation": "candidate workload similarity; no ground-truth cause"
+    },
+    {
+      "left": "prefill/128",
+      "right": "queue/1",
+      "symptom_relative_gaps": {
+        "mean_ttft_ms": 0.1642298062855489,
+        "mean_tpot_ms": 0.07470447402560709,
+        "p95_e2e_ms": 0.14427291255797775
+      },
+      "left_observations": {
+        "mean_ttft_ms": 35.930116875078966,
+        "mean_tpot_ms": 14.881130947835446,
+        "p95_e2e_ms": 2097.341141600282,
+        "mean_client_queue_ms": 6983.243132375037,
+        "queue_mean_ms": 0.012217874655107153,
+        "prefill_mean_ms": 31.56884562531559,
+        "decode_mean_ms": 1890.3539002501475,
+        "gpu_utilization_mean_pct": 37.892857142857146,
+        "gpu_memory_peak_mib": 5794.0
+      },
+      "right_observations": {
+        "mean_ttft_ms": 42.9904262502987,
+        "mean_tpot_ms": 16.082570951766684,
+        "p95_e2e_ms": 2450.9463033006796,
+        "mean_client_queue_ms": 6319.592700999692,
+        "queue_mean_ms": 0.014308624940895243,
+        "prefill_mean_ms": 38.537299375093426,
+        "decode_mean_ms": 2043.0740898748354,
+        "gpu_utilization_mean_pct": 37.41935483870968,
+        "gpu_memory_peak_mib": 6016.0
+      },
+      "interpretation": "candidate workload similarity; no ground-truth cause"
+    },
+    {
+      "left": "prefill/512",
+      "right": "queue/1",
+      "symptom_relative_gaps": {
+        "mean_ttft_ms": 0.06080038286509892,
+        "mean_tpot_ms": 0.04619652394122487,
+        "p95_e2e_ms": 0.15805328708290042
+      },
+      "left_observations": {
+        "mean_ttft_ms": 40.37659187474674,
+        "mean_tpot_ms": 15.339612077756946,
+        "p95_e2e_ms": 2063.5661836003237,
+        "mean_client_queue_ms": 6986.778558125025,
+        "queue_mean_ms": 0.012042124808431254,
+        "prefill_mean_ms": 35.70108137500938,
+        "decode_mean_ms": 1949.1759756253941,
+        "gpu_utilization_mean_pct": 37.90625,
+        "gpu_memory_peak_mib": 5962.0
+      },
+      "right_observations": {
+        "mean_ttft_ms": 42.9904262502987,
+        "mean_tpot_ms": 16.082570951766684,
+        "p95_e2e_ms": 2450.9463033006796,
+        "mean_client_queue_ms": 6319.592700999692,
+        "queue_mean_ms": 0.014308624940895243,
+        "prefill_mean_ms": 38.537299375093426,
+        "decode_mean_ms": 2043.0740898748354,
+        "gpu_utilization_mean_pct": 37.41935483870968,
+        "gpu_memory_peak_mib": 6016.0
+      },
+      "interpretation": "candidate workload similarity; no ground-truth cause"
+    },
+    {
+      "left": "queue/1",
+      "right": "queue/4",
+      "symptom_relative_gaps": {
+        "mean_ttft_ms": 0.1720587953545374,
+        "mean_tpot_ms": 0.012177735626027735,
+        "p95_e2e_ms": 0.12512171190277163
+      },
+      "left_observations": {
+        "mean_ttft_ms": 42.9904262502987,
+        "mean_tpot_ms": 16.082570951766684,
+        "p95_e2e_ms": 2450.9463033006796,
+        "mean_client_queue_ms": 6319.592700999692,
+        "queue_mean_ms": 0.014308624940895243,
+        "prefill_mean_ms": 38.537299375093426,
+        "decode_mean_ms": 2043.0740898748354,
+        "gpu_utilization_mean_pct": 37.41935483870968,
+        "gpu_memory_peak_mib": 6016.0
+      },
+      "right_observations": {
+        "mean_ttft_ms": 51.92449175024194,
+        "mean_tpot_ms": 15.886721654529236,
+        "p95_e2e_ms": 2144.279706049929,
+        "mean_client_queue_ms": 562.2067411247826,
+        "queue_mean_ms": 0.007786874903104035,
+        "prefill_mean_ms": 38.00236162510373,
+        "decode_mean_ms": 2017.525009875044,
+        "gpu_utilization_mean_pct": 35.77777777777778,
+        "gpu_memory_peak_mib": 6030.0
+      },
+      "interpretation": "candidate workload similarity; no ground-truth cause"
+    }
+  ],
+  "integrity_errors": [],
+  "verdict": {
+    "status": "INSUFFICIENT_EVIDENCE",
+    "hypothesis": "Stage/resource observations reduce misdiagnosis under similar aggregate symptoms",
+    "supported": null,
+    "refuted": null,
+    "diagnostic_accuracy": null,
+    "reasons": [
+      "Phase1 has aggregate stages but no linked per-request stage measurements",
+      "Trace v2 remains HOLD and covers only one input/output workload setting",
+      "Workload group names are interventions, not verified mechanism labels",
+      "No held-out, independent labelled diagnosis trials exist"
+    ],
+    "new_gpu_experiment_executed": false,
+    "classifier_or_diagnosis_algorithm_built": false,
+    "warning": "Symptom screen is retrospective, eight requests/cell; P95 is descriptive, not robust tail evidence"
+  }
+}

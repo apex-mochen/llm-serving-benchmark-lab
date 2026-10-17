@@ -1,0 +1,3 @@
+BEGIN 2026-10-16T01:04:21.417626+00:00 ['research/experiments/run_trace_aa_control.py', '--execute']
+STOP AssertionError('Host free physical below conservative 3GiB margin')
+END HOLD

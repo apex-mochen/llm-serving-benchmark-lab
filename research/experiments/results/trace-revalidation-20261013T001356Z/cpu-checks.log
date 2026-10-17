@@ -1,0 +1,9 @@
+test_equal_five_is_not_pass (__main__.Arithmetic.test_equal_five_is_not_pass) ... ok
+test_identity (__main__.Arithmetic.test_identity) ... ok
+test_latency_and_throughput_sign (__main__.Arithmetic.test_latency_and_throughput_sign) ... ok
+test_measurement_denominator (__main__.Arithmetic.test_measurement_denominator) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

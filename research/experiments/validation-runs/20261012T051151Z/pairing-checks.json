@@ -1,0 +1,38 @@
+[
+  {
+    "cache": false,
+    "repeat": 0,
+    "identical_input_and_output_counts": true,
+    "max_arrival_mismatch_ms": 0.7946340010676067
+  },
+  {
+    "cache": false,
+    "repeat": 1,
+    "identical_input_and_output_counts": true,
+    "max_arrival_mismatch_ms": 1.2108820010325871
+  },
+  {
+    "cache": false,
+    "repeat": 2,
+    "identical_input_and_output_counts": true,
+    "max_arrival_mismatch_ms": 1.3026579999859678
+  },
+  {
+    "cache": true,
+    "repeat": 0,
+    "identical_input_and_output_counts": true,
+    "max_arrival_mismatch_ms": 0.878566001119907
+  },
+  {
+    "cache": true,
+    "repeat": 1,
+    "identical_input_and_output_counts": true,
+    "max_arrival_mismatch_ms": 1.0141459988517454
+  },
+  {
+    "cache": true,
+    "repeat": 2,
+    "identical_input_and_output_counts": true,
+    "max_arrival_mismatch_ms": 1.4153859992802609
+  }
+]

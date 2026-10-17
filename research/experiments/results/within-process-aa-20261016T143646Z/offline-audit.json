@@ -1,0 +1,200 @@
+{
+  "episodes": [
+    {
+      "number": 0,
+      "phase": "warmup",
+      "window": null,
+      "label": null,
+      "start": 116.192817203,
+      "end": 120.1523913,
+      "summary": {
+        "tpot_ms": 12.458896324803138,
+        "front_ttft_ms": 61.327173749997854,
+        "back_ttft_ms": 696.9184714999983,
+        "all_ttft_ms": 379.1228226249981,
+        "e2e_ms": 1961.6564563749996
+      },
+      "actual_lateness_ms": null
+    },
+    {
+      "number": 1,
+      "phase": "burn-in",
+      "window": null,
+      "label": null,
+      "start": 122.164784578,
+      "end": 126.027735682,
+      "summary": {
+        "tpot_ms": 12.044045303149623,
+        "front_ttft_ms": 44.421721499997346,
+        "back_ttft_ms": 618.7447212499997,
+        "all_ttft_ms": 331.5832213749985,
+        "e2e_ms": 1861.4637183749992
+      },
+      "actual_lateness_ms": 12.39327799999046
+    },
+    {
+      "number": 2,
+      "phase": "burn-in",
+      "window": null,
+      "label": null,
+      "start": 128.040880506,
+      "end": 132.113978313,
+      "summary": {
+        "tpot_ms": 12.763756505905533,
+        "front_ttft_ms": 49.19448874998977,
+        "back_ttft_ms": 717.3214984999987,
+        "all_ttft_ms": 383.25799362499424,
+        "e2e_ms": 2004.5092522499956
+      },
+      "actual_lateness_ms": 13.14482399999406
+    },
+    {
+      "number": 3,
+      "phase": "burn-in",
+      "window": null,
+      "label": null,
+      "start": 134.126140146,
+      "end": 137.97754176,
+      "summary": {
+        "tpot_ms": 12.11589876476381,
+        "front_ttft_ms": 45.50387075000373,
+        "back_ttft_ms": 720.4723252499932,
+        "all_ttft_ms": 382.98809799999844,
+        "e2e_ms": 1921.9123167499959
+      },
+      "actual_lateness_ms": 12.161833000021716
+    },
+    {
+      "number": 4,
+      "phase": "burn-in",
+      "window": null,
+      "label": null,
+      "start": 139.988492443,
+      "end": 143.600629135,
+      "summary": {
+        "tpot_ms": 11.179733159448762,
+        "front_ttft_ms": 40.221801500003096,
+        "back_ttft_ms": 476.4070537500089,
+        "all_ttft_ms": 258.31442762500603,
+        "e2e_ms": 1678.335210875005
+      },
+      "actual_lateness_ms": 10.950683000004346
+    },
+    {
+      "number": 5,
+      "phase": "measurement",
+      "window": 0,
+      "label": "A",
+      "start": 145.613511606,
+      "end": 149.511720826,
+      "summary": {
+        "tpot_ms": 12.053371672244038,
+        "front_ttft_ms": 43.81603999999584,
+        "back_ttft_ms": 639.8668517499999,
+        "all_ttft_ms": 341.8414458749979,
+        "e2e_ms": 1872.8314794999967
+      },
+      "actual_lateness_ms": 12.88247100001172
+    },
+    {
+      "number": 6,
+      "phase": "measurement",
+      "window": 0,
+      "label": "A",
+      "start": 151.523969095,
+      "end": 155.417355142,
+      "summary": {
+        "tpot_ms": 12.19344613484248,
+        "front_ttft_ms": 54.545800250004106,
+        "back_ttft_ms": 661.6696987499893,
+        "all_ttft_ms": 358.10774949999666,
+        "e2e_ms": 1906.9282656249982
+      },
+      "actual_lateness_ms": 12.248269000025402
+    },
+    {
+      "number": 7,
+      "phase": "measurement",
+      "window": 0,
+      "label": "A",
+      "start": 157.429049555,
+      "end": 161.279564265,
+      "summary": {
+        "tpot_ms": 11.917175499999995,
+        "front_ttft_ms": 46.08828574999535,
+        "back_ttft_ms": 568.5408510000016,
+        "all_ttft_ms": 307.3145683749985,
+        "e2e_ms": 1821.0886252499954
+      },
+      "actual_lateness_ms": 11.694413000014947
+    }
+  ],
+  "total_requests": 64,
+  "measurement_requests": 24,
+  "complete_windows": 0,
+  "complete_abba_blocks": 0,
+  "native_trace_records": 0,
+  "local_samples": 37,
+  "host_samples": 5,
+  "observed_monitor_issues": [],
+  "process_ids": {
+    "client": 525,
+    "monitor": 696
+  },
+  "measured_ranges": {
+    "tpot_ms": {
+      "mean": 12.054664435695505,
+      "min": 11.917175499999995,
+      "max": 12.19344613484248
+    },
+    "front_ttft_ms": {
+      "mean": 48.15004199999843,
+      "min": 43.81603999999584,
+      "max": 54.545800250004106
+    },
+    "back_ttft_ms": {
+      "mean": 623.3591338333302,
+      "min": 568.5408510000016,
+      "max": 661.6696987499893
+    },
+    "all_ttft_ms": {
+      "mean": 335.7545879166643,
+      "min": 307.3145683749985,
+      "max": 358.10774949999666
+    },
+    "e2e_ms": {
+      "mean": 1866.9494567916634,
+      "min": 1821.0886252499954,
+      "max": 1906.9282656249982
+    }
+  },
+  "stop": {
+    "status": "HOLD",
+    "error": "RuntimeError('Episode start lateness >50ms')",
+    "primary_error": "RuntimeError('Episode start lateness >50ms')",
+    "cleanup_errors": [],
+    "completed_episodes": 8,
+    "measurement_episodes": 3,
+    "core_unchanged": true,
+    "stability_pass": null,
+    "trace_overhead_pass": null,
+    "phase2_expansion_executed": false
+  },
+  "source_sha256": {
+    "episode-000.json": "21a2e41f41c9b299a7a7ed7b7b672a26256300959f33be573aa07c1b07a9a12f",
+    "episode-001.json": "2946e9e8849ccaff7fe9407408bf4cf14e771ae3525db3878fcd055bafb59309",
+    "episode-002.json": "190bf8cac8c9740e3899eb46c83bd95e3f73189822e88489f7cec9ed6e36a5a2",
+    "episode-003.json": "ae495636931d600f0c06c16c2dff795c9e220f3a9a02c5ac9055bd41f8bac3be",
+    "episode-004.json": "2e18c297c5f0e5514ac1bcb202c62f599ce1e944864346c96fc453922bf5cf20",
+    "episode-005.json": "3541c4510d696f910c33d4c0de00269c50b0f611ece4af64094dadb86fcbd05c",
+    "episode-006.json": "576a26c2744b296e4c5c1e761960daec621c9deff80b9ce94da09c11553133de",
+    "episode-007.json": "0cee375628704968213de711777b6e92234df8714d6bad5a4782ec155ef7c7bd"
+  },
+  "warning": "Three measurement episodes only, no complete window; stopped wakeup lateness magnitude was not recorded.",
+  "log_matches": {
+    "OutOfMemoryError": 0,
+    "CUDA out of memory": 0,
+    "memory allocation failed with OOM": 0,
+    "semaphore": 1
+  }
+}

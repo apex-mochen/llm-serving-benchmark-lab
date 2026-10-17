@@ -1,0 +1,13 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "executable": "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+  "httpx": "0.28.1",
+  "git_head": "1040d35d60e37bb44be87c23cd81cf665adb844f",
+  "kernel": "Linux LAPTOP-1CJ9QBDQ 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "anchor": {
+    "monotonic_s": 10.59717734,
+    "utc": "2026-10-16T14:44:02.413556+00:00",
+    "pid": 666,
+    "boot_id": "a9ee61b8-ffd0-4ca7-83e2-1ede091713a9"
+  }
+}

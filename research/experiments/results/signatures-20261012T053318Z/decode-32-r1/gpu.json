@@ -1,0 +1,93 @@
+[
+  {
+    "monotonic_s": 10856.624765651,
+    "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver_version": "616.64",
+    "memory.total": 8188.0,
+    "memory.used": 5970.0,
+    "utilization.gpu": 37.0,
+    "temperature.gpu": "80",
+    "power.draw": "53.33",
+    "clocks.sm": "2595",
+    "clocks.mem": "8001"
+  },
+  {
+    "monotonic_s": 10857.167843506,
+    "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver_version": "616.64",
+    "memory.total": 8188.0,
+    "memory.used": 5970.0,
+    "utilization.gpu": 44.0,
+    "temperature.gpu": "79",
+    "power.draw": "63.14",
+    "clocks.sm": "2595",
+    "clocks.mem": "8001"
+  },
+  {
+    "monotonic_s": 10857.718821278,
+    "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver_version": "616.64",
+    "memory.total": 8188.0,
+    "memory.used": 5964.0,
+    "utilization.gpu": 40.0,
+    "temperature.gpu": "80",
+    "power.draw": "54.15",
+    "clocks.sm": "2595",
+    "clocks.mem": "8001"
+  },
+  {
+    "monotonic_s": 10858.276488809,
+    "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver_version": "616.64",
+    "memory.total": 8188.0,
+    "memory.used": 5964.0,
+    "utilization.gpu": 44.0,
+    "temperature.gpu": "79",
+    "power.draw": "56.30",
+    "clocks.sm": "2595",
+    "clocks.mem": "8001"
+  },
+  {
+    "monotonic_s": 10858.816992789,
+    "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver_version": "616.64",
+    "memory.total": 8188.0,
+    "memory.used": 5964.0,
+    "utilization.gpu": 43.0,
+    "temperature.gpu": "79",
+    "power.draw": "55.31",
+    "clocks.sm": "2595",
+    "clocks.mem": "8001"
+  },
+  {
+    "monotonic_s": 10859.356557741,
+    "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver_version": "616.64",
+    "memory.total": 8188.0,
+    "memory.used": 5964.0,
+    "utilization.gpu": 40.0,
+    "temperature.gpu": "80",
+    "power.draw": "57.81",
+    "clocks.sm": "2595",
+    "clocks.mem": "8001"
+  },
+  {
+    "monotonic_s": 10859.904546692,
+    "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver_version": "616.64",
+    "memory.total": 8188.0,
+    "memory.used": 5964.0,
+    "utilization.gpu": 39.0,
+    "temperature.gpu": "79",
+    "power.draw": "55.88",
+    "clocks.sm": "2595",
+    "clocks.mem": "8001"
+  }
+]

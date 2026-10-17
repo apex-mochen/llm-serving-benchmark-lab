@@ -1,0 +1,1 @@
+{"status": "HOLD", "measured": 384, "native": 192, "complete_variants": 6, "errors": [], "warnings": ["off-r0: leaked semaphore warning", "off-r1: leaked semaphore warning", "off-r2: leaked semaphore warning", "on-r0: leaked semaphore warning", "on-r1: leaked semaphore warning", "on-r2: leaked semaphore warning"]}

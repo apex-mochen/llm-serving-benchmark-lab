@@ -1,0 +1,235 @@
+{
+  "verified_at_utc": "2026-10-13T11:11:22.920347+00:00",
+  "status": "PASS",
+  "scope": "18 bounded recorded stage gates only; not publication blanket approval",
+  "measurement_requests": 192,
+  "warmup_requests": 24,
+  "cycles": [
+    {
+      "cycle": 0,
+      "measurement_requests": 64,
+      "warmup_requests": 8,
+      "before_utc": "2026-10-13T00:28:58.601035+00:00",
+      "after_utc": "2026-10-13T00:30:35.427687+00:00",
+      "before_tick": 916.196172637,
+      "after_tick": 1011.867603974,
+      "during_first_utc": "2026-10-13T00:28:59.786917+00:00",
+      "during_last_utc": "2026-10-13T00:30:17.669207+00:00",
+      "during_tick_range": [
+        917.382054358,
+        994.109131646
+      ],
+      "during_samples": 33,
+      "before_gpu_mib": 1457.0,
+      "peak_gpu_mib": 5233.0,
+      "after_gpu_mib": 1511.0,
+      "before_host_freevirtual_mib": 9142.03125,
+      "after_host_freevirtual_mib": 8973.0703125,
+      "gpu_delta_mib": 54.0,
+      "host_freevirtual_loss_mib": 168.9609375,
+      "oom": false,
+      "release_samples": 6,
+      "release_tick_span_s": 16.54918661299996,
+      "owned_server_pid": 704,
+      "allocation_log_lines": [
+        "(EngineCore pid=843) INFO 10-13 08:29:25 [model_runner.py:428] Model loading took 0.93 GiB memory and 4.180214 seconds",
+        "(EngineCore pid=843) INFO 10-13 08:29:29 [gpu_worker.py:640] Available KV cache memory: 2.49 GiB",
+        "(EngineCore pid=843) INFO 10-13 08:29:29 [kv_cache_utils.py:2395] GPU KV cache size: 217,616 tokens, Maximum concurrency for 2,048 tokens per request: 106.26x",
+        "(EngineCore pid=843) INFO 10-13 08:29:30 [gpu_worker.py:888] Free memory on device (6.93/8.0 GiB) on startup. Desired GPU memory utilization is (0.45, 3.6 GiB). Actual usage is 1.04 GiB for consumed memory (weights + non-torch), 0.07 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=2516973568` (2.34 GiB) to fit into requested memory, or `--kv-cache-memory=6094321664` (5.68 GiB) to fully utilize gpu memory. Current kv cache memory in use is 2.49 GiB."
+      ],
+      "shutdown_warnings": [
+        "(APIServer pid=704) WARNING 10-13 08:30:17 [utils.py:652] [shutdown] Process manager: force killing remaining processes count=1",
+        "(APIServer pid=704) WARNING 10-13 08:30:17 [utils.py:657] [shutdown] Process manager: force killing remaining process EngineCore pid 843",
+        "/usr/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown"
+      ]
+    },
+    {
+      "cycle": 1,
+      "measurement_requests": 64,
+      "warmup_requests": 8,
+      "before_utc": "2026-10-13T00:30:36.457325+00:00",
+      "after_utc": "2026-10-13T00:32:06.973779+00:00",
+      "before_tick": 1012.897239724,
+      "after_tick": 1101.923513976,
+      "during_first_utc": "2026-10-13T00:30:37.475472+00:00",
+      "during_last_utc": "2026-10-13T00:31:41.002048+00:00",
+      "during_tick_range": [
+        1013.915383116,
+        1076.680152424
+      ],
+      "during_samples": 28,
+      "before_gpu_mib": 1513.0,
+      "peak_gpu_mib": 5246.0,
+      "after_gpu_mib": 1513.0,
+      "before_host_freevirtual_mib": 8942.89453125,
+      "after_host_freevirtual_mib": 9385.49609375,
+      "gpu_delta_mib": 0.0,
+      "host_freevirtual_loss_mib": -442.6015625,
+      "oom": false,
+      "release_samples": 9,
+      "release_tick_span_s": 24.627586043000065,
+      "owned_server_pid": 1391,
+      "allocation_log_lines": [
+        "(EngineCore pid=1519) INFO 10-13 08:30:57 [model_runner.py:428] Model loading took 0.93 GiB memory and 1.968863 seconds",
+        "(EngineCore pid=1519) INFO 10-13 08:30:58 [gpu_worker.py:640] Available KV cache memory: 2.49 GiB",
+        "(EngineCore pid=1519) INFO 10-13 08:30:58 [kv_cache_utils.py:2395] GPU KV cache size: 217,616 tokens, Maximum concurrency for 2,048 tokens per request: 106.26x",
+        "(EngineCore pid=1519) INFO 10-13 08:30:59 [gpu_worker.py:888] Free memory on device (6.93/8.0 GiB) on startup. Desired GPU memory utilization is (0.45, 3.6 GiB). Actual usage is 1.04 GiB for consumed memory (weights + non-torch), 0.07 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=2516973568` (2.34 GiB) to fit into requested memory, or `--kv-cache-memory=6094321664` (5.68 GiB) to fully utilize gpu memory. Current kv cache memory in use is 2.49 GiB."
+      ],
+      "shutdown_warnings": [
+        "(APIServer pid=1391) WARNING 10-13 08:31:41 [utils.py:652] [shutdown] Process manager: force killing remaining processes count=1",
+        "(APIServer pid=1391) WARNING 10-13 08:31:41 [utils.py:657] [shutdown] Process manager: force killing remaining process EngineCore pid 1519",
+        "/usr/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown"
+      ]
+    },
+    {
+      "cycle": 2,
+      "measurement_requests": 64,
+      "warmup_requests": 8,
+      "before_utc": "2026-10-13T00:32:07.997776+00:00",
+      "after_utc": "2026-10-13T00:33:39.555066+00:00",
+      "before_tick": 1102.947502798,
+      "after_tick": 1191.857865015,
+      "during_first_utc": "2026-10-13T00:32:09.040692+00:00",
+      "during_last_utc": "2026-10-13T00:33:16.038429+00:00",
+      "during_tick_range": [
+        1103.99041954,
+        1169.239851839
+      ],
+      "during_samples": 29,
+      "before_gpu_mib": 1513.0,
+      "peak_gpu_mib": 5250.0,
+      "after_gpu_mib": 1518.0,
+      "before_host_freevirtual_mib": 9356.51171875,
+      "after_host_freevirtual_mib": 9334.0,
+      "gpu_delta_mib": 5.0,
+      "host_freevirtual_loss_mib": 22.51171875,
+      "oom": false,
+      "release_samples": 8,
+      "release_tick_span_s": 22.084291127999904,
+      "owned_server_pid": 2058,
+      "allocation_log_lines": [
+        "(EngineCore pid=2187) INFO 10-13 08:32:29 [model_runner.py:428] Model loading took 0.93 GiB memory and 2.727949 seconds",
+        "(EngineCore pid=2187) INFO 10-13 08:32:31 [gpu_worker.py:640] Available KV cache memory: 2.49 GiB",
+        "(EngineCore pid=2187) INFO 10-13 08:32:31 [kv_cache_utils.py:2395] GPU KV cache size: 217,616 tokens, Maximum concurrency for 2,048 tokens per request: 106.26x",
+        "(EngineCore pid=2187) INFO 10-13 08:32:32 [gpu_worker.py:888] Free memory on device (6.93/8.0 GiB) on startup. Desired GPU memory utilization is (0.45, 3.6 GiB). Actual usage is 1.04 GiB for consumed memory (weights + non-torch), 0.07 GiB for peak activation, and 0.0 GiB for CUDAGraph memory. Replace gpu_memory_utilization config with `--kv-cache-memory=2516973568` (2.34 GiB) to fit into requested memory, or `--kv-cache-memory=6094321664` (5.68 GiB) to fully utilize gpu memory. Current kv cache memory in use is 2.49 GiB."
+      ],
+      "shutdown_warnings": [
+        "(APIServer pid=2058) WARNING 10-13 08:33:15 [utils.py:652] [shutdown] Process manager: force killing remaining processes count=1",
+        "(APIServer pid=2058) WARNING 10-13 08:33:15 [utils.py:657] [shutdown] Process manager: force killing remaining process EngineCore pid 2187",
+        "/usr/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown"
+      ]
+    }
+  ],
+  "gates": [
+    {
+      "name": "01 specification / source / payload",
+      "status": "PASS",
+      "evidence": "specification + saved runner + payload"
+    },
+    {
+      "name": "02 fixed protocol / trace-free",
+      "status": "PASS",
+      "evidence": "command and workload parameters"
+    },
+    {
+      "name": "03 cycle 0 requests and warmup",
+      "status": "PASS",
+      "evidence": "8 episode JSON + warmup JSON, 72 rows"
+    },
+    {
+      "name": "04 cycle 0 launch / allocation / no OOM / no DEBUG",
+      "status": "PASS",
+      "evidence": "server.log and ownership.json"
+    },
+    {
+      "name": "05 cycle 0 GPU release budget",
+      "status": "PASS",
+      "evidence": "after-before <=256 MiB"
+    },
+    {
+      "name": "06 cycle 0 host release budget",
+      "status": "PASS",
+      "evidence": "FreeVirtualMemory before-after <=512 MiB"
+    },
+    {
+      "name": "07 cycle 0 consecutive release / process group",
+      "status": "PASS",
+      "evidence": "3 raw resource samples + empty final group; historical port release only recorded composite verdict"
+    },
+    {
+      "name": "08 cycle 1 requests and warmup",
+      "status": "PASS",
+      "evidence": "8 episode JSON + warmup JSON, 72 rows"
+    },
+    {
+      "name": "09 cycle 1 launch / allocation / no OOM / no DEBUG",
+      "status": "PASS",
+      "evidence": "server.log and ownership.json"
+    },
+    {
+      "name": "10 cycle 1 GPU release budget",
+      "status": "PASS",
+      "evidence": "after-before <=256 MiB"
+    },
+    {
+      "name": "11 cycle 1 host release budget",
+      "status": "PASS",
+      "evidence": "FreeVirtualMemory before-after <=512 MiB"
+    },
+    {
+      "name": "12 cycle 1 consecutive release / process group",
+      "status": "PASS",
+      "evidence": "3 raw resource samples + empty final group; historical port release only recorded composite verdict"
+    },
+    {
+      "name": "13 cycle 2 requests and warmup",
+      "status": "PASS",
+      "evidence": "8 episode JSON + warmup JSON, 72 rows"
+    },
+    {
+      "name": "14 cycle 2 launch / allocation / no OOM / no DEBUG",
+      "status": "PASS",
+      "evidence": "server.log and ownership.json"
+    },
+    {
+      "name": "15 cycle 2 GPU release budget",
+      "status": "PASS",
+      "evidence": "after-before <=256 MiB"
+    },
+    {
+      "name": "16 cycle 2 host release budget",
+      "status": "PASS",
+      "evidence": "FreeVirtualMemory before-after <=512 MiB"
+    },
+    {
+      "name": "17 cycle 2 consecutive release / process group",
+      "status": "PASS",
+      "evidence": "3 raw resource samples + empty final group; historical port release only recorded composite verdict"
+    },
+    {
+      "name": "18 same boot / UUID / core / trace remains off",
+      "status": "PASS",
+      "evidence": "all parsed snapshots + core hashes + outcome"
+    }
+  ],
+  "core_matches": {
+    "lab.py": true,
+    "study.py": true,
+    "tail_report.py": true,
+    "README.md": true
+  },
+  "actual_observation_start_utc": "2026-10-13T00:28:58.601035+00:00",
+  "actual_observation_end_utc": "2026-10-13T00:33:39.555066+00:00",
+  "limitations": [
+    "Port connect_ex return values were not independently persisted; resource release composite verdict records historical successful check. Cannot reconstruct each port check from snapshots.",
+    "Exact server command saved; stdout/stderr merged into server.log; runner invocation and runner stderr not separately saved in this run.",
+    "Start/end UTC below are observation bounds, not invented process creation timestamps; log clock has no explicit timezone.",
+    "Historical Python/Torch/CUDA/Triton package versions and embedded source build commit not saved in this run; log establishes vLLM 0.30.0 only. Current environment is not historical attestation.",
+    "force-kill and leaked-semaphore warnings retained; observed release budgets do not establish zero leaks or graceful-only shutdown.",
+    "Three same-boot cycles with synthetic token prompts demonstrate bounded completion/release only; not long-term stability, production reliability, quality, phase mechanism or earlier OOM root-cause fix.",
+    "No trace-overhead experiment resumed; earlier two completed pairs and third-round OOM remain separate BLOCKED evidence.",
+    "Response text and full SSE stream were not persisted: rows contain timing/usage/IDs only. Sufficient for stated completion/resource gates, not independent output-correctness verification.",
+    "Inherited runtime environment and run_diagnosis_phase2 helper historical source hash were not separately snapshotted; its current source clarifies intended sampling seed only, not independently frozen historical attestation.",
+    "This baseline explicitly used --disable-log-stats, uvicorn-log-level warning, DEV_MODE=0 and INFO, with extra observer flags disabled. Observability differs from prior trace tests. Future off/on revalidation must align flags and check that metrics are actually returned; this PASS does not establish restored trace conditions."
+  ]
+}

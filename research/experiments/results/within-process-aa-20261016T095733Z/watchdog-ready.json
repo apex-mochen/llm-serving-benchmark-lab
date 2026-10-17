@@ -1,0 +1,10 @@
+{
+  "pid": 871,
+  "parent": {
+    "pid": 867,
+    "start_ticks": "29720",
+    "uid": 1000,
+    "boot_id": "d51c1c73-2002-4bfd-bad9-64e58ad8bfc4"
+  },
+  "limit_s": 1800
+}

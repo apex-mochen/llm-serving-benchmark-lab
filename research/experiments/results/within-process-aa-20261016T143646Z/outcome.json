@@ -1,0 +1,12 @@
+{
+  "status": "HOLD",
+  "error": "RuntimeError('Episode start lateness >50ms')",
+  "primary_error": "RuntimeError('Episode start lateness >50ms')",
+  "cleanup_errors": [],
+  "completed_episodes": 8,
+  "measurement_episodes": 3,
+  "core_unchanged": true,
+  "stability_pass": null,
+  "trace_overhead_pass": null,
+  "phase2_expansion_executed": false
+}

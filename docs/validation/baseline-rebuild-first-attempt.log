@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/mnt/d/myknowledge/work/llm-serving-benchmark-publication/lab.py", line 333, in <module>
+    report(args.runs, args.output)
+  File "/mnt/d/myknowledge/work/llm-serving-benchmark-publication/lab.py", line 209, in report
+    meta = json.loads((root / 'metadata.json').read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1029, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'results/20261002T102742Z-sglang/metadata.json'

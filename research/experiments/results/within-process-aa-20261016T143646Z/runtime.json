@@ -1,0 +1,26 @@
+{
+  "vllm_version": "0.30.0",
+  "vllm_path": "/home/dcl/projects/vllm-v2-gpu-venv/lib/python3.12/site-packages/vllm/__init__.py",
+  "vllm_commit": "gced6857af",
+  "packages": {
+    "torch": "2.13.0+cu130",
+    "httpx": "0.28.1",
+    "triton": "3.7.1"
+  },
+  "vllm_distributions": [
+    {
+      "version": "0.1.dev1+g157bcb7c4.d20260923",
+      "path": "/home/dcl/projects/vllm-v2-gpu-venv/lib/python3.12/site-packages/vllm-0.1.dev1+g157bcb7c4.d20260923.dist-info",
+      "direct_url": "{\"url\":\"file:///home/dcl/projects/vllm-upstream\",\"dir_info\":{\"editable\":true}}"
+    },
+    {
+      "version": "0.30.0",
+      "path": "/home/dcl/projects/vllm-v2-gpu-venv/lib/python3.12/site-packages/vllm-0.30.0.dist-info",
+      "direct_url": null
+    }
+  ],
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "kernel": "Linux LAPTOP-1CJ9QBDQ 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "gpu": "Fri Oct 16 22:37:03 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 615.65.07              KMD Version: 616.64        CUDA UMD Version: 13.4     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 4060 ...    On  |   00000000:01:00.0  On |                  N/A |\n| N/A   63C    P0             19W /  113W |    1523MiB /   8188MiB |      2%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+",
+  "git_head": "f78ce0f123cb05673fe3c4b7ba6bdeef8fff75d9"
+}

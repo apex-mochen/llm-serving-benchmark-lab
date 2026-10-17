@@ -1,0 +1,31 @@
+{
+  "status": "HOLD",
+  "numeric_pass": null,
+  "all_absolute_pairs_below_five": null,
+  "error": "AssertionError('Owned process release incomplete or foreign activity')",
+  "completed_variants": 3,
+  "core_unchanged": true,
+  "monitor_errors": [],
+  "observed_interference": [
+    "compiler:3301:cmake",
+    "compiler:3301:cmake",
+    "compiler:3395:cmake",
+    "compiler:3396:ninja",
+    "compiler:3402:cmake"
+  ],
+  "run_to_run_cv": {
+    "A/mean_ttft_ms": null,
+    "A/mean_tpot_ms": null,
+    "A/mean_e2e_ms": null,
+    "A/requests_per_s": null,
+    "A/output_tokens_per_s": null,
+    "B/mean_ttft_ms": 0.07807295722065623,
+    "B/mean_tpot_ms": 0.028323959372408884,
+    "B/mean_e2e_ms": 0.037882149978874444,
+    "B/requests_per_s": 0.02386362170754527,
+    "B/output_tokens_per_s": 0.02386362170754527
+  },
+  "preflight_only": false,
+  "observe_only": false,
+  "phase2_expansion_executed": false
+}

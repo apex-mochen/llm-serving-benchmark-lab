@@ -1,0 +1,25 @@
+{
+  "status": "HOLD",
+  "numeric_pass": true,
+  "all_pairs_below_five": false,
+  "error": null,
+  "completed_variants": 6,
+  "core_unchanged": true,
+  "monitor_errors": [],
+  "observed_interference": [],
+  "run_to_run_cv": {
+    "off/mean_ttft_ms": 0.11548542803772953,
+    "off/mean_tpot_ms": 0.04815277229378494,
+    "off/mean_e2e_ms": 0.06114382650802105,
+    "off/requests_per_s": 0.03893250820094456,
+    "off/output_tokens_per_s": 0.03893250820094456,
+    "full/mean_ttft_ms": 0.024509162953718844,
+    "full/mean_tpot_ms": 0.00791636784121507,
+    "full/mean_e2e_ms": 0.008489890665966232,
+    "full/requests_per_s": 0.006670167104637267,
+    "full/output_tokens_per_s": 0.006670167104637267
+  },
+  "preflight_only": false,
+  "observe_only": false,
+  "phase2_expansion_executed": false
+}

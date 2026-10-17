@@ -1,0 +1,2 @@
+STOP RuntimeError('host_physical_below_3GiB')
+END 0 RuntimeError('host_physical_below_3GiB')

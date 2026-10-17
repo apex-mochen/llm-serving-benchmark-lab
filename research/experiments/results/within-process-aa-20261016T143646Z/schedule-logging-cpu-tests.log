@@ -1,0 +1,8 @@
+test_late_value_saved (__main__.Tests.test_late_value_saved) ... ok
+test_on_time_no_added_io (__main__.Tests.test_on_time_no_added_io) ... ok
+test_write_failure_does_not_mask_gate (__main__.Tests.test_write_failure_does_not_mask_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

@@ -1,0 +1,14 @@
+{
+  "group": "cache-expand",
+  "condition": "cold",
+  "input_length": 1024,
+  "output_length": 128,
+  "cap": 4,
+  "cache": "cold",
+  "repeat": 0,
+  "episodes": 8,
+  "episode_requests": 8,
+  "arrival_rate": 4,
+  "seed_base": 20261012,
+  "native_prefill_boundary": "scheduled -> first output token; same as vLLM phase histogram, not GPU-only kernel time"
+}

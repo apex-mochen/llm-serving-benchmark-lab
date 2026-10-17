@@ -1,0 +1,7 @@
+{
+  "status": "INTERRUPTED",
+  "reason": "WSL reboot observed after experiment disappeared; no completed paired treatment",
+  "cause": "unknown",
+  "reuse_samples": false,
+  "boot_id": "7998158a-b875-4e9e-ba27-52f541dcaea7"
+}

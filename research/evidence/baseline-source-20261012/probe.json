@@ -1,0 +1,58 @@
+{
+  "kind": "CPU exact-method probes with stub objects; synthetic times, no performance measurement",
+  "cases": [
+    {
+      "probe": "Continuum pin",
+      "input": null,
+      "actual_seconds": 0
+    },
+    {
+      "probe": "Continuum pin",
+      "input": "unknown",
+      "actual_seconds": 2.0
+    },
+    {
+      "probe": "Continuum pin",
+      "input": "short",
+      "actual_seconds": 2.0
+    },
+    {
+      "probe": "Continuum pin",
+      "input": "long",
+      "actual_seconds": 0
+    },
+    {
+      "probe": "GuideLLM dependent target",
+      "mode": "idle_gap",
+      "actual_seconds": 1012.0
+    },
+    {
+      "probe": "GuideLLM dependent target",
+      "mode": "timestamp",
+      "actual_seconds": 1003.0
+    }
+  ],
+  "full_upstream_tests_run": false,
+  "sources": [
+    {
+      "path": "continuum/vllm/v1/core/estimate_with_func.py",
+      "sha256": "23406dca89faf6e0affca078f771633e1ff81e36ae19ce4e6259a03c6bd1a3f8"
+    },
+    {
+      "path": "guidellm/src/guidellm/scheduler/strategies.py",
+      "sha256": "25180fc2951a79806cf69ff2da59bb271a52447bd66ed98a139b0cadee377bf6"
+    },
+    {
+      "path": "continuum/vllm/v1/core/sched/scheduler.py",
+      "sha256": "e2f4d30fef5d98ec3d5b8dd50419d3df33aaf074309905e838437bac668b470e"
+    },
+    {
+      "path": "guidellm/src/guidellm/schemas/data/deserializers/trace_common.py",
+      "sha256": "c6c39b9053f5541f78754fca6eb4cddd54b285ed7f227f83eba459a843cf4805"
+    }
+  ],
+  "commits": {
+    "continuum": "316a58794a6ff86b216e579b74fd56ed0c5a911f",
+    "guidellm": "87a66f0e9d7af24ceb87b4c26e1b87ddfd9b0215"
+  }
+}

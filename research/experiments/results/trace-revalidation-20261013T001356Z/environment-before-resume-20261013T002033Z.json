@@ -1,0 +1,25 @@
+{
+  "monotonic_s": 427.798915506,
+  "boot_id": "7998158a-b875-4e9e-ba27-52f541dcaea7",
+  "processes": "    PID    PPID %CPU COMMAND\n      1       0  0.1 systemd\n      2       1  0.0 init-systemd(Ub\n      8       2  0.5 init\n     41       1  0.1 systemd-journal\n     87       1  0.1 systemd-udevd\n    113       1  0.0 systemd-resolve\n    114       1  0.0 systemd-timesyn\n    207       1  0.0 cron\n    208       1  0.0 dbus-daemon\n    215       1  0.0 systemd-logind\n    219       1  0.0 wsl-pro-service\n    234       1  0.2 containerd\n    236       1  0.0 rsyslogd\n    249       1  0.0 agetty\n    261       1  0.0 unattended-upgr\n    328       1  0.1 dockerd\n    581       2  0.0 login\n    629       1  0.0 systemd\n    630     629  0.0 (sd-pam)\n    641     581  0.0 bash\n   1120       2  0.0 SessionLeader\n   1121    1120  0.0 Relay(1122)\n   1122    1121  0.0 bash\n   8617    1122  0.0 timeout\n   8618    8617  0.0 git\n   8619    8618  0.0 git\n   8620    8619  0.0 git-remote-http\n   9388       2  0.0 SessionLeader\n   9389    9388  0.0 Relay(9390)\n   9390    9389  0.0 bash\n   9396    9390  0.0 git\n   9397    9396  0.0 git\n   9398    9397  0.0 git\n   9399    9398  0.0 git-remote-http\n   9631       2  0.0 SessionLeader\n   9632    9631  0.0 Relay(9633)\n   9633    9632  0.0 bash\n   9880    9633  171 python\n   9955       2  0.0 SessionLeader\n   9956      87  0.0 (udev-worker)\n   9957    9955  0.0 Relay(9960)\n   9958      87  0.0 (udev-worker)\n   9959      87  0.0 (udev-worker)\n   9960    9957 88.8 python\n   9968    9960  0.0 ps\n",
+  "compiler_jobs": [],
+  "compute_apps": "",
+  "gpu": {
+    "uuid": "GPU-0e836c3d-baf0-ca04-2c78-da67aa50c8ca",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "driver_version": "616.64",
+    "memory.total": 8188.0,
+    "memory.used": 1320.0,
+    "utilization.gpu": 8.0,
+    "temperature.gpu": "69",
+    "power.draw": "22.50",
+    "clocks.sm": "1890",
+    "clocks.mem": "8001"
+  },
+  "cpu_load": [
+    3.322265625,
+    1.84765625,
+    0.86376953125
+  ],
+  "memory": "MemTotal:       10178260 kB\nMemFree:         1688708 kB\nMemAvailable:    8968844 kB\nBuffers:          386072 kB\nCached:          6838192 kB\nSwapCached:          136 kB\nActive:          3895488 kB\nInactive:        3890368 kB\nActive(anon):       3712 kB\nInactive(anon):   561304 kB\nActive(file):    3891776 kB\nInactive(file):  3329064 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:      16777216 kB\nSwapFree:       16775848 kB\nDirty:               432 kB\nWriteback:            12 kB\nAnonPages:        561856 kB\nMapped:           359748 kB\nShmem:              3408 kB\nKReclaimable:     263896 kB\nSlab:             398476 kB\nSReclaimable:     263896 kB\nSUnreclaim:       134580 kB\nKernelStack:        7824 kB\nPageTables:         8072 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    21866344 kB\nCommitted_AS:    3777056 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:       47512 kB\nVmallocChunk:          0 kB\nPercpu:            13184 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    888832 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:       66560 kB\nDirectMap2M:     6223872 kB\nDirectMap1G:     5242880 kB\n"
+}

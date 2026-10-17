@@ -1,0 +1,105 @@
+{
+  "requests_per_variant": 64,
+  "repeats": 3,
+  "input_tokens": 512,
+  "output_tokens": 128,
+  "client_cap": 8,
+  "episode_requests": 8,
+  "arrival_rate": 4,
+  "seed": 20261013,
+  "payload_sha256": "a85d217f3e47e8945e9ecb1b913978b0aabc8f69199f755a3c4171c91bb8daf5",
+  "core_sha256": {
+    "lab.py": "9f344ed38e1c445f416086241fed58f4565ecb7fb915aeaad92c6858a78068c6",
+    "study.py": "bfc9b72ee68bc9e0416675eee0e9a8ee9f27890afa34252b24da5892b3df03aa",
+    "tail_report.py": "bd5436cd57a069cfbe6bbd9106962a8a9d3c430fdd43407ddc6b2cc32e4a86e6",
+    "README.md": "a93223a54ab6d6be7d36788b36e532259960adc0b8d0b6dc44478c89f0a7cbe6"
+  },
+  "config": {
+    "client_python": "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+    "model_snapshot": "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+    "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "served_model_name": "benchmark-model",
+    "gpu_index": 0,
+    "seed": 20261002,
+    "num_prompts": 64,
+    "repeats": 3,
+    "results_dir": "results",
+    "engines": {
+      "vllm": {
+        "python": "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+        "repo": "/home/dcl/projects/vllm-upstream",
+        "base_url": "http://127.0.0.1:8019",
+        "server_command": [
+          "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+          "-m",
+          "vllm.entrypoints.openai.api_server",
+          "--model",
+          "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+          "--served-model-name",
+          "benchmark-model",
+          "--port",
+          "8019",
+          "--dtype",
+          "float16",
+          "--max-model-len",
+          "2048",
+          "--gpu-memory-utilization",
+          "0.45",
+          "--no-enable-prefix-caching",
+          "--enforce-eager"
+        ],
+        "server_environment": {
+          "VLLM_USE_FLASHINFER_SAMPLER": "0",
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "server_parameters": {
+          "dtype": "float16",
+          "max_model_len": 2048,
+          "memory_fraction": 0.45,
+          "prefix_cache": false,
+          "tensor_parallel_size": 1,
+          "cuda_graphs": false
+        }
+      },
+      "sglang": {
+        "python": "/home/dcl/projects/llm-serving-benchmark-lab/sglang-python",
+        "repo": "/home/dcl/projects/sglang-42070",
+        "base_url": "http://127.0.0.1:8019",
+        "server_command": [
+          "/home/dcl/projects/llm-serving-benchmark-lab/sglang-python",
+          "-m",
+          "sglang.launch_server",
+          "--model-path",
+          "/home/dcl/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+          "--served-model-name",
+          "benchmark-model",
+          "--port",
+          "8019",
+          "--dtype",
+          "float16",
+          "--context-length",
+          "2048",
+          "--mem-fraction-static",
+          "0.45",
+          "--disable-radix-cache",
+          "--disable-cuda-graph",
+          "--attention-backend",
+          "triton",
+          "--sampling-backend",
+          "pytorch"
+        ],
+        "server_parameters": {
+          "dtype": "float16",
+          "max_model_len": 2048,
+          "memory_fraction": 0.45,
+          "prefix_cache": false,
+          "tensor_parallel_size": 1,
+          "cuda_graphs": false
+        }
+      }
+    }
+  },
+  "threshold_percent": 5,
+  "acceptance": "All median paired latency overheads and throughput losses strictly below 5%; reject detected compiler/foreign compute contamination. Three repeats are a pilot, not proof of general equivalence.",
+  "component_followup": "Only if full trace fails: paired full versus remove-one-component variants, same payload/config. These are experiments, not a diagnosis algorithm."
+}

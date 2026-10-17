@@ -1,0 +1,7 @@
+{
+  "status": "BLOCKED",
+  "error": "RuntimeError('vllm: server failed; inspect /home/dcl/projects/llm-serving-benchmark-lab/research/experiments/results/trace-revalidation-20261013T001356Z/off-r2-retry-server.log')",
+  "completed_variants": 4,
+  "compiler_contamination": false,
+  "scope": "Only trace remediation; no Phase2 expansion/diagnosis algorithm"
+}

@@ -1,0 +1,278 @@
+[
+  {
+    "cache": false,
+    "repeat": 0,
+    "kind": "agent",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 416.0,
+      "vllm:request_num_preemptions_count": 52.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  },
+  {
+    "cache": false,
+    "repeat": 0,
+    "kind": "traditional",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 800.0,
+      "vllm:request_num_preemptions_count": 100.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  },
+  {
+    "cache": false,
+    "repeat": 1,
+    "kind": "agent",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 1184.0,
+      "vllm:request_num_preemptions_count": 148.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  },
+  {
+    "cache": false,
+    "repeat": 1,
+    "kind": "traditional",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 1568.0,
+      "vllm:request_num_preemptions_count": 196.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  },
+  {
+    "cache": false,
+    "repeat": 2,
+    "kind": "agent",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 1952.0,
+      "vllm:request_num_preemptions_count": 244.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  },
+  {
+    "cache": false,
+    "repeat": 2,
+    "kind": "traditional",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 2336.0,
+      "vllm:request_num_preemptions_count": 292.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  },
+  {
+    "cache": true,
+    "repeat": 0,
+    "kind": "agent",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 56576.0,
+      "vllm:prefix_cache_hits_total": 32768.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 416.0,
+      "vllm:request_num_preemptions_count": 52.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 52224.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 30464.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  },
+  {
+    "cache": true,
+    "repeat": 0,
+    "kind": "traditional",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 108800.0,
+      "vllm:prefix_cache_hits_total": 63232.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 800.0,
+      "vllm:request_num_preemptions_count": 100.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 52224.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 30464.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  },
+  {
+    "cache": true,
+    "repeat": 1,
+    "kind": "agent",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 161024.0,
+      "vllm:prefix_cache_hits_total": 93696.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 1184.0,
+      "vllm:request_num_preemptions_count": 148.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 52224.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 30464.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  },
+  {
+    "cache": true,
+    "repeat": 1,
+    "kind": "traditional",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 213248.0,
+      "vllm:prefix_cache_hits_total": 124160.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 1568.0,
+      "vllm:request_num_preemptions_count": 196.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 52224.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 30464.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  },
+  {
+    "cache": true,
+    "repeat": 2,
+    "kind": "agent",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 265472.0,
+      "vllm:prefix_cache_hits_total": 154624.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 1952.0,
+      "vllm:request_num_preemptions_count": 244.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 52224.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 30464.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  },
+  {
+    "cache": true,
+    "repeat": 2,
+    "kind": "traditional",
+    "after": {
+      "vllm:kv_cache_usage_perc": 0.0,
+      "vllm:prefix_cache_queries_total": 317696.0,
+      "vllm:prefix_cache_hits_total": 185088.0,
+      "vllm:external_prefix_cache_queries_total": 0.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:request_num_preemptions_bucket": 2336.0,
+      "vllm:request_num_preemptions_count": 292.0,
+      "vllm:request_num_preemptions_sum": 0.0
+    },
+    "counter_deltas": {
+      "vllm:prefix_cache_queries_total": 52224.0,
+      "vllm:external_prefix_cache_hits_total": 0.0,
+      "vllm:prefix_cache_hits_total": 30464.0,
+      "vllm:num_preemptions_total": 0.0,
+      "vllm:external_prefix_cache_queries_total": 0.0
+    }
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "executable": "/home/dcl/projects/vllm-v2-gpu-venv/bin/python",
+  "vllm_version": "0.30.0",
+  "vllm_path": "/home/dcl/projects/vllm-v2-gpu-venv/lib/python3.12/site-packages/vllm/__init__.py",
+  "torch": "2.13.0+cu130",
+  "cuda": "13.0",
+  "packages": {
+    "httpx": "0.28.1",
+    "triton": "3.7.1"
+  },
+  "git_head": "cf3c469973f55c56fd051b381b6f3f85abf1e825",
+  "kernel": "Linux LAPTOP-1CJ9QBDQ 6.18.33.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun 18 21:54:43 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux",
+  "gpu": "Thu Oct 15 16:32:46 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 615.65.07              KMD Version: 616.64        CUDA UMD Version: 13.4     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA GeForce RTX 4060 ...    On  |   00000000:01:00.0  On |                  N/A |\n| N/A   60C    P0             20W /   97W |    1539MiB /   8188MiB |      1%      Default |\n|                                         |                        |                  N/A |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+"
+}

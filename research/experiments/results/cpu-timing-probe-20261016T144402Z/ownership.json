@@ -1,0 +1,10 @@
+{
+  "client_pid": 666,
+  "monitor_pid": 669,
+  "monitor_identity": {
+    "pid": 669,
+    "start_ticks": "1059",
+    "uid": 1000,
+    "boot_id": "a9ee61b8-ffd0-4ca7-83e2-1ede091713a9"
+  }
+}

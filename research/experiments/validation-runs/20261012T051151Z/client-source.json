@@ -1,0 +1,5 @@
+{
+  "source_sha256": "54c6cd5863d8e8eee34961fe153b8360390b0bf9d02e01b0805589a673130d14",
+  "guidellm_commit": "87a66f0e9d7af24ceb87b4c26e1b87ddfd9b0215",
+  "note": "Final preserved client source; unchanged during completed run. Earlier failed attempts used earlier script revisions."
+}

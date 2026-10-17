@@ -1,0 +1,22 @@
+{
+  "requests": 8,
+  "duration_s": 8.407677017999958,
+  "trace": true,
+  "cap": 4,
+  "mean_ttft_ms": 174.1411621246698,
+  "mean_tpot_ms": 28.839420963587454,
+  "mean_e2e_ms": 3837.1544561246083,
+  "queue_hist_mean_ms": 0.009689124908618396,
+  "queue_request_mean_ms": 0.009689124908618396,
+  "queue_reconciliation_ms": 0.0,
+  "prefill_hist_mean_ms": 133.255103375177,
+  "prefill_request_mean_ms": 133.255103375177,
+  "prefill_reconciliation_ms": 0.0,
+  "decode_hist_mean_ms": 3664.065771249625,
+  "decode_request_mean_ms": 3664.065771249625,
+  "decode_reconciliation_ms": 0.0,
+  "min_ttft_residual_ms": 9.106601999519626,
+  "prefix_cache_queries_total_delta": 8192.0,
+  "prefix_cache_hits_total_delta": 1792.0,
+  "num_preemptions_total_delta": 0.0
+}

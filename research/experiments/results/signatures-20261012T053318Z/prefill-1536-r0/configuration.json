@@ -1,0 +1,15 @@
+{
+  "group": "prefill",
+  "level": 1536,
+  "repeat": 0,
+  "seed": 20261012,
+  "input_length": 1536,
+  "output_length": 128,
+  "requests": 8,
+  "concurrency": 1,
+  "arrival_rate": null,
+  "load_mode": "finite burst + client cap",
+  "cache_state": "disabled",
+  "model_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "served_model": "benchmark-model"
+}
