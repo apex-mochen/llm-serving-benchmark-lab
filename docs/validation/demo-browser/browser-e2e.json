@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": [
+    "24 real runs / 1536 requests rendered",
+    "8 real aggregate cells rendered",
+    "Single-engine filter: 12 runs",
+    "Concurrency filter: 3 runs / 192 requests",
+    "Run detail selection and request plot",
+    "CSV export matches filter",
+    "Raw artifact contains actual 64-request result",
+    "390px viewport has no document overflow",
+    "No uncaught browser runtime exceptions"
+  ],
+  "inference_launched": false,
+  "source": "existing historical baseline",
+  "browser": "msedge.exe"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "historical_runs": 24,
+  "historical_requests": 1536,
+  "original_files_verified": 128,
+  "before_after_hashes_unchanged": true,
+  "metric_values_equal_original": true,
+  "new_inference_requests": 0
+}

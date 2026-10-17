@@ -4,7 +4,7 @@
 
 这个项目从一个实际问题出发：同一个模型换用不同推理引擎或请求负载后，响应时间和吞吐会怎样变化？测试条件是否一致、原始数据是否完整、测到的变化是否只是运行波动？
 
-目前以 Python 命令行工具和实验脚本为主，支持 vLLM / SGLang 的受控测试、结果校验与图表生成。项目同时作为软件工程本科毕设底座，以及性能退化分析的研究实验平台。
+目前提供 Python 命令行压测、实验脚本和本地只读结果浏览器，支持 vLLM / SGLang 的受控测试、结果校验与图表展示。项目同时作为软件工程本科毕设底座，以及性能退化分析的研究实验平台。
 
 > **当前阶段：可运行的 Benchmark 工程与研究原型。** 自动瓶颈归因尚未实现；trace 测量可信度仍在验证。CPU 测试、合成响应与真实 GPU 测量分别记录，没有将它们混作性能结果。
 
@@ -14,6 +14,7 @@
 - [参赛方向与待补材料](docs/COMPETITION_READINESS.md)
 - [固定并发对比报告与图表](reports/001-concurrency-study.md)
 - [最新研究状态与证据](docs/RESEARCH_STATUS.md)
+- [本地演示与验收步骤](docs/LOCAL_DEMO.md)
 - [公开快照范围](docs/PUBLICATION.md)
 
 ## 当前能力
@@ -24,7 +25,7 @@
 | 受控压测 | 固定并发、重复运行、预热、输入/输出长度校验；研究脚本含固定到达率与多阶段回放 | 研究脚本部分绑定历史本机路径，需要适配 |
 | 指标与数据 | TTFT、TPOT、ITL、输出吞吐、请求延迟、GPU采样及可得的服务端指标 | 各指标测量边界不同，不把观测区间当作GPU纯执行时间 |
 | 结果校验 | 检查失败请求、长度、缺失/非有限数值、配置一致性；保存原始记录与哈希 | 哈希核对不等于研究假设成立 |
-| 可视化 | CSV / JSON / Markdown 报告、SVG / PNG 图表 | 当前展示以报告为主，完整任务管理与Web界面不在此版本交付范围 |
+| 可视化 | CSV / JSON / Markdown 报告、SVG / PNG 图表；FastAPI/SQLite本地结果浏览器 | Web界面只读；任务创建、worker和在线压测尚未接入 |
 | 测量补救 | A/A负控、绝对时钟记录、独立资源采集、异常清理与CPU定时探针 | 未得出trace开销稳定或自动诊断有效的结论 |
 
 ## 已有报告示例
@@ -34,6 +35,19 @@
 ![固定并发实验图表](reports/001-concurrency-study.png)
 
 ## 运行与检查
+
+### 无需GPU的本地演示
+
+```bash
+python -m pip install -r web-requirements.txt
+python -m benchmark_lab
+```
+
+浏览器打开 `http://127.0.0.1:8765`，可筛选引擎/并发、查看单次运行的P50/P95/P99与请求序列、下载原始文件及CSV。Windows也可运行 `scripts/start-demo.ps1` 自动准备隔离的Web环境。页面读取现有历史结果，不下载模型、不发起推理。
+
+![本地结果浏览器](docs/media/results-browser-desktop.png)
+
+### 命令行Benchmark与CPU检查
 
 Python 3.12+。CPU校验可先运行：
 
@@ -65,6 +79,9 @@ python lab.py run config.local.json --engine vllm
 lab.py / study.py     压测、采集、校验与报告入口
 tail_report.py        请求级延迟与尾部统计
 tests/               CPU校验与报告测试
+benchmark_lab/       只读结果API与可重建SQLite索引
+web/                 本地结果浏览界面
+web_tests/           API与证据访问测试
 reports/             已保存报告、数据与图表
 results/             历史固定并发报告引用的原始件
 research/            文献、假设、实验脚本与选定证据
