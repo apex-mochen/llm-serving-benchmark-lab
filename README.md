@@ -45,6 +45,8 @@ python -m benchmark_lab
 
 浏览器打开 `http://127.0.0.1:8765`，可筛选引擎/并发、查看单次运行的P50/P95/P99与请求序列、下载原始文件及CSV。Windows也可运行 `scripts/start-demo.ps1` 自动准备隔离的Web环境。页面读取现有历史结果，不下载模型、不发起推理。
 
+自己用 `vllm bench serve --save-result --save-detailed` 跑出的结果，可以用 `python -m benchmark_lab import-vllm <文件> --engine vllm` 导入：原文件按字节保存并登记哈希，逐请求重算核对上报的 TTFT 汇总，失败、不完整或数值不一致的结果会被拒绝。详见[本地演示](docs/LOCAL_DEMO.md)。
+
 ![本地结果浏览器](docs/media/results-browser-desktop.png)
 
 ### 命令行Benchmark与CPU检查
@@ -79,7 +81,7 @@ python lab.py run config.local.json --engine vllm
 lab.py / study.py     压测、采集、校验与报告入口
 tail_report.py        请求级延迟与尾部统计
 tests/               CPU校验与报告测试
-benchmark_lab/       只读结果API与可重建SQLite索引
+benchmark_lab/       只读结果API、可重建SQLite索引与 vllm bench 结果导入
 web/                 本地结果浏览界面
 web_tests/           API与证据访问测试
 reports/             已保存报告、数据与图表

@@ -32,8 +32,8 @@ def create_app(root=None, database=None):
         return JSONResponse(status_code=404, content=dict(detail='Run not found'))
 
     @app.get('/api/runs')
-    def runs(engine: str | None = None, concurrency: int | None = None):
-        rows = filtered(engine, concurrency)
+    def runs(engine: str | None = None, concurrency: int | None = None, source: str | None = None):
+        rows = filtered(engine, concurrency, source)
         return dict(runs=rows, total=len(rows), requests=sum(r['requests'] for r in rows),
             mode='historical_replay', launches_gpu=False,
             aggregation='Each table row is one original run, not an aggregate across repetitions.')
@@ -53,9 +53,9 @@ def create_app(root=None, database=None):
             'Content-Disposition': f'attachment; filename="{Path(relative).name}"'})
 
     @app.get('/api/export.csv')
-    def export(engine: str | None = None, concurrency: int | None = None):
-        rows = filtered(engine, concurrency)
-        fields = ('id','engine','concurrency','repeat','requests','mean_ttft_ms','mean_tpot_ms',
+    def export(engine: str | None = None, concurrency: int | None = None, source: str | None = None):
+        rows = filtered(engine, concurrency, source)
+        fields = ('id','kind','label','engine','concurrency','repeat','requests','mean_ttft_ms','mean_tpot_ms',
             'output_tokens_per_s','p50_latency_ms','p95_latency_ms','p99_latency_ms','source_sha256')
         data = io.StringIO(newline='')
         writer = csv.DictWriter(data, fieldnames=fields, extrasaction='ignore')
@@ -63,9 +63,9 @@ def create_app(root=None, database=None):
         return Response(data.getvalue(), media_type='text/csv', headers={
             'Content-Disposition': 'attachment; filename="benchmark-runs.csv"'})
 
-    def filtered(engine, concurrency):
+    def filtered(engine, concurrency, source=None):
         try:
-            return catalog.runs(engine, concurrency)
+            return catalog.runs(engine, concurrency, source)
         except EvidenceError as exc:
             raise HTTPException(400, str(exc)) from exc
 

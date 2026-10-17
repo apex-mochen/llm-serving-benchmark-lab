@@ -42,6 +42,24 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(self.client.get(base+'result').status_code,409)
         self.assertEqual(self.client.get('/api/runs/'+row['id']).status_code,409)
 
+    def test_imported_runs_source_filter_and_provenance_artifact(self):
+        from benchmark_lab.vllm_import import import_file
+        from test_import import bench_result
+        source=self.root/'incoming.json';source.write_bytes(__import__('json').dumps(bench_result()).encode())
+        imported=import_file(self.root,source,'vllm','api fixture')['id']
+        self.client.__exit__(None,None,None)
+        self.client=TestClient(create_app(self.root,self.root/'index2.sqlite3'));self.client.__enter__()
+        self.addCleanup(self.client.__exit__,None,None,None)
+        listing=self.client.get('/api/runs?source=imported').json()
+        self.assertEqual([r['id'] for r in listing['runs']],[imported])
+        self.assertEqual(self.client.get('/api/runs?source=baseline').json()['total'],1)
+        self.assertEqual(self.client.get('/api/runs?source=elsewhere').status_code,400)
+        detail=self.client.get('/api/runs/'+imported).json()
+        self.assertEqual(detail['provenance']['source_name'],'incoming.json')
+        self.assertEqual(self.client.get(f'/api/runs/{imported}/artifacts/provenance').status_code,200)
+        rows=list(csv.DictReader(io.StringIO(self.client.get('/api/export.csv?source=imported').text)))
+        self.assertEqual((rows[0]['kind'],rows[0]['label']),('imported','api fixture'))
+
     def test_unknown_run_and_no_execution_endpoint(self):
         self.assertEqual(self.client.get('/api/runs/no-such-run').status_code,404)
         self.assertEqual(self.client.post('/api/runs',json={'command':'anything'}).status_code,405)

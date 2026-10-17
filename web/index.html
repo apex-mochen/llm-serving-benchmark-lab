@@ -15,10 +15,11 @@
       <article><span>已校验的运行</span><strong id="run-count">—</strong><small id="run-note">每一行对应一次原始运行</small></article>
       <article><span>已保存的请求</span><strong id="request-count">—</strong><small id="request-note">失败或不完整数据不计入索引</small></article>
       <article><span>推理引擎</span><strong id="engine-count">—</strong><small>vLLM / SGLang · 同一历史实验</small></article>
-      <article><span>数据来源</span><strong class="stat-word">真实 GPU</strong><small>本地实验室 · 有限请求批次</small></article>
+      <article><span>数据来源</span><strong id="source-word" class="stat-word">真实 GPU</strong><small id="source-note">本地实验室 · 有限请求批次</small></article>
     </section>
     <section class="panel filters" aria-label="筛选与导出">
       <div><label for="engine">推理引擎</label><select id="engine"><option value="">全部引擎</option><option value="vllm">vLLM</option><option value="sglang">SGLang</option></select></div>
+      <div><label for="source">数据来源</label><select id="source"><option value="">全部来源</option><option value="baseline">历史基线</option><option value="imported">导入结果</option></select></div>
       <div><label for="concurrency">并发规模</label><select id="concurrency"><option value="">全部并发</option><option>1</option><option>8</option><option>32</option><option>64</option></select></div>
       <p class="filter-note">相同输入/输出长度，重复运行。<br>筛选不会触发新的推理任务。</p>
       <a id="export" class="button secondary" href="/api/export.csv">导出 CSV ↓</a>
@@ -26,7 +27,7 @@
     <div class="workspace">
       <div class="results-column">
         <section class="panel chart-panel">
-          <div class="panel-head"><div><h2>并发变化下的性能</h2><p>每点为重复运行均值的中位数；竖线为最小至最大值，不是置信区间。</p></div><select id="metric" aria-label="图表指标"><option value="mean_ttft_ms">平均 TTFT · ms</option><option value="mean_tpot_ms">平均 TPOT · ms</option><option value="output_tokens_per_s">输出吞吐 · tokens/s</option></select></div>
+          <div class="panel-head"><div><h2>并发变化下的性能</h2><p>每点为重复运行均值的中位数；竖线为最小至最大值，不是置信区间。仅含历史基线，导入结果不并入。</p></div><select id="metric" aria-label="图表指标"><option value="mean_ttft_ms">平均 TTFT · ms</option><option value="mean_tpot_ms">平均 TPOT · ms</option><option value="output_tokens_per_s">输出吞吐 · tokens/s</option></select></div>
           <div id="chart" class="chart" aria-label="按并发分组的性能图"></div>
           <div class="legend"><span><i class="dot vllm"></i>vLLM</span><span><i class="dot sglang"></i>SGLang</span><small>结果仅适用于这组模型、硬件和配置。</small></div>
         </section>

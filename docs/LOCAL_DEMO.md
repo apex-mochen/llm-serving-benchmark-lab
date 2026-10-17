@@ -29,6 +29,22 @@ python -m benchmark_lab
 
 图表不会启动模型或调用GPU；页面不生成根因诊断。研究测量HOLD和工程展示可用分别验收。
 
+## 导入自己的 vllm bench serve 结果
+
+```bash
+vllm bench serve ... --save-result --save-detailed --result-filename my-run.json
+python -m benchmark_lab import-vllm my-run.json --engine vllm --label "A100 c16 试验"
+python -m benchmark_lab   # 重启后列表出现“导入”标记的记录
+```
+
+- 原文件按字节原样复制到 `imports/imp-<sha256前16位>/result.json`，同目录写 `provenance.json`（原文件名、SHA256、导入时间、声明的引擎、核对项），哈希登记在 `imports/manifest.json`。原文件不会被修改。
+- 拒绝导入：`failed>0`、`completed≠num_prompts`、指标缺失或非有限值、逐请求数组不对齐或有错误记录、上报的 mean/P50/P95/P99 TTFT 与逐请求数据重算不一致，以及与历史基线字节相同的文件。重复导入同一文件不会产生第二条记录。
+- 用 `--save-detailed` 保存的文件会逐请求复核并显示 TTFT 序列；未加该参数时 vLLM 会删除 `ttfts`/`errors`/`start_times` 等字段（见 `vllm/benchmarks/serve.py`），页面只显示汇总与按 `latencies` 计算的分位数，并明确标注。
+- 每次启动都会重新计算哈希、重新核对导入结果，`provenance.json` 里的结论不被直接信任；被改动的文件会让启动失败或详情返回409。
+- 结果文件不含模型、硬件和引擎版本，引擎类型由导入者声明。因此导入结果不并入历史基线图表，“数据来源”卡片也不会把它们标成真实GPU。
+- `imports/` 被 `.gitignore` 忽略，属于使用者本地数据；网页本身没有上传或写入接口，导入只能在本机命令行进行。
+- `scripts/check-demo-data.py` 会用导入器的核对逻辑检查全部 24 个真实历史结果：全部判为可逐请求复核，且上报的 TTFT 汇总值与逐请求数据一致。
+
 ## 实现与数据边界
 
 - `benchmark_lab/catalog.py`复用`lab.validate`和`tail_report.summarize`，不复制新的指标公式。

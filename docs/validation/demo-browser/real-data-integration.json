@@ -5,5 +5,6 @@
   "original_files_verified": 128,
   "before_after_hashes_unchanged": true,
   "metric_values_equal_original": true,
+  "importer_accepts_all_real_results": true,
   "new_inference_requests": 0
 }

@@ -27,8 +27,14 @@ with TestClient(create_app(ROOT,ROOT/'.benchmark/integration-index.sqlite3')) as
         assert client.get('/api/runs/'+row['id']+'/artifacts/result').content==(ROOT/row['source']).read_bytes()
 after={p:hashlib.sha256((ROOT/p).read_bytes()).hexdigest() for p in manifest}
 assert before==after
+# The importer's checks must accept every real `vllm bench serve --save-detailed` output in the baseline,
+# including reported mean/P50/P95/P99 TTFT matching the per-request data.
+from benchmark_lab.vllm_import import inspect
+importer_levels={inspect(json.loads((ROOT/row['source']).read_bytes()))[0] for row in listing['runs']}
+assert importer_levels=={'detailed'},importer_levels
 answer=dict(status='PASS',historical_runs=24,historical_requests=1536,original_files_verified=len(manifest),
-    before_after_hashes_unchanged=True,metric_values_equal_original=True,new_inference_requests=0)
+    before_after_hashes_unchanged=True,metric_values_equal_original=True,
+    importer_accepts_all_real_results=True,new_inference_requests=0)
 output=ROOT/'docs/validation/demo-browser/real-data-integration.json'
 output.parent.mkdir(parents=True,exist_ok=True);output.write_text(json.dumps(answer,indent=2)+'\n',encoding='utf-8',newline='\n')
 print(json.dumps(answer,indent=2))

@@ -7,7 +7,9 @@ import re
 import sqlite3
 
 from lab import validate
-from tail_report import summarize
+from tail_report import percentile, summarize
+
+from . import vllm_import
 
 
 class EvidenceError(ValueError):
@@ -78,7 +80,7 @@ class Catalog:
                 raise EvidenceError('Invalid original run: ' + relative)
             tail = summarize(result, count)
             run_id = hashlib.sha256(relative.encode()).hexdigest()[:20]
-            record = dict(id=run_id, engine=metadata['engine'], concurrency=concurrency,
+            record = dict(id=run_id, kind='baseline', engine=metadata['engine'], concurrency=concurrency,
                 repeat=repeat, requests=count, status='validated_history',
                 mean_ttft_ms=result['mean_ttft_ms'], mean_tpot_ms=result['mean_tpot_ms'],
                 output_tokens_per_s=result['output_throughput'],
@@ -90,26 +92,63 @@ class Catalog:
             records.append(record)
         if not records:
             raise EvidenceError('No validated runs found')
+        records += self.imported_records(expected)
         self.database.parent.mkdir(parents=True, exist_ok=True)
         with self.connect() as con:
-            con.execute('CREATE TABLE IF NOT EXISTS runs (id TEXT PRIMARY KEY, engine TEXT NOT NULL, concurrency INTEGER NOT NULL, repeat INTEGER NOT NULL, payload TEXT NOT NULL)')
-            con.execute('DELETE FROM runs')
-            con.executemany('INSERT INTO runs VALUES (?, ?, ?, ?, ?)',
-                [(r['id'], r['engine'], r['concurrency'], r['repeat'], json.dumps(r)) for r in records])
+            # The index is disposable; recreate it so schema changes never need migration.
+            con.execute('DROP TABLE IF EXISTS runs')
+            con.execute('CREATE TABLE runs (id TEXT PRIMARY KEY, kind TEXT NOT NULL, engine TEXT NOT NULL, concurrency INTEGER, repeat INTEGER, payload TEXT NOT NULL)')
+            con.executemany('INSERT INTO runs VALUES (?, ?, ?, ?, ?, ?)',
+                [(r['id'], r['kind'], r['engine'], r['concurrency'], r['repeat'], json.dumps(r)) for r in records])
         return len(records)
 
-    def runs(self, engine=None, concurrency=None):
+    def imported_records(self, baseline):
+        """Re-hash and re-inspect every imported result; provenance claims are not trusted."""
+        manifest = vllm_import.load_manifest(self.root)
+        if set(manifest) & set(baseline):
+            raise EvidenceError('Import manifest overlaps the baseline manifest')
+        self.expected = {**baseline, **manifest}
+        records = []
+        for relative in sorted(manifest):
+            match = re.fullmatch(r'imports/(imp-[0-9a-f]{16})/result\.json', relative)
+            if not match:
+                continue
+            provenance_path = relative.rsplit('/', 1)[0] + '/provenance.json'
+            provenance = self.load(provenance_path)
+            result = self.load(relative)
+            if provenance.get('sha256') != manifest[relative] or provenance.get('id') != match[1]:
+                raise EvidenceError('Provenance does not describe ' + relative)
+            try:
+                level, checks = vllm_import.inspect(result)
+            except vllm_import.ImportRejected as exc:
+                raise EvidenceError('Imported run no longer passes checks: ' + str(exc)) from exc
+            latencies = result['latencies']
+            records.append(dict(id=match[1], kind='imported', engine=provenance['declared']['engine'],
+                concurrency=result.get('max_concurrency'), repeat=None, requests=result['completed'],
+                status='imported_' + level, label=provenance['declared'].get('label'), detail_level=level,
+                mean_ttft_ms=result['mean_ttft_ms'], mean_tpot_ms=result['mean_tpot_ms'],
+                output_tokens_per_s=result['output_throughput'],
+                **{f'p{p}_latency_ms': percentile(latencies, p) * 1000 for p in (50, 95, 99)},
+                source=relative, source_sha256=manifest[relative],
+                artifacts=dict(result=relative, provenance=provenance_path)))
+        return records
+
+    def runs(self, engine=None, concurrency=None, kind=None):
         if engine is not None and engine not in ('vllm', 'sglang'):
             raise EvidenceError('Unsupported engine filter')
-        if concurrency is not None and concurrency not in (1, 8, 32, 64):
+        if concurrency is not None and (type(concurrency) is not int or concurrency <= 0):
             raise EvidenceError('Unsupported concurrency filter')
+        if kind is not None and kind not in ('baseline', 'imported'):
+            raise EvidenceError('Unsupported source filter')
         query = 'SELECT payload FROM runs WHERE 1=1'
         params = []
         if engine is not None:
             query += ' AND engine=?'; params.append(engine)
         if concurrency is not None:
             query += ' AND concurrency=?'; params.append(concurrency)
-        query += ' ORDER BY engine DESC, concurrency, repeat'
+        if kind is not None:
+            query += ' AND kind=?'; params.append(kind)
+        query += ' ORDER BY kind, engine DESC, concurrency, repeat, id'
         with self.connect() as con:
             return [json.loads(row[0]) for row in con.execute(query, params)]
 
@@ -120,8 +159,28 @@ class Catalog:
             raise KeyError(run_id)
         return json.loads(row[0])
 
+    def imported_detail(self, row):
+        result = self.load(row['source'])
+        provenance = self.load(row['artifacts']['provenance'])
+        count = result['completed']
+        timing = None
+        if row['detail_level'] == 'detailed':
+            tails = summarize(result, count)['tails_ms']
+            timing = [dict(index=i, ttft_ms=result['ttfts'][i]*1000, e2e_ms=result['latencies'][i]*1000,
+                client_queue_ms=result['queue_times'][i]*1000) for i in range(count)]
+        else:
+            tails = dict(latencies={str(p): percentile(result['latencies'], p) * 1000 for p in (50, 95, 99)})
+        limitations = list(provenance.get('limitations', []))
+        limitations.append(f'{count} requests: P99 is descriptive, not production tail reliability.')
+        row.update(tails=tails, request_timing=timing, provenance=dict(
+            source_name=provenance['source_name'], imported_utc=provenance['imported_utc'],
+            checks=provenance['checks'], reported=provenance['reported']), limitations=limitations)
+        return row
+
     def detail(self, run_id):
         row = self.run(run_id)
+        if row['kind'] == 'imported':
+            return self.imported_detail(row)
         result = self.load(row['source'])
         metadata = self.load(row['artifacts']['metadata'])
         count = metadata['config']['num_prompts']
