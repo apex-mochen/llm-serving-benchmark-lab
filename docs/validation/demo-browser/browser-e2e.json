@@ -3,6 +3,7 @@
   "checks": [
     "24 real runs / 1536 requests rendered",
     "8 real aggregate cells rendered",
+    "Engine difference judged against repeat range (C32 TTFT overlap, C64 separated)",
     "Single-engine filter: 12 runs",
     "Concurrency filter: 3 runs / 192 requests",
     "Filtered counts labelled against the full dataset",

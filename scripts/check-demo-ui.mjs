@@ -33,6 +33,10 @@ try{
   await until("document.getElementById('run-count')?.textContent==='24' && document.querySelectorAll('#detail .tails strong').length===3");
   assert.equal(await evaluate("document.getElementById('request-count').textContent"),'1,536');checks.push('24 real runs / 1536 requests rendered');
   assert.equal(await evaluate("document.querySelectorAll('#chart svg rect').length"),8);checks.push('8 real aggregate cells rendered');
+  // Real data: mean TTFT at C32 differs by 1.57x yet repeat ranges overlap; C64 ranges are separated.
+  const verdict=c=>evaluate(`document.querySelector('#compare tr[data-concurrency="${c}"] .verdict').className`);
+  assert.equal(await verdict(32),'verdict overlap');assert.equal(await verdict(64),'verdict separated');
+  checks.push('Engine difference judged against repeat range (C32 TTFT overlap, C64 separated)');
   let shot=await send('Page.captureScreenshot',{format:'png',captureBeyondViewport:false});await writeFile(join(root,'docs/media/results-browser-desktop.png'),Buffer.from(shot.data,'base64'));
   await evaluate("document.getElementById('engine').value='vllm';document.getElementById('engine').dispatchEvent(new Event('change'))");
   await until("document.getElementById('run-count').textContent==='12'");checks.push('Single-engine filter: 12 runs');

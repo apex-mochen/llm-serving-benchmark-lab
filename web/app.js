@@ -15,7 +15,7 @@ function chart(){
   // Imported runs come from other experiments; never pool them into baseline medians.
   const base=runs.filter(r=>r.kind==='baseline');
   for(const r of base){const key=r.engine+':'+r.concurrency;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(r[field]);}
-  const all=[...groups.values()].flat();if(!all.length){$('chart').replaceChildren(node('p',runs.length?'当前筛选只有导入结果；图表只展示历史基线。':'没有匹配的结果。','empty'));return;}
+  const all=[...groups.values()].flat();if(!all.length){$('chart').replaceChildren(node('p',runs.length?'当前筛选只有导入结果；图表只展示历史基线。':'没有匹配的结果。','empty'));compare(base,field);return;}
   const top=Math.max(...all)*1.15||1, x0=65,y0=198,h=166,w=630;
   for(let i=0;i<=4;i++){const y=y0-h*i/4;chart.append(svg('line',{x1:x0,x2:x0+w,y1:y,y2:y,stroke:'#e8eef4','stroke-dasharray':'3 4'}));chart.append(svg('text',{x:x0-10,y:y+3,'text-anchor':'end',fill:'#8393a5','font-size':10},fmt(top*i/4)));}
   const cs=[...new Set(base.map(r=>r.concurrency))].sort((a,b)=>a-b),engines=['vllm','sglang'].filter(e=>base.some(r=>r.engine===e));
@@ -27,6 +27,23 @@ function chart(){
       chart.append(svg('title',{},`${names[engine]} 并发${c}：中位数${fmt(mean)}，范围${fmt(min)}–${fmt(max)}`));
     });});
   $('chart').replaceChildren(chart);
+  compare(base,field);
+}
+// Repeat range of the same configuration is the noise reference (an A/A-style check).
+function compare(base,field){
+  const target=$('compare'),cs=[...new Set(base.map(r=>r.concurrency))].sort((a,b)=>a-b);
+  const pairs=cs.map(c=>[c,...['vllm','sglang'].map(e=>base.filter(r=>r.engine===e&&r.concurrency===c).map(r=>r[field]))]).filter(([,a,b])=>a.length&&b.length);
+  if(!pairs.length){target.replaceChildren(node('p','需要同一并发下同时有 vLLM 和 SGLang 的历史基线。','empty'));return;}
+  const table=node('table',undefined,'compare-table'),head=node('tr');
+  for(const h of ['并发','判断','比值 vLLM/SGLang','vLLM 中位 [范围]','SGLang 中位 [范围]'])head.append(node('th',h));table.append(head);
+  const span=v=>`${fmt(median(v))} [${fmt(Math.min(...v))}–${fmt(Math.max(...v))}]`;
+  for(const[c,a,b]of pairs){
+    const separated=Math.max(...a)<Math.min(...b)||Math.max(...b)<Math.min(...a),tr=node('tr');tr.dataset.concurrency=c;
+    tr.append(node('td','C'+c),node('td',separated?'差异超出重复波动':'范围重叠 · 不判定快慢',separated?'verdict separated':'verdict overlap'),
+      node('td',(median(a)/median(b)).toFixed(2)),node('td',span(a)),node('td',span(b)));
+    table.append(tr);
+  }
+  target.replaceChildren(table);
 }
 function renderTable(){
   $('runs').replaceChildren();

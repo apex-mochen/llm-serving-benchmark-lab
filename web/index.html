@@ -30,6 +30,7 @@
           <div class="panel-head"><div><h2>并发变化下的性能</h2><p>每点为重复运行均值的中位数；竖线为最小至最大值，不是置信区间。仅含历史基线，导入结果不并入。</p></div><select id="metric" aria-label="图表指标"><option value="mean_ttft_ms">平均 TTFT · ms</option><option value="mean_tpot_ms">平均 TPOT · ms</option><option value="output_tokens_per_s">输出吞吐 · tokens/s</option></select></div>
           <div id="chart" class="chart" aria-label="按并发分组的性能图"></div>
           <div class="legend"><span><i class="dot vllm"></i>vLLM</span><span><i class="dot sglang"></i>SGLang</span><small>结果仅适用于这组模型、硬件和配置。</small></div>
+          <div class="compare-block"><h3>引擎差异是否超过重复波动</h3><p>同一配置重复运行的最小–最大范围作为噪声参照：两组范围不重叠才判为“差异超出重复波动”，重叠则不判定快慢。</p><div id="compare"></div><p class="compare-note">每组仅3次重复，这是描述性判断，不是显著性检验；结论只适用于这组模型、硬件和配置。</p></div>
         </section>
         <section class="panel runs-panel">
           <div class="panel-head"><div><h2>运行记录 <span id="table-count" class="count">—</span></h2><p>选择一条记录，查看该次运行的请求与来源。</p></div><span class="small-badge">已校验历史数据</span></div>
