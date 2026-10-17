@@ -47,6 +47,8 @@ python -m unittest discover -s web_tests -v
 python scripts/check-demo-data.py
 ```
 
+`.github/workflows/ci.yml`在 Ubuntu 与 Windows 上运行上述命令（另含`test_readiness`）。仓库`.gitattributes`对全部文件关闭换行转换：Git for Windows默认`core.autocrlf=true`，否则全新克隆会把原始JSON转成CRLF，导致哈希核对失败、演示无法启动（2026-10-17用全新克隆复现）。
+
 CPU单元/API测试使用显式fixture；最后一个命令校验仓库已有真实数据，不运行推理。当前FastAPI/Starlette环境使用TestClient时会提示httpx兼容层弃用警告，测试仍可运行；后续升级依赖单独验证，不隐去警告。
 
 可选浏览器端测试：Node 22+和本地Edge/Chrome，先启动演示服务，再执行`node scripts/check-demo-ui.mjs`（服务不在8765时用`DEMO_URL`指定实际地址）。通过`BROWSER_PATH`指定浏览器程序；使用独立无头测试profile，输出桌面/手机截图与测试JSON，缓存位于`.benchmark/`。

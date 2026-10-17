@@ -1,6 +1,6 @@
 'use strict';
 const $ = id => document.getElementById(id);
-let runs = [], selected = null, detailSequence = 0;
+let runs = [], selected = null, detailSequence = 0, overall = null;
 const colors = {vllm:'#2366cc',sglang:'#008e83'};
 const names = {vllm:'vLLM',sglang:'SGLang'};
 const fmt = value => Number(value).toLocaleString('zh-CN',{minimumFractionDigits:1,maximumFractionDigits:2});
@@ -55,7 +55,12 @@ async function select(id){
 }
 async function refresh(){
   $('refresh').disabled=true;
-  try{const data=await get('/api/runs?'+query());runs=data.runs;$('run-count').textContent=data.total;$('request-count').textContent=data.requests.toLocaleString();$('engine-count').textContent=new Set(runs.map(r=>r.engine)).size;$('export').href='/api/export.csv?'+query();chart();renderTable();error('');
+  try{const data=await get('/api/runs?'+query());runs=data.runs;$('run-count').textContent=data.total;$('request-count').textContent=data.requests.toLocaleString();
+    // Filtered counts must not read as the whole dataset.
+    if(!query())overall={total:data.total,requests:data.requests};
+    const filtered=Boolean(query())&&overall;
+    $('run-note').textContent=filtered?`当前筛选 · 全部 ${overall.total} 次`:'每一行对应一次原始运行';
+    $('request-note').textContent=filtered?`当前筛选 · 全部 ${overall.requests.toLocaleString()} 条`:'失败或不完整数据不计入索引';$('engine-count').textContent=new Set(runs.map(r=>r.engine)).size;$('export').href='/api/export.csv?'+query();chart();renderTable();error('');
     if(runs.length)await select(runs.some(r=>r.id===selected)?selected:runs[0].id);else{$('detail').replaceChildren(node('p','没有匹配记录。','muted'));$('detail-title').textContent='选择运行记录';}
   }catch(e){error(e.message);}finally{$('refresh').disabled=false;}
 }

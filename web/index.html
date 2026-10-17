@@ -12,8 +12,8 @@
     <div class="intro"><div><p class="eyebrow">EXPERIMENT WORKSPACE</p><h1>让每个性能数字都有出处。</h1><p class="subtitle">浏览已保存的真实实验，对比指标，再回到逐请求记录核对。</p></div><button id="refresh" class="secondary">刷新列表 <span aria-hidden="true">↻</span></button></div>
     <div class="notice"><span class="notice-icon">i</span><p>当前展示固定并发的历史 GPU 测量，输入为合成提示词。这里不启动压测，也不自动判断瓶颈；研究中的 trace 测量验证仍为 HOLD。</p></div>
     <section class="stats" aria-label="数据概况">
-      <article><span>已校验的运行</span><strong id="run-count">—</strong><small>每一行对应一次原始运行</small></article>
-      <article><span>已保存的请求</span><strong id="request-count">—</strong><small>失败或不完整数据不计入索引</small></article>
+      <article><span>已校验的运行</span><strong id="run-count">—</strong><small id="run-note">每一行对应一次原始运行</small></article>
+      <article><span>已保存的请求</span><strong id="request-count">—</strong><small id="request-note">失败或不完整数据不计入索引</small></article>
       <article><span>推理引擎</span><strong id="engine-count">—</strong><small>vLLM / SGLang · 同一历史实验</small></article>
       <article><span>数据来源</span><strong class="stat-word">真实 GPU</strong><small>本地实验室 · 有限请求批次</small></article>
     </section>

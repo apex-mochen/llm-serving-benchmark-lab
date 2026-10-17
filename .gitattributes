@@ -1,1 +1,4 @@
+# Evidence repository: check out every file byte-for-byte so recorded SHA-256 hashes
+# (reports/001-raw-sha256.json, PUBLICATION_MANIFEST.json) also hold on Windows clones.
+* -text
 smoke/*.log -whitespace

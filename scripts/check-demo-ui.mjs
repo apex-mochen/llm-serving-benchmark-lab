@@ -38,6 +38,7 @@ try{
   await until("document.getElementById('run-count').textContent==='12'");checks.push('Single-engine filter: 12 runs');
   await evaluate("document.getElementById('concurrency').value='32';document.getElementById('concurrency').dispatchEvent(new Event('change'))");
   await until("document.getElementById('run-count').textContent==='3' && document.querySelectorAll('#runs tr').length===3");checks.push('Concurrency filter: 3 runs / 192 requests');
+  assert.equal(await evaluate("document.getElementById('run-note').textContent"),'当前筛选 · 全部 24 次');checks.push('Filtered counts labelled against the full dataset');
   await evaluate("document.querySelectorAll('.run-link')[1].click()");
   await until("document.getElementById('detail-title').textContent.includes('第2次') && document.querySelector('#detail .tails strong')!==null");checks.push('Run detail selection and request plot');
   const csv=await(await fetch(base+'/api/export.csv?engine=vllm&concurrency=32')).text();assert.equal(csv.trim().split('\n').length,4);checks.push('CSV export matches filter');

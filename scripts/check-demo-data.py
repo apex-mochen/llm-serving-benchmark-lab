@@ -30,5 +30,5 @@ assert before==after
 answer=dict(status='PASS',historical_runs=24,historical_requests=1536,original_files_verified=len(manifest),
     before_after_hashes_unchanged=True,metric_values_equal_original=True,new_inference_requests=0)
 output=ROOT/'docs/validation/demo-browser/real-data-integration.json'
-output.parent.mkdir(parents=True,exist_ok=True);output.write_text(json.dumps(answer,indent=2)+'\n')
+output.parent.mkdir(parents=True,exist_ok=True);output.write_text(json.dumps(answer,indent=2)+'\n',encoding='utf-8',newline='\n')
 print(json.dumps(answer,indent=2))

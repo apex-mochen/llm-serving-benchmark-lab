@@ -5,6 +5,7 @@
     "8 real aggregate cells rendered",
     "Single-engine filter: 12 runs",
     "Concurrency filter: 3 runs / 192 requests",
+    "Filtered counts labelled against the full dataset",
     "Run detail selection and request plot",
     "CSV export matches filter",
     "Raw artifact contains actual 64-request result",
