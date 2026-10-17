@@ -25,6 +25,9 @@ class ApiTests(unittest.TestCase):
         detail=self.client.get('/api/runs/'+listing['runs'][0]['id']).json()
         self.assertEqual(detail['request_timing'][0]['ttft_ms'],100)
         self.assertEqual(detail['tails']['latencies']['99'],1990)
+        # Fixture requests overlap while max_concurrency is 1: reported, never hidden.
+        self.assertEqual((detail['timeline']['peak_in_flight'],detail['timeline']['within_client_limit']),(2,False))
+        self.assertAlmostEqual(detail['request_timing'][1]['dispatch_ms'],100)
 
     def test_filters_and_csv_match(self):
         response=self.client.get('/api/export.csv?engine=vllm&concurrency=1')

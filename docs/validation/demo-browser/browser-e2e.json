@@ -8,6 +8,8 @@
     "Concurrency filter: 3 runs / 192 requests",
     "Filtered counts labelled against the full dataset",
     "Run detail selection and request plot",
+    "Request timeline: peak in-flight 32 within the client limit",
+    "Shared URL restores filters and selected run",
     "CSV export matches filter",
     "Raw artifact contains actual 64-request result",
     "390px viewport has no document overflow",

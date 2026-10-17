@@ -16,6 +16,29 @@ class EvidenceError(ValueError):
     pass
 
 
+def request_timeline(result, count):
+    """Per-request phases on one clock, following vllm/benchmarks (serve.py, endpoint_request_func.py):
+    start_time = dispatch after the client semaphore, client_queue_time = dispatch - arrival,
+    ttft / latency are measured from dispatch. Offsets are relative to the earliest arrival."""
+    starts, queues = result['start_times'], result['queue_times']
+    origin = min(s - q for s, q in zip(starts, queues))
+    timing = []
+    for i in range(count):
+        dispatch = starts[i] - origin
+        timing.append(dict(index=i, ttft_ms=result['ttfts'][i] * 1000, e2e_ms=result['latencies'][i] * 1000,
+            client_queue_ms=queues[i] * 1000, arrival_ms=(dispatch - queues[i]) * 1000, dispatch_ms=dispatch * 1000,
+            first_token_ms=(dispatch + result['ttfts'][i]) * 1000, end_ms=(dispatch + result['latencies'][i]) * 1000))
+    # Half-open [dispatch, end): at equal timestamps a completion frees its slot first.
+    events = sorted([(t['dispatch_ms'], 1) for t in timing] + [(t['end_ms'], -1) for t in timing])
+    in_flight = peak = 0
+    for _, change in events:
+        in_flight += change
+        peak = max(peak, in_flight)
+    limit = result.get('max_concurrency')
+    return timing, dict(peak_in_flight=peak, max_concurrency=limit, span_ms=max(t['end_ms'] for t in timing),
+        within_client_limit=None if limit is None else peak <= limit)
+
+
 class Catalog:
     def __init__(self, root, database):
         self.root = Path(root).resolve()
@@ -163,16 +186,15 @@ class Catalog:
         result = self.load(row['source'])
         provenance = self.load(row['artifacts']['provenance'])
         count = result['completed']
-        timing = None
+        timing = timeline = None
         if row['detail_level'] == 'detailed':
             tails = summarize(result, count)['tails_ms']
-            timing = [dict(index=i, ttft_ms=result['ttfts'][i]*1000, e2e_ms=result['latencies'][i]*1000,
-                client_queue_ms=result['queue_times'][i]*1000) for i in range(count)]
+            timing, timeline = request_timeline(result, count)
         else:
             tails = dict(latencies={str(p): percentile(result['latencies'], p) * 1000 for p in (50, 95, 99)})
         limitations = list(provenance.get('limitations', []))
         limitations.append(f'{count} requests: P99 is descriptive, not production tail reliability.')
-        row.update(tails=tails, request_timing=timing, provenance=dict(
+        row.update(tails=tails, request_timing=timing, timeline=timeline, provenance=dict(
             source_name=provenance['source_name'], imported_utc=provenance['imported_utc'],
             checks=provenance['checks'], reported=provenance['reported']), limitations=limitations)
         return row
@@ -186,16 +208,15 @@ class Catalog:
         count = metadata['config']['num_prompts']
         tail = summarize(result, count)
         config = metadata['config']
-        row.update(tails=tail['tails_ms'], environment=dict(
+        timing, timeline = request_timeline(result, count)
+        row.update(tails=tail['tails_ms'], timeline=timeline, environment=dict(
             engine_commit=metadata['engine_commit'],
             engine_version=metadata['environment'].get('engine'),
             gpu=metadata['gpu']['name'], gpu_memory_mib=metadata['gpu']['memory.total'],
             model_snapshot=config['model_snapshot'], model_revision=config['model_revision'],
             seed=config['seed'], input_tokens=1024, output_tokens=256,
             arrival='infinite-rate finite batch', prefix_cache=False),
-            request_timing=[dict(index=i,ttft_ms=result['ttfts'][i]*1000,
-                e2e_ms=result['latencies'][i]*1000,client_queue_ms=result['queue_times'][i]*1000)
-                for i in range(count)],
+            request_timing=timing,
             limitations=tail.get('limitations', [
                 '64 requests per run: P99 is descriptive, not production tail reliability.',
                 'Client queue time is not engine scheduler waiting time.',

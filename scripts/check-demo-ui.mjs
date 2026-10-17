@@ -45,6 +45,12 @@ try{
   assert.equal(await evaluate("document.getElementById('run-note').textContent"),'当前筛选 · 全部 24 次');checks.push('Filtered counts labelled against the full dataset');
   await evaluate("document.querySelectorAll('.run-link')[1].click()");
   await until("document.getElementById('detail-title').textContent.includes('第2次') && document.querySelector('#detail .tails strong')!==null");checks.push('Run detail selection and request plot');
+  await until("document.getElementById('timeline-title').textContent.includes('第2次')");
+  assert.match(await evaluate("document.getElementById('timeline-stats').textContent"),/峰值同时在途 32 \/ 客户端上限 32（未超过上限）/);
+  assert(await evaluate("document.querySelectorAll('#timeline rect').length>=128"),'Timeline segments missing');checks.push('Request timeline: peak in-flight 32 within the client limit');
+  const shared=await evaluate('location.href');assert.match(shared,/engine=vllm&concurrency=32&run=[0-9a-f]{20}/);
+  await send('Page.navigate',{url:shared});
+  await until("document.getElementById('run-count')?.textContent==='3' && document.getElementById('detail-title').textContent.includes('第2次')");checks.push('Shared URL restores filters and selected run');
   const csv=await(await fetch(base+'/api/export.csv?engine=vllm&concurrency=32')).text();assert.equal(csv.trim().split('\n').length,4);checks.push('CSV export matches filter');
   const listing=await(await fetch(base+'/api/runs?engine=vllm&concurrency=32')).json();
   const raw=await(await fetch(base+`/api/runs/${listing.runs[0].id}/artifacts/result`)).json();assert.equal(raw.completed,64);checks.push('Raw artifact contains actual 64-request result');

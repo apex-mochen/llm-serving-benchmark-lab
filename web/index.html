@@ -22,8 +22,19 @@
       <div><label for="source">数据来源</label><select id="source"><option value="">全部来源</option><option value="baseline">历史基线</option><option value="imported">导入结果</option></select></div>
       <div><label for="concurrency">并发规模</label><select id="concurrency"><option value="">全部并发</option><option>1</option><option>8</option><option>32</option><option>64</option></select></div>
       <p class="filter-note">相同输入/输出长度，重复运行。<br>筛选不会触发新的推理任务。</p>
-      <a id="export" class="button secondary" href="/api/export.csv">导出 CSV ↓</a>
+      <div class="filter-actions"><button id="copy-link" class="secondary" type="button">复制当前视图链接</button><a id="export" class="button secondary" href="/api/export.csv">导出 CSV ↓</a></div>
     </section>
+    <details class="panel glossary">
+      <summary>指标口径：每个数字从哪里开始计时？</summary>
+      <dl>
+        <dt>客户端等待</dt><dd>请求到达压测客户端 → 真正发出。包括客户端并发上限的排队和客户端自身逐个发请求的延迟，<strong>不等于</strong>服务端调度排队。</dd>
+        <dt>TTFT</dt><dd>请求发出 → 收到第一个输出 token，不含客户端等待。</dd>
+        <dt>端到端延迟 E2E</dt><dd>请求发出 → 收到最后一个 token。</dd>
+        <dt>TPOT</dt><dd>每个请求 (E2E − TTFT) ÷ (输出 token 数 − 1)，再在请求间取平均。</dd>
+        <dt>输出吞吐</dt><dd>全部输出 token ÷ 整批时长。有限批次包含开始和收尾阶段，不是稳态容量。</dd>
+      </dl>
+      <p>依据：vLLM 源码 <code>vllm/benchmarks/lib/endpoint_request_func.py</code>（计时起点为发出时刻）与 <code>vllm/benchmarks/serve.py</code>（client_queue_time、TPOT 与吞吐的计算）。其他压测工具的定义可能不同，不能直接拿数字比较。</p>
+    </details>
     <div class="workspace">
       <div class="results-column">
         <section class="panel chart-panel">
@@ -42,6 +53,12 @@
         <div id="detail"><p class="muted">加载后可查看配置、延迟分布与原始文件。</p></div>
       </aside>
     </div>
+    <section id="timeline-panel" class="panel timeline-panel" aria-label="单次运行请求时间线" hidden>
+      <div class="panel-head"><div><h2>请求时间线 <span id="timeline-title" class="count"></span></h2><p>每行一个请求，按到达顺序排列。上方曲线是同时在途（已发出、未完成）的请求数，虚线是客户端并发上限。时间来自 vllm bench serve 原始记录，不是服务端调度日志。</p></div></div>
+      <p id="timeline-stats" class="timeline-stats"></p>
+      <div id="timeline" class="timeline"></div>
+      <div class="legend"><span><i class="swatch wait"></i>客户端等待（到达→发出）</span><span><i class="swatch ttft"></i>等待首 token（发出→首 token）</span><span><i class="swatch decode"></i>生成（首 token→完成）</span><small>悬停查看单个请求的数值。</small></div>
+    </section>
     <p id="error" class="error" role="alert" hidden></p>
     <footer>单机受控实验，不代表线上稳态容量。客户端排队 ≠ 服务端调度等待。所有指标按各自测量边界解释。</footer>
   </main>
