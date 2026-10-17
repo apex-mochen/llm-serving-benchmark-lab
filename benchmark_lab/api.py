@@ -1,6 +1,7 @@
 """Local read-only FastAPI result browser; never launches an inference engine."""
 from contextlib import asynccontextmanager
 import csv
+import datetime as dt
 import io
 from pathlib import Path
 
@@ -9,6 +10,7 @@ from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 
 from .catalog import Catalog, EvidenceError
+from .report import render as render_report
 
 
 def create_app(root=None, database=None):
@@ -62,6 +64,14 @@ def create_app(root=None, database=None):
         writer.writeheader(); writer.writerows(rows)
         return Response(data.getvalue(), media_type='text/csv', headers={
             'Content-Disposition': 'attachment; filename="benchmark-runs.csv"'})
+
+    @app.get('/api/report.md')
+    def report(engine: str | None = None, concurrency: int | None = None, source: str | None = None):
+        rows = filtered(engine, concurrency, source)
+        generated = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat()
+        text = render_report(root, rows, dict(engine=engine, concurrency=concurrency, source=source), generated)
+        return Response(text.encode('utf-8'), media_type='text/markdown; charset=utf-8', headers={
+            'Content-Disposition': 'attachment; filename="benchmark-evidence-report.md"'})
 
     def filtered(engine, concurrency, source=None):
         try:

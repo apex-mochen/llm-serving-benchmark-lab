@@ -17,7 +17,9 @@ const child=spawn(browser,['--headless=new','--disable-gpu','--no-first-run',`--
 let socket;const errors=[];const checks=[];
 try{
   let port;
-  for(let i=0;i<100;i++){try{port=(await readFile(join(profile,'DevToolsActivePort'),'utf8')).split('\n')[0];break;}catch{await sleep(100);}}
+  // The browser writes "<port>\n<path>"; reading too early can yield a partial port, so wait for both lines.
+  for(let i=0;i<100;i++){try{const [first,second]=(await readFile(join(profile,'DevToolsActivePort'),'utf8')).split('\n');
+    if(/^\d{4,5}$/.test(first.trim())&&second&&second.trim()){port=first.trim();break;}}catch{}await sleep(100);}
   assert(port,'Headless browser did not start');
   const pages=await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();
   const page=pages.find(p=>p.type==='page');assert(page);
@@ -28,6 +30,8 @@ try{
   const evaluate=async expression=>{const r=await send('Runtime.evaluate',{expression,returnByValue:true,awaitPromise:true});if(r.exceptionDetails)throw new Error(r.exceptionDetails.text);return r.result.value;};
   const until=async expression=>{for(let i=0;i<100;i++){if(await evaluate(expression))return;await sleep(100);}throw new Error('UI condition not reached: '+expression);};
   await send('Page.enable');await send('Runtime.enable');
+  // Deterministic screenshots: render the light theme regardless of the host's system setting.
+  await send('Emulation.setEmulatedMedia',{features:[{name:'prefers-color-scheme',value:'light'}]});
   await send('Emulation.setDeviceMetricsOverride',{width:1440,height:1100,deviceScaleFactor:1,mobile:false});
   await send('Page.navigate',{url:base});
   await until("document.getElementById('run-count')?.textContent==='24' && document.querySelectorAll('#detail .tails strong').length===3");
@@ -52,6 +56,9 @@ try{
   await send('Page.navigate',{url:shared});
   await until("document.getElementById('run-count')?.textContent==='3' && document.getElementById('detail-title').textContent.includes('第2次')");checks.push('Shared URL restores filters and selected run');
   const csv=await(await fetch(base+'/api/export.csv?engine=vllm&concurrency=32')).text();assert.equal(csv.trim().split('\n').length,4);checks.push('CSV export matches filter');
+  assert.equal(await evaluate("document.getElementById('report').getAttribute('href')"),'/api/report.md?engine=vllm&concurrency=32');
+  const report=await(await fetch(base+'/api/report.md')).text();assert(report.includes('| C32 | 范围重叠 · 不判定快慢 | 1.57 |'),'Report verdict missing');
+  checks.push('Evidence report link follows filters; report verdicts match the page');
   const listing=await(await fetch(base+'/api/runs?engine=vllm&concurrency=32')).json();
   const raw=await(await fetch(base+`/api/runs/${listing.runs[0].id}/artifacts/result`)).json();assert.equal(raw.completed,64);checks.push('Raw artifact contains actual 64-request result');
   await send('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});await sleep(300);

@@ -63,6 +63,14 @@ class ApiTests(unittest.TestCase):
         rows=list(csv.DictReader(io.StringIO(self.client.get('/api/export.csv?source=imported').text)))
         self.assertEqual((rows[0]['kind'],rows[0]['label']),('imported','api fixture'))
 
+    def test_evidence_report_follows_filters(self):
+        response=self.client.get('/api/report.md?engine=vllm')
+        self.assertEqual(response.status_code,200)
+        self.assertTrue(response.headers['content-type'].startswith('text/markdown'))
+        self.assertIn('attachment',response.headers['content-disposition'])
+        self.assertIn('# 证据报告',response.text);self.assertIn('数据范围：engine=vllm',response.text)
+        self.assertEqual(self.client.get('/api/report.md?engine=other').status_code,400)
+
     def test_unknown_run_and_no_execution_endpoint(self):
         self.assertEqual(self.client.get('/api/runs/no-such-run').status_code,404)
         self.assertEqual(self.client.post('/api/runs',json={'command':'anything'}).status_code,405)

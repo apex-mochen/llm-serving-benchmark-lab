@@ -17,6 +17,11 @@ with TestClient(create_app(ROOT,ROOT/'.benchmark/integration-index.sqlite3')) as
     assert listing['total']==24 and listing['requests']==1536
     assert client.get('/api/runs?engine=vllm').json()['total']==12
     assert client.get('/api/runs?engine=sglang&concurrency=32').json()['total']==3
+    # Evidence report: same verdicts as the browser table (C32 TTFT overlaps, C64 separated) and
+    # one row with the full SHA256 for every original run.
+    report=client.get('/api/report.md').text
+    assert '| C32 | 范围重叠 · 不判定快慢 | 1.57 |' in report and '| C64 | 差异超出重复波动 | 2.60 |' in report
+    assert all(f"`{row['source_sha256']}`" in report for row in listing['runs'])
     for row in listing['runs']:
         detail=client.get('/api/runs/'+row['id']).json()
         assert len(detail['request_timing'])==64

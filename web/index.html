@@ -56,7 +56,7 @@
       <div class="field"><label for="source">数据来源</label><select id="source"><option value="">全部来源</option><option value="baseline">历史基线</option><option value="imported">导入结果</option></select></div>
       <div class="field"><label for="concurrency">并发规模</label><select id="concurrency"><option value="">全部并发</option><option>1</option><option>8</option><option>32</option><option>64</option></select></div>
       <div class="filter-status"><p id="filter-summary" aria-live="polite">正在载入…</p><button id="clear-filters" class="link-button" type="button" hidden>清除筛选</button></div>
-      <div class="filter-actions"><button id="copy-link" class="secondary" type="button">复制当前视图链接</button><a id="export" class="button secondary" href="/api/export.csv">导出 CSV ↓</a></div>
+      <div class="filter-actions"><button id="copy-link" class="secondary" type="button">复制当前视图链接</button><a id="export" class="button secondary" href="/api/export.csv">导出 CSV ↓</a><a id="report" class="button secondary primary" href="/api/report.md" title="把当前筛选范围内的比较结论、原始文件哈希和口径整理成 Markdown，可直接发给导师或放进论文附录">导出证据报告 ↓</a></div>
     </section>
 
     <details class="panel glossary">

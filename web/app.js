@@ -213,7 +213,7 @@ async function refresh(){
     const kinds=new Set(runs.map(r=>r.kind)),mixed=kinds.size>1,onlyImported=kinds.size===1&&kinds.has('imported');
     $('source-word').textContent=mixed?'基线 + 导入':onlyImported?'导入结果':'真实 GPU';
     $('source-note').textContent=mixed||onlyImported?'导入结果的硬件与版本未核实':'本地实验室 · 有限请求批次';
-    $('export').href='/api/export.csv?'+query();summary(data);chart();renderTable();error('');
+    $('export').href='/api/export.csv?'+query();$('report').href='/api/report.md?'+query();summary(data);chart();renderTable();error('');
     if(runs.length)await select(runs.some(r=>r.id===selected)?selected:runs[0].id);
     else{selected=current=null;$('detail').replaceChildren(emptyState('没有匹配记录。',true));$('detail-title').textContent='选择运行记录';$('timeline-panel').hidden=true;syncUrl();}
   }catch(e){error(e.message);}finally{$('refresh').disabled=false;}

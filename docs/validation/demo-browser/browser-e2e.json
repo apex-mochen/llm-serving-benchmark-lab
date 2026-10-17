@@ -11,6 +11,7 @@
     "Request timeline: peak in-flight 32 within the client limit",
     "Shared URL restores filters and selected run",
     "CSV export matches filter",
+    "Evidence report link follows filters; report verdicts match the page",
     "Raw artifact contains actual 64-request result",
     "390px viewport has no document overflow",
     "No uncaught browser runtime exceptions"

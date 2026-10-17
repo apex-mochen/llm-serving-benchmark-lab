@@ -285,3 +285,4 @@ footer{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;padding:2
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 .tip em{font-style:normal;opacity:.7}.tip strong{font-weight:650}
+.secondary.primary{background:var(--accent);border-color:var(--accent);color:#fff}.secondary.primary:hover{background:color-mix(in srgb,var(--accent) 88%,#000);border-color:transparent}
