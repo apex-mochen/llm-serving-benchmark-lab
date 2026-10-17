@@ -4,7 +4,6 @@
   "files": {
     ".gitattributes": "42c26463c9beffedb0e8ec133abc17f376244ac85dfc8612248c0be679e02c70",
     ".gitignore": "bdd6cb7cde73eaf112c8d52dcfe09a23453ba13fb7787cf9ee0569238a8f34aa",
-    ".mplconfig/fontlist-v390.json": "02e3ce3b77db227db4508d9c7b70e128d0f759e27c436f606c07e3f96d0e2a26",
     "AGENT_EXPERIMENT_READINESS_20261012.md": "fdbefad8fd42fb60cb3c43c66e390a800a9a288411a39fa2bd4d85d5a2b8885b",
     "BASELINE_SOURCE_AUDIT_20261012.md": "28f8ec23eb5e298bd8259ecb57fd65bf40b7a3b3f28edbf7b4d8ed4f7d613708",
     "README.md": "e233935ffb4b191f42bea1a43140239a3f01f1073179532c28ae92036c5f324b",
